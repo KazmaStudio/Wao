@@ -1,0 +1,28 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "691D1273BA6EB234606764486AC2A40058DD0D90",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "691D1273BA6EB234606764486AC2A40058DD0D90" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "76B008CD-531A-454E-BA72-8FF779820469",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "691D1273BA6EB234606764486AC2A40058DD0D90" : "..\/..\/Desktop\/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9\/Wao\/Wao"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Wao",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Code\/Wao-iOS\/Wao\/Wao.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KazmaStudio\/Wao",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "691D1273BA6EB234606764486AC2A40058DD0D90"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KazmaStudio\/Wao.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "691D1273BA6EB234606764486AC2A40058DD0D90"
+    }
+  ]
+}
