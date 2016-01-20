@@ -24,8 +24,8 @@ class ViewCell: UIView {
     
     func setup(){
         
-        let topLine = UIView(frame: CGRectMake(0, 0, ScreenWith, px1))
-        let bottomLine = UIView(frame: CGRectMake(0, self.frame.height - px1, ScreenWith, px1))
+        let topLine = UIView(frame: CGRectMake(0, 0, ScreenWidth, px1))
+        let bottomLine = UIView(frame: CGRectMake(0, self.frame.height - px1, ScreenWidth, px1))
         
         topLine.backgroundColor = rgba(220, g: 220, b: 220, a: 1)
         bottomLine.backgroundColor = rgba(220, g: 220, b: 220, a: 1)

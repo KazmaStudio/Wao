@@ -94,7 +94,7 @@ extension UIView {
                 
                 let bottomBorder: CALayer = CALayer()
                 
-                bottomBorder.frame = CGRect(x: 0.0, y: self.frame.height - px1, width: ScreenWith, height: px1)
+                bottomBorder.frame = CGRect(x: 0.0, y: self.frame.height - px1, width: ScreenWidth, height: px1)
                 
                 bottomBorder.backgroundColor = rgba(220, g: 220, b: 220, a: 1).CGColor
                 

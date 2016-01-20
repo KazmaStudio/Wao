@@ -54,6 +54,7 @@
 		0607B5F51C436230002A508A /* SBMine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0607B5F41C436230002A508A /* SBMine.storyboard */; };
 		0607B5F71C439687002A508A /* CFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0607B5F61C439687002A508A /* CFButton.swift */; };
 		060B49AA1C4F17D4008844A8 /* UITableView+NodataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B49A91C4F17D4008844A8 /* UITableView+NodataView.swift */; };
+		060B49AC1C4F2546008844A8 /* WaterLayoutMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B49AB1C4F2546008844A8 /* WaterLayoutMain.swift */; };
 		0681EDA21C3A57A90036DFB4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA01C365DE3008ED5CF /* Alamofire.framework */; };
 		0681EDA31C3A57A90036DFB4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA01C365DE3008ED5CF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0681EDA51C3A57AF0036DFB4 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA21C365DE3008ED5CF /* Kingfisher.framework */; };
@@ -81,7 +82,6 @@
 		06D179F61C3D0FC200610BB8 /* NavigationControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D179F51C3D0FC200610BB8 /* NavigationControllerMain.swift */; };
 		06D179F81C3D0FE700610BB8 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D179F71C3D0FE700610BB8 /* ViewControllerMain.swift */; };
 		865186BC1C4F1F7C0044997C /* WaterCellMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865186BA1C4F1F7C0044997C /* WaterCellMain.swift */; };
-		865186BD1C4F1F7C0044997C /* WaterLayoutMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865186BB1C4F1F7C0044997C /* WaterLayoutMain.swift */; };
 		865186BF1C4F1F8C0044997C /* WaterCellMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865186BE1C4F1F8C0044997C /* WaterCellMain.xib */; };
 		865186C11C4F1FEB0044997C /* SBGiftzlistMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865186C01C4F1FEB0044997C /* SBGiftzlistMain.storyboard */; };
 		865186C71C4F20740044997C /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 865186C31C4F20740044997C /* 1.JPG */; };
@@ -177,6 +177,7 @@
 		0607B5F41C436230002A508A /* SBMine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBMine.storyboard; sourceTree = "<group>"; };
 		0607B5F61C439687002A508A /* CFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFButton.swift; sourceTree = "<group>"; };
 		060B49A91C4F17D4008844A8 /* UITableView+NodataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+NodataView.swift"; sourceTree = "<group>"; };
+		060B49AB1C4F2546008844A8 /* WaterLayoutMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterLayoutMain.swift; sourceTree = "<group>"; };
 		0681EDA71C3A57D80036DFB4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0681EDA81C3A57D80036DFB4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		06AEAA6D1C365AD9008ED5CF /* Wao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wao.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,7 +213,6 @@
 		06D179F51C3D0FC200610BB8 /* NavigationControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerMain.swift; sourceTree = "<group>"; };
 		06D179F71C3D0FE700610BB8 /* ViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
 		865186BA1C4F1F7C0044997C /* WaterCellMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterCellMain.swift; sourceTree = "<group>"; };
-		865186BB1C4F1F7C0044997C /* WaterLayoutMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterLayoutMain.swift; sourceTree = "<group>"; };
 		865186BE1C4F1F8C0044997C /* WaterCellMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterCellMain.xib; sourceTree = "<group>"; };
 		865186C01C4F1FEB0044997C /* SBGiftzlistMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBGiftzlistMain.storyboard; sourceTree = "<group>"; };
 		865186C31C4F20740044997C /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.JPG; sourceTree = "<group>"; };
@@ -544,7 +544,7 @@
 			children = (
 				865186BE1C4F1F8C0044997C /* WaterCellMain.xib */,
 				865186BA1C4F1F7C0044997C /* WaterCellMain.swift */,
-				865186BB1C4F1F7C0044997C /* WaterLayoutMain.swift */,
+				060B49AB1C4F2546008844A8 /* WaterLayoutMain.swift */,
 			);
 			name = "Main Collection Cell";
 			sourceTree = "<group>";
@@ -752,6 +752,7 @@
 				02C814551C4E3DD700AA5D85 /* ViewController.swift in Sources */,
 				06AEAAB61C365DE3008ED5CF /* UIView+XIBEdit.swift in Sources */,
 				06AEAAB31C365DE3008ED5CF /* UICommon.swift in Sources */,
+				060B49AC1C4F2546008844A8 /* WaterLayoutMain.swift in Sources */,
 				8663B7601C4CB715004AD904 /* ViewControllerGiftListMain.swift in Sources */,
 				02C814571C4E3E5700AA5D85 /* uiview.swift in Sources */,
 				8663B7691C4CB9B7004AD904 /* ViewControllerGiftList.swift in Sources */,

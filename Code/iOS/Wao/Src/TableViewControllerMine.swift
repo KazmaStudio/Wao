@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewControllerMine: UITableViewController {
 
-    var navBottomLine = UIView.init(frame: CGRectMake(0, 44 - px1, ScreenWith, px1))
+    var navBottomLine = UIView.init(frame: CGRectMake(0, 44 - px1, ScreenWidth, px1))
     
     override func viewDidLoad() {
         super.viewDidLoad()
