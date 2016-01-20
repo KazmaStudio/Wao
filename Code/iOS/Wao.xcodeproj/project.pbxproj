@@ -53,6 +53,7 @@
 		0607B5F31C436212002A508A /* TableViewControllerMine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0607B5F21C436212002A508A /* TableViewControllerMine.swift */; };
 		0607B5F51C436230002A508A /* SBMine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0607B5F41C436230002A508A /* SBMine.storyboard */; };
 		0607B5F71C439687002A508A /* CFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0607B5F61C439687002A508A /* CFButton.swift */; };
+		060B49AA1C4F17D4008844A8 /* UITableView+NodataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B49A91C4F17D4008844A8 /* UITableView+NodataView.swift */; };
 		0681EDA21C3A57A90036DFB4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA01C365DE3008ED5CF /* Alamofire.framework */; };
 		0681EDA31C3A57A90036DFB4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA01C365DE3008ED5CF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0681EDA51C3A57AF0036DFB4 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA21C365DE3008ED5CF /* Kingfisher.framework */; };
@@ -175,6 +176,7 @@
 		0607B5F21C436212002A508A /* TableViewControllerMine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerMine.swift; sourceTree = "<group>"; };
 		0607B5F41C436230002A508A /* SBMine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBMine.storyboard; sourceTree = "<group>"; };
 		0607B5F61C439687002A508A /* CFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFButton.swift; sourceTree = "<group>"; };
+		060B49A91C4F17D4008844A8 /* UITableView+NodataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+NodataView.swift"; sourceTree = "<group>"; };
 		0681EDA71C3A57D80036DFB4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0681EDA81C3A57D80036DFB4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		06AEAA6D1C365AD9008ED5CF /* Wao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wao.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -444,6 +446,7 @@
 				0607B59C1C4123A1002A508A /* ViewCell.swift */,
 				0607B59E1C421A28002A508A /* GhostButton.swift */,
 				0607B5F61C439687002A508A /* CFButton.swift */,
+				060B49A91C4F17D4008844A8 /* UITableView+NodataView.swift */,
 			);
 			name = "UI Helper";
 			path = "Xib Helper";
@@ -738,6 +741,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0607B59F1C421A28002A508A /* GhostButton.swift in Sources */,
+				060B49AA1C4F17D4008844A8 /* UITableView+NodataView.swift in Sources */,
 				0607B59D1C4123A1002A508A /* ViewCell.swift in Sources */,
 				06AEAAB21C365DE3008ED5CF /* Common.swift in Sources */,
 				06C9D2321C3F983E00B7F8E5 /* ModelWeChatInfo.swift in Sources */,

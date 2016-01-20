@@ -8,7 +8,7 @@
 
 import UIKit
 
-var ScreenWith = UIScreen.mainScreen().bounds.width
+var ScreenWidth = UIScreen.mainScreen().bounds.width
 
 var ScreenHeight = UIScreen.mainScreen().bounds.height
 

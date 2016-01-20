@@ -28,4 +28,7 @@ let KEY_AVATAR = "headimgurl"
 // segue id
 let SEGUE_LOGIN_2_MAIN = "Login2Main"
 
+// view tag
+let TABLE_VIEW_NO_DATA_VIEW_TAG = 999001
+
 
