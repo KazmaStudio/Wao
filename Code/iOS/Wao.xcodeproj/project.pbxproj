@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02C814551C4E3DD700AA5D85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814541C4E3DD700AA5D85 /* ViewController.swift */; };
-		02C814571C4E3E5700AA5D85 /* uiview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814561C4E3E5700AA5D85 /* uiview.swift */; };
+		02C814631C4FC8B400AA5D85 /* NavigationViewControllerWish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */; };
+		02C814651C4FC8D400AA5D85 /* WishViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */; };
+		02C814671C4FC8E100AA5D85 /* SBWish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C814661C4FC8E100AA5D85 /* SBWish.storyboard */; };
+		02C8146A1C4FD71000AA5D85 /* NotLitWishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814691C4FD71000AA5D85 /* NotLitWishTableViewCell.swift */; };
+		02C8146C1C4FD73300AA5D85 /* LitWishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8146B1C4FD73300AA5D85 /* LitWishTableViewCell.swift */; };
+		02C8146E1C4FE8A700AA5D85 /* 44FF25.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C8146D1C4FE8A700AA5D85 /* 44FF25.png */; };
 		0607B5961C40D89F002A508A /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0607B5951C40D89F002A508A /* ViewControllerLogin.swift */; };
 		0607B5991C40DE18002A508A /* ViewControllerRegisterMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0607B5981C40DE18002A508A /* ViewControllerRegisterMobile.swift */; };
 		0607B59D1C4123A1002A508A /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0607B59C1C4123A1002A508A /* ViewCell.swift */; };
@@ -130,8 +134,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		02C814541C4E3DD700AA5D85 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		02C814561C4E3E5700AA5D85 /* uiview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = uiview.swift; sourceTree = "<group>"; };
+		02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerWish.swift; sourceTree = "<group>"; };
+		02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishViewControllerMain.swift; sourceTree = "<group>"; };
+		02C814661C4FC8E100AA5D85 /* SBWish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBWish.storyboard; sourceTree = "<group>"; };
+		02C814691C4FD71000AA5D85 /* NotLitWishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotLitWishTableViewCell.swift; sourceTree = "<group>"; };
+		02C8146B1C4FD73300AA5D85 /* LitWishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LitWishTableViewCell.swift; sourceTree = "<group>"; };
+		02C8146D1C4FE8A700AA5D85 /* 44FF25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 44FF25.png; path = Wao/Resource/Image/44FF25.png; sourceTree = SOURCE_ROOT; };
 		0607B5951C40D89F002A508A /* ViewControllerLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
 		0607B5981C40DE18002A508A /* ViewControllerRegisterMobile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRegisterMobile.swift; sourceTree = "<group>"; };
 		0607B59C1C4123A1002A508A /* ViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
@@ -261,6 +269,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02C814681C4FD6D700AA5D85 /* WishCell */ = {
+			isa = PBXGroup;
+			children = (
+				02C814691C4FD71000AA5D85 /* NotLitWishTableViewCell.swift */,
+				02C8146B1C4FD73300AA5D85 /* LitWishTableViewCell.swift */,
+			);
+			name = WishCell;
+			sourceTree = "<group>";
+		};
 		0607B5A01C428295002A508A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,8 +343,10 @@
 		0681EDAA1C3A589E0036DFB4 /* Wish */ = {
 			isa = PBXGroup;
 			children = (
-				02C814541C4E3DD700AA5D85 /* ViewController.swift */,
-				02C814561C4E3E5700AA5D85 /* uiview.swift */,
+				02C814681C4FD6D700AA5D85 /* WishCell */,
+				02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */,
+				02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */,
+				02C814661C4FC8E100AA5D85 /* SBWish.storyboard */,
 			);
 			name = Wish;
 			sourceTree = "<group>";
@@ -552,6 +571,7 @@
 		865186C21C4F20740044997C /* fake */ = {
 			isa = PBXGroup;
 			children = (
+				02C8146D1C4FE8A700AA5D85 /* 44FF25.png */,
 				865186C31C4F20740044997C /* 1.JPG */,
 				865186C41C4F20740044997C /* 2.JPG */,
 				865186C51C4F20740044997C /* 3.JPG */,
@@ -696,6 +716,7 @@
 				865186BF1C4F1F8C0044997C /* WaterCellMain.xib in Resources */,
 				0607B5EB1C43438D002A508A /* SBLogin.storyboard in Resources */,
 				0607B5C01C428452002A508A /* collection.png in Resources */,
+				02C814671C4FC8E100AA5D85 /* SBWish.storyboard in Resources */,
 				0607B5C71C428452002A508A /* me@3x.png in Resources */,
 				0607B5BE1C428452002A508A /* CLOSE_b.png in Resources */,
 				0607B5E51C4296A1002A508A /* qq@2x.png in Resources */,
@@ -705,6 +726,7 @@
 				8663B7491C4C74FF004AD904 /* SBMain.storyboard in Resources */,
 				0607B5D31C428452002A508A /* xinyuan_h@2x.png in Resources */,
 				0607B5C41C428452002A508A /* index_h@3x.png in Resources */,
+				02C8146E1C4FE8A700AA5D85 /* 44FF25.png in Resources */,
 				0607B5D21C428452002A508A /* win.png in Resources */,
 				0607B5E01C4296A1002A508A /* coufenzi_h@2x.png in Resources */,
 				0607B5E11C4296A1002A508A /* coufenzi@2x.png in Resources */,
@@ -748,15 +770,17 @@
 				8663B7621C4CB747004AD904 /* WaterLayout.swift in Sources */,
 				0607B5F11C4361BC002A508A /* NavigationControllerMine.swift in Sources */,
 				06D179F61C3D0FC200610BB8 /* NavigationControllerMain.swift in Sources */,
+				02C814651C4FC8D400AA5D85 /* WishViewControllerMain.swift in Sources */,
 				0607B5F31C436212002A508A /* TableViewControllerMine.swift in Sources */,
-				02C814551C4E3DD700AA5D85 /* ViewController.swift in Sources */,
+				02C8146A1C4FD71000AA5D85 /* NotLitWishTableViewCell.swift in Sources */,
+				02C814631C4FC8B400AA5D85 /* NavigationViewControllerWish.swift in Sources */,
 				06AEAAB61C365DE3008ED5CF /* UIView+XIBEdit.swift in Sources */,
 				06AEAAB31C365DE3008ED5CF /* UICommon.swift in Sources */,
 				060B49AC1C4F2546008844A8 /* WaterLayoutMain.swift in Sources */,
 				8663B7601C4CB715004AD904 /* ViewControllerGiftListMain.swift in Sources */,
-				02C814571C4E3E5700AA5D85 /* uiview.swift in Sources */,
 				8663B7691C4CB9B7004AD904 /* ViewControllerGiftList.swift in Sources */,
 				06AEAA711C365AD9008ED5CF /* AppDelegate.swift in Sources */,
+				02C8146C1C4FD73300AA5D85 /* LitWishTableViewCell.swift in Sources */,
 				0607B5F71C439687002A508A /* CFButton.swift in Sources */,
 				06D179F81C3D0FE700610BB8 /* ViewControllerMain.swift in Sources */,
 				0607B5991C40DE18002A508A /* ViewControllerRegisterMobile.swift in Sources */,

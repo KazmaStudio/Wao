@@ -41,7 +41,7 @@
         <!--心愿-->
         <scene sceneID="LyK-43-p4J">
             <objects>
-                <navigationController title="心愿" id="LkK-iG-KDP" sceneMemberID="viewController">
+                <navigationController title="心愿" id="LkK-iG-KDP" customClass="NavigationViewControllerWish" customModule="Wao" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="心愿" id="YER-VC-QzN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BKk-Aa-wzp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
