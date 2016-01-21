@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Wao
 //
-//  Created by 华瑞金科 on 16/1/19.
+//  Created by gaojian on 16/1/19.
 //  Copyright © 2016年 kazmastudio. All rights reserved.
 //
 
