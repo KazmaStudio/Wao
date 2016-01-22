@@ -10,7 +10,7 @@ import UIKit
 
 extension UITableView{
     
-    func addNodataView(title: String, image: UIImage, offsetY: CGFloat){
+    func addNodataView(title: String, imageName: String, offsetY: CGFloat){
         
         if let view: UIView = self.viewWithTag(TABLE_VIEW_NO_DATA_VIEW_TAG){
             
@@ -33,15 +33,19 @@ extension UITableView{
         noDataView.tag = TABLE_VIEW_NO_DATA_VIEW_TAG
         
         let imageView = UIImageView.init(frame: CGRectMake((ScreenWidth - 80) / 2, (ScreenHeight/3 - 134) / 2, 80, 80))
-        imageView.image = image
+
+        if !imageName.isEmpty || imageName != ""{
+            imageView.image = UIImage.init(named: imageName)
+        }
+        
         imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        noDataView.addSubview(imageView)
         
         let label = UILabel.init(frame: CGRectMake(0, (ScreenHeight/3 - 134)/2 + 110, ScreenWidth, 24))
         label.font = UIFont.systemFontOfSize(24)
         label.textColor = rgba(200, g: 200, b: 200, a: 1)
         label.textAlignment = NSTextAlignment.Center
         
-        noDataView.addSubview(imageView)
         noDataView.addSubview(label)
         
         self.addSubview(noDataView)
