@@ -93,6 +93,12 @@
 		8663B7621C4CB747004AD904 /* WaterLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8663B7611C4CB747004AD904 /* WaterLayout.swift */; };
 		8663B7641C4CB765004AD904 /* ViewControllerGiftList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8663B7631C4CB765004AD904 /* ViewControllerGiftList.xib */; };
 		8663B7691C4CB9B7004AD904 /* ViewControllerGiftList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8663B7681C4CB9B7004AD904 /* ViewControllerGiftList.swift */; };
+		86E1488D1C52148C00E72371 /* SBDetailMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E1488C1C52148C00E72371 /* SBDetailMain.storyboard */; };
+		86E1488F1C52149400E72371 /* SBDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1488E1C52149400E72371 /* SBDetailViewController.swift */; };
+		86E148911C52149C00E72371 /* ScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E148901C52149C00E72371 /* ScrollViewCell.swift */; };
+		86E148931C5214A400E72371 /* ScrollViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86E148921C5214A400E72371 /* ScrollViewCell.xib */; };
+		86E148961C5214C800E72371 /* buttonHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86E148941C5214C800E72371 /* buttonHeader.xib */; };
+		86E148971C5214C800E72371 /* buttonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E148951C5214C800E72371 /* buttonHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +230,12 @@
 		8663B7611C4CB747004AD904 /* WaterLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterLayout.swift; sourceTree = "<group>"; };
 		8663B7631C4CB765004AD904 /* ViewControllerGiftList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerGiftList.xib; sourceTree = "<group>"; };
 		8663B7681C4CB9B7004AD904 /* ViewControllerGiftList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerGiftList.swift; sourceTree = "<group>"; };
+		86E1488C1C52148C00E72371 /* SBDetailMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBDetailMain.storyboard; sourceTree = "<group>"; };
+		86E1488E1C52149400E72371 /* SBDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBDetailViewController.swift; sourceTree = "<group>"; };
+		86E148901C52149C00E72371 /* ScrollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewCell.swift; sourceTree = "<group>"; };
+		86E148921C5214A400E72371 /* ScrollViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewCell.xib; sourceTree = "<group>"; };
+		86E148941C5214C800E72371 /* buttonHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buttonHeader.xib; sourceTree = "<group>"; };
+		86E148951C5214C800E72371 /* buttonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buttonHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +326,7 @@
 		0681EDA91C3A58830036DFB4 /* Main Page */ = {
 			isa = PBXGroup;
 			children = (
+				86E1488B1C52147400E72371 /* GiftDetail */,
 				865186B91C4F1F610044997C /* Main Collection Cell */,
 				06C9D2201C3F938100B7F8E5 /* Gift List */,
 				8663B7481C4C74FF004AD904 /* SBMain.storyboard */,
@@ -560,6 +573,19 @@
 			path = fake;
 			sourceTree = "<group>";
 		};
+		86E1488B1C52147400E72371 /* GiftDetail */ = {
+			isa = PBXGroup;
+			children = (
+				86E148901C52149C00E72371 /* ScrollViewCell.swift */,
+				86E1488C1C52148C00E72371 /* SBDetailMain.storyboard */,
+				86E1488E1C52149400E72371 /* SBDetailViewController.swift */,
+				86E148921C5214A400E72371 /* ScrollViewCell.xib */,
+				86E148941C5214C800E72371 /* buttonHeader.xib */,
+				86E148951C5214C800E72371 /* buttonHeader.swift */,
+			);
+			name = GiftDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -685,11 +711,13 @@
 				0607B5ED1C4343A6002A508A /* SBRegisterMobile.storyboard in Resources */,
 				0607B5D51C428452002A508A /* xinyuandan.png in Resources */,
 				0607B5CF1C428452002A508A /* sub.png in Resources */,
+				86E1488D1C52148C00E72371 /* SBDetailMain.storyboard in Resources */,
 				0607B5C51C428452002A508A /* index@3x.png in Resources */,
 				0607B5E81C4296A1002A508A /* xinyuan_h@3x.png in Resources */,
 				06AEAA761C365AD9008ED5CF /* Main.storyboard in Resources */,
 				0607B5C31C428452002A508A /* hander.png in Resources */,
 				0607B5C91C428452002A508A /* passport.png in Resources */,
+				86E148931C5214A400E72371 /* ScrollViewCell.xib in Resources */,
 				865186CA1C4F20740044997C /* 4.JPG in Resources */,
 				0607B5CA1C428452002A508A /* plus.png in Resources */,
 				0607B5CD1C428452002A508A /* qunren.png in Resources */,
@@ -702,6 +730,7 @@
 				0607B5F51C436230002A508A /* SBMine.storyboard in Resources */,
 				0607B5E71C4296A1002A508A /* weixin@2x.png in Resources */,
 				0607B5BD1C428452002A508A /* cam.png in Resources */,
+				86E148961C5214C800E72371 /* buttonHeader.xib in Resources */,
 				8663B7491C4C74FF004AD904 /* SBMain.storyboard in Resources */,
 				0607B5D31C428452002A508A /* xinyuan_h@2x.png in Resources */,
 				0607B5C41C428452002A508A /* index_h@3x.png in Resources */,
@@ -739,7 +768,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0607B59F1C421A28002A508A /* GhostButton.swift in Sources */,
+				86E148911C52149C00E72371 /* ScrollViewCell.swift in Sources */,
 				060B49AA1C4F17D4008844A8 /* UITableView+NodataView.swift in Sources */,
+				86E1488F1C52149400E72371 /* SBDetailViewController.swift in Sources */,
 				0607B59D1C4123A1002A508A /* ViewCell.swift in Sources */,
 				865186BC1C4F1F7C0044997C /* WaterCellMain.swift in Sources */,
 				06AEAAB21C365DE3008ED5CF /* Common.swift in Sources */,
@@ -755,6 +786,7 @@
 				060B49AC1C4F2546008844A8 /* WaterLayoutMain.swift in Sources */,
 				8663B7601C4CB715004AD904 /* ViewControllerGiftListMain.swift in Sources */,
 				02C814571C4E3E5700AA5D85 /* uiview.swift in Sources */,
+				86E148971C5214C800E72371 /* buttonHeader.swift in Sources */,
 				8663B7691C4CB9B7004AD904 /* ViewControllerGiftList.swift in Sources */,
 				06AEAA711C365AD9008ED5CF /* AppDelegate.swift in Sources */,
 				0607B5F71C439687002A508A /* CFButton.swift in Sources */,
