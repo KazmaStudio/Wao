@@ -17,6 +17,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysj-IF-lth">
                         <rect key="frame" x="0.0" y="264" width="33" height="29"/>
                         <constraints>
+                            <constraint firstAttribute="width" constant="33" id="NJi-rF-qs6"/>
                             <constraint firstAttribute="height" constant="29" id="pvY-CW-dvM"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -25,6 +26,10 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2234568o" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q52-Ve-8ce">
                         <rect key="frame" x="0.0" y="296" width="82" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="JE0-jW-AM7"/>
+                            <constraint firstAttribute="width" constant="82" id="uvc-w5-Ao3"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -54,6 +59,7 @@
                 <constraint firstItem="Q48-hd-hno" firstAttribute="top" secondItem="Cxf-py-cpd" secondAttribute="top" id="3Gb-Q8-9gm"/>
                 <constraint firstItem="Ysj-IF-lth" firstAttribute="top" secondItem="Q48-hd-hno" secondAttribute="bottom" constant="14" id="B4o-xx-7NG"/>
                 <constraint firstAttribute="trailing" secondItem="sTp-Wu-0Ea" secondAttribute="trailing" id="Cb3-3L-oZ3"/>
+                <constraint firstItem="q52-Ve-8ce" firstAttribute="top" secondItem="Ysj-IF-lth" secondAttribute="bottom" constant="3" id="DjB-N9-Orl"/>
                 <constraint firstItem="Ysj-IF-lth" firstAttribute="leading" secondItem="Cxf-py-cpd" secondAttribute="leading" id="JdR-Er-TJE"/>
                 <constraint firstItem="sTp-Wu-0Ea" firstAttribute="top" secondItem="Q48-hd-hno" secondAttribute="bottom" constant="15" id="Sb8-6s-EWq"/>
                 <constraint firstItem="q52-Ve-8ce" firstAttribute="leading" secondItem="Cxf-py-cpd" secondAttribute="leading" id="VDn-8F-7f6"/>
@@ -62,6 +68,12 @@
                 <constraint firstItem="Q48-hd-hno" firstAttribute="leading" secondItem="Cxf-py-cpd" secondAttribute="leading" id="qBq-2D-1BH"/>
             </constraints>
             <size key="customSize" width="190" height="316.5"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="DjB-N9-Orl"/>
+                    <exclude reference="p8K-Lr-LGi"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="giftDescribeLabel" destination="q52-Ve-8ce" id="eiV-bk-Paa"/>
                 <outlet property="giftImageView" destination="Q48-hd-hno" id="NFS-GT-1dN"/>
