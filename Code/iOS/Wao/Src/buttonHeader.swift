@@ -10,6 +10,8 @@ import UIKit
 
 class buttonHeader: UITableViewHeaderFooterView {
     
+	@IBOutlet var viewBG: UIView!
+	
     @IBAction func addGiftList(sender: AnyObject) {
     }
     
