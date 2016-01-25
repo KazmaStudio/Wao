@@ -22,6 +22,9 @@ class WishViewControllerMain: UIViewController {
     var array = []
     var notLitView: UIView!
     var footButton: UIButton!
+    var hideHeadView: UIView!
+    var footerView: UIView!
+    
     weak var  tellFriendButton: UIButton!
     weak var  shareFriendCircleButton: UIButton!
     
@@ -30,10 +33,24 @@ class WishViewControllerMain: UIViewController {
         super.viewDidLoad()
 
         
+        self.title = "心愿"
+        let rightButton = UIBarButtonItem(title: "全选", style: .Plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = rightButton
+        
+        hideHeadView = UIView()
+        hideHeadView.frame = CGRectMake(0, 64, view.frame.width, 50)
+        hideHeadView.backgroundColor = UIColor.whiteColor()
+        view.addSubview(hideHeadView)
+        
+        footerView = UIView()
+        footerView.frame = CGRectMake(0, view.frame.height - 109, view.frame.width, 60)
+        footerView.backgroundColor = UIColor.whiteColor()
+        view.addSubview(footerView)
+        
         self.view.backgroundColor = UIColor.whiteColor()
         segment = UISegmentedControl(items: appsArray)
-        segment.frame = CGRectMake(20, 81, 320, 40)
-        segment.tintColor = UIColor.blackColor()
+        segment.frame = CGRectMake(10, 10, self.view.frame.width - 20, 30)
+        segment.tintColor = UIColor.redColor()
         segment.setTitle("未点亮心愿", forSegmentAtIndex: 0)
         segment.selectedSegmentIndex = 0
         
@@ -41,7 +58,7 @@ class WishViewControllerMain: UIViewController {
         
         
         
-        self.view.addSubview(segment)
+        hideHeadView.addSubview(segment)
         segment.userInteractionEnabled = true
         addFooterButton()
         tellFriendAction()
@@ -83,31 +100,33 @@ class WishViewControllerMain: UIViewController {
         
         var tellFriendButton: UIButton!
         tellFriendButton = UIButton(type: .Custom)
-        tellFriendButton.backgroundColor = UIColor.blackColor()
-        tellFriendButton.frame = CGRectMake(15, 570, 170, 40)
+        tellFriendButton.backgroundColor = UIColor.redColor()
+        tellFriendButton.frame = CGRectMake(10, 10, self.footerView.frame.width * 0.5 - 15, 40)
         tellFriendButton.setTitle("把心愿告诉好友", forState: .Normal)
-        
+        tellFriendButton.cornerRadius = 6
         self.tellFriendButton = tellFriendButton
         
-        view.addSubview(self.tellFriendButton)
+        footerView.addSubview(self.tellFriendButton)
         
         
     }
     func shareFriendCircleAction(){
         var shareFriendCircleBut: UIButton!
         shareFriendCircleBut = UIButton(type: .Custom)
-        shareFriendCircleBut.backgroundColor = UIColor.blackColor()
-        shareFriendCircleBut.frame = CGRectMake(200, 570, 170, 40)
-        shareFriendCircleBut.setTitle("把心愿分享到朋友圈", forState: .Normal)
+        shareFriendCircleBut.backgroundColor = UIColor.redColor()
+        shareFriendCircleBut.frame = CGRectMake(self.tellFriendButton.frame.width + 20, 10, self.footerView.frame.width * 0.5 - 15, 40)
+        shareFriendCircleBut.setTitle("把分享到朋友圈", forState: .Normal)
+        shareFriendCircleBut.cornerRadius = 6
         self.shareFriendCircleButton = shareFriendCircleBut
-        view.addSubview(self.shareFriendCircleButton)
+        footerView.addSubview(self.shareFriendCircleButton)
         
     }
     
     func addFooterButton(){
         footButton = UIButton(type: .Custom)
-        footButton.backgroundColor = UIColor.blackColor()
-        footButton.frame = CGRectMake(20, 570, 340, 40)
+        footButton.backgroundColor = UIColor.redColor()
+        footButton.frame = CGRectMake(20, self.view.frame.height - 99, self.view.frame.width - 40, 40)
+        footButton.cornerRadius = 6
         footButton.setTitle("分享到朋友圈", forState: UIControlState.Normal)
         footButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         footButton.addTarget(self, action: "footButtonAct", forControlEvents: .TouchUpInside)
@@ -124,7 +143,7 @@ class WishViewControllerMain: UIViewController {
 
 extension WishViewControllerMain:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return appsArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -143,6 +162,7 @@ extension WishViewControllerMain:UITableViewDataSource,UITableViewDelegate{
         
     }
     
+
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete{
@@ -163,9 +183,9 @@ extension WishViewControllerMain:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if segment.selectedSegmentIndex == 0{
-            return 110
+            return 90
         } else {
-            return 252
+            return  150
         }
     }
     
