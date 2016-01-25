@@ -71,10 +71,9 @@ class ScrollViewCell: UITableViewCell,UIScrollViewDelegate {
         self.addTimer()
         
     }
-    
+	
     func nextImage(sender:AnyObject!){//图片轮播；
-        
-        print("here")
+
         var page:Int = self.PageControl.currentPage;
         if(page == 3){   //循环；
             page = 0;

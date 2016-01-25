@@ -19,6 +19,7 @@ class ViewControllerGiftListMain: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		
         let cellGoodsNib = UINib(nibName: "ViewControllerGiftList", bundle: nil)
         self.CollectionView.registerNib(cellGoodsNib, forCellWithReuseIdentifier: "ViewControllerGiftList")
         
@@ -70,6 +71,17 @@ extension ViewControllerGiftListMain:UICollectionViewDelegate,UICollectionViewDa
         
         return cell
     }
+	
+	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+		
+		var storyboard: UIStoryboard
+		storyboard = UIStoryboard.init(name: "SBDetailMain", bundle: nil)
+		
+		var viewControllerMain: SBDetailViewController
+		viewControllerMain = storyboard.instantiateViewControllerWithIdentifier("SBDetailViewController") as! SBDetailViewController
+		
+		self.navigationController?.pushViewController(viewControllerMain, animated: true)
+	}
     
     func displayCellAnimation(view:UIView){
         view.transform = CGAffineTransformMakeScale(0.0, 0.0)
@@ -86,14 +98,12 @@ extension ViewControllerGiftListMain:UICollectionViewDelegate,UICollectionViewDa
     
     //waterfallProtocol询问cell高度的代理
     func collectionView_heightForItemAtIndexPath(view:UICollectionView, layout:WaterLayout,path Path:NSIndexPath)->Float{
-        print(dataSource[Path.row])
-        let origiImage = UIImage(named: dataSource[Path.row] as! String)!
+		
+       // let origiImage = UIImage(named: dataSource[Path.row] as! String)!
         
       //  let origiImageWidth = UIImage(named: dataSource[Path.row] as! String)!.size.width
-        print(origiImage.size)
+
         let cellItemHeight = (UIScreen.mainScreen().bounds.height)/2
-        print(cellItemHeight)
-        
         
         return Float(cellItemHeight)
     }
