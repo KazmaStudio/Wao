@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller Main-->
         <scene sceneID="h1S-3X-UxU">
             <objects>
-                <viewController storyboardIdentifier="viewControllerMain" id="vHe-75-SOt" customClass="ViewControllerMain" customModule="Wao" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewControllerMain" automaticallyAdjustsScrollViewInsets="NO" id="vHe-75-SOt" customClass="ViewControllerMain" customModule="Wao" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Q2-Lj-cWS"/>
                         <viewControllerLayoutGuide type="bottom" id="bXl-o7-US2"/>
@@ -17,38 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-y5-k3Q">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="107"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vpa-9H-NYC">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="107"/>
-                                    </imageView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ehi-Ey-PXU">
-                                        <rect key="frame" x="53" y="70" width="495" height="37"/>
-                                    </pageControl>
-                                </subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-y5-k3Q">
+                                <rect key="frame" x="0.0" y="64" width="600" height="220"/>
                                 <constraints>
-                                    <constraint firstItem="ehi-Ey-PXU" firstAttribute="centerX" secondItem="GN7-y5-k3Q" secondAttribute="centerX" id="0jo-Gl-Iyd"/>
-                                    <constraint firstAttribute="bottom" secondItem="ehi-Ey-PXU" secondAttribute="bottom" id="7zq-aS-ECj"/>
-                                    <constraint firstAttribute="trailing" secondItem="vpa-9H-NYC" secondAttribute="trailing" constant="228" id="Gkt-lA-bpY"/>
-                                    <constraint firstAttribute="trailing" secondItem="ehi-Ey-PXU" secondAttribute="trailing" constant="280" id="ODf-Xj-BPN"/>
-                                    <constraint firstItem="vpa-9H-NYC" firstAttribute="height" secondItem="GN7-y5-k3Q" secondAttribute="height" id="cFY-xq-lm4"/>
-                                    <constraint firstItem="ehi-Ey-PXU" firstAttribute="top" secondItem="GN7-y5-k3Q" secondAttribute="top" constant="70" id="jJd-yQ-VXh"/>
-                                    <constraint firstAttribute="height" constant="107" id="nNr-uB-9DD"/>
-                                    <constraint firstItem="vpa-9H-NYC" firstAttribute="leading" secondItem="GN7-y5-k3Q" secondAttribute="leading" id="pIc-hN-Rve"/>
-                                    <constraint firstItem="vpa-9H-NYC" firstAttribute="top" secondItem="GN7-y5-k3Q" secondAttribute="top" id="tuD-AX-Ihv"/>
-                                    <constraint firstItem="vpa-9H-NYC" firstAttribute="width" secondItem="GN7-y5-k3Q" secondAttribute="width" id="v8h-Ii-1nT"/>
-                                    <constraint firstAttribute="bottom" secondItem="vpa-9H-NYC" secondAttribute="bottom" id="vux-sP-aJ1"/>
+                                    <constraint firstAttribute="width" secondItem="GN7-y5-k3Q" secondAttribute="height" multiplier="600:220" id="t2x-v1-fis"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="vHe-75-SOt" id="O93-1G-IcP"/>
                                 </connections>
                             </scrollView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-RQ-oTr">
-                                <rect key="frame" x="0.0" y="109" width="600" height="491"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="NJ3-Qc-Fuo">
+                                <rect key="frame" x="489" y="247" width="111" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="85i-Jr-BHA"/>
+                                    <constraint firstAttribute="width" constant="111" id="1lS-Fg-meG"/>
+                                    <constraint firstAttribute="height" constant="37" id="BjX-AG-0gF"/>
                                 </constraints>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-RQ-oTr">
+                                <rect key="frame" x="0.0" y="284" width="600" height="316"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HKe-cs-rtW" customClass="WaterLayoutMain" customModule="Wao" customModuleProvider="target">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -74,23 +62,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fa4-RQ-oTr" firstAttribute="leading" secondItem="1kr-4h-oDd" secondAttribute="leading" id="04s-0V-yPw"/>
-                            <constraint firstItem="bXl-o7-US2" firstAttribute="top" secondItem="GN7-y5-k3Q" secondAttribute="bottom" constant="493" id="2Ds-3C-S5M"/>
-                            <constraint firstItem="GN7-y5-k3Q" firstAttribute="width" secondItem="1kr-4h-oDd" secondAttribute="width" id="G4M-u2-9US"/>
-                            <constraint firstItem="GN7-y5-k3Q" firstAttribute="leading" secondItem="1kr-4h-oDd" secondAttribute="leading" id="WE3-6s-yyl"/>
-                            <constraint firstAttribute="trailing" secondItem="fa4-RQ-oTr" secondAttribute="trailing" id="Z5d-E3-S4w"/>
-                            <constraint firstItem="fa4-RQ-oTr" firstAttribute="leading" secondItem="GN7-y5-k3Q" secondAttribute="leading" id="g70-mV-Tp3"/>
-                            <constraint firstItem="GN7-y5-k3Q" firstAttribute="top" secondItem="3Q2-Lj-cWS" secondAttribute="bottom" constant="-20" id="hRo-Ag-g7j"/>
-                            <constraint firstItem="bXl-o7-US2" firstAttribute="top" secondItem="fa4-RQ-oTr" secondAttribute="bottom" id="nyo-iV-F5p"/>
-                            <constraint firstAttribute="trailing" secondItem="GN7-y5-k3Q" secondAttribute="trailing" id="uv6-0S-5mN"/>
-                            <constraint firstItem="fa4-RQ-oTr" firstAttribute="top" secondItem="GN7-y5-k3Q" secondAttribute="bottom" constant="2" id="xsA-vd-tTM"/>
+                            <constraint firstItem="fa4-RQ-oTr" firstAttribute="leading" secondItem="1kr-4h-oDd" secondAttribute="leading" id="1D1-4P-cdR"/>
+                            <constraint firstItem="NJ3-Qc-Fuo" firstAttribute="bottom" secondItem="GN7-y5-k3Q" secondAttribute="bottom" id="9g0-eT-puA"/>
+                            <constraint firstItem="bXl-o7-US2" firstAttribute="top" secondItem="fa4-RQ-oTr" secondAttribute="bottom" id="GpP-EG-dvx"/>
+                            <constraint firstItem="GN7-y5-k3Q" firstAttribute="top" secondItem="3Q2-Lj-cWS" secondAttribute="bottom" id="WrG-Vy-Og0"/>
+                            <constraint firstItem="fa4-RQ-oTr" firstAttribute="width" secondItem="1kr-4h-oDd" secondAttribute="width" id="gRM-NC-9Jr"/>
+                            <constraint firstItem="GN7-y5-k3Q" firstAttribute="leading" secondItem="1kr-4h-oDd" secondAttribute="leading" id="qe4-SS-EDV"/>
+                            <constraint firstItem="fa4-RQ-oTr" firstAttribute="top" secondItem="GN7-y5-k3Q" secondAttribute="bottom" id="vo0-D6-JFl"/>
+                            <constraint firstAttribute="trailing" secondItem="NJ3-Qc-Fuo" secondAttribute="trailing" id="xF2-g8-4Zi"/>
+                            <constraint firstItem="GN7-y5-k3Q" firstAttribute="width" secondItem="1kr-4h-oDd" secondAttribute="width" id="zIt-jI-XR9"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="CollectionView" destination="fa4-RQ-oTr" id="JGD-ai-CW9"/>
-                        <outlet property="imagePageController" destination="ehi-Ey-PXU" id="x8P-ia-B9S"/>
+                        <outlet property="imagePageController" destination="NJ3-Qc-Fuo" id="IQE-Fm-GfX"/>
                         <outlet property="imageScrollView" destination="GN7-y5-k3Q" id="qOU-xz-RE3"/>
-                        <outlet property="imageView" destination="vpa-9H-NYC" id="Nx6-iM-ejs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYy-Ed-dXE" sceneMemberID="firstResponder"/>

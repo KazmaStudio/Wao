@@ -56,11 +56,11 @@ class WishViewControllerMain: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
 
-        if array.count > 0 {
-            tableView.hideNoDataView()
-        } else {
-            tableView.addNodataView("还没有心愿墙", image: UIImage(named: "index_h@2x")!, offsetY: 0)
-        }
+//        if array.count > 0 {
+//            tableView.hideNoDataView()
+//        } else {
+//            tableView.addNodataView("还没有心愿墙", imageName: "", offsetY: 0)
+//        }
     }
     
     
@@ -124,7 +124,7 @@ class WishViewControllerMain: UIViewController {
 
 extension WishViewControllerMain:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
+        return 4
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -142,6 +142,7 @@ extension WishViewControllerMain:UITableViewDataSource,UITableViewDelegate{
         
         
     }
+    
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete{
