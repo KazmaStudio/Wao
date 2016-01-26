@@ -12,7 +12,6 @@ class NavigationViewControllerWish: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         var storyBoardWish: UIStoryboard
         storyBoardWish = UIStoryboard.init(name: "SBWish", bundle: nil)
         
