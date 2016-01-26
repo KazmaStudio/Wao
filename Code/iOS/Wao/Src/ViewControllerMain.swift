@@ -12,37 +12,29 @@ class ViewControllerMain: UIViewController ,UIScrollViewDelegate{
     
     @IBOutlet weak var imageScrollView: UIScrollView!
     
-    
-    @IBOutlet weak var imageView: UIImageView!
-    
-    
     @IBOutlet weak var imagePageController: UIPageControl!
-    
+	
     var timer:NSTimer!
-    
-    
-    @IBOutlet weak var tableView: UITableView!
-    
-    
+	
     
     @IBOutlet weak var CollectionView: UICollectionView!
     
     var cellItemWidth = Float(0.0)
     var dataSource = NSMutableArray()
     var controlAnim = NSMutableArray()
-    
-    
-    
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+		
+		self.CollectionView.alwaysBounceVertical = true
+        self.CollectionView.contentInset = UIEdgeInsetsMake(15, 0, 0, 0)
         imageGallery()
         
         let cellGoodsNib = UINib(nibName: "WaterCellMain", bundle: nil)
         self.CollectionView.registerNib(cellGoodsNib, forCellWithReuseIdentifier: "WaterCellMain")
         
         // Do any additional setup after loading the view, typically from a nib.
-        let tempArray = ["1.JPG","2.JPG","3.JPG","4.JPG"]
+        let tempArray = ["1.JPG","5.JPG","6.JPG","4.JPG","6.JPG","2.JPG","5.JPG","4.JPG"]
         dataSource.addObjectsFromArray(tempArray)
         let TempAni = NSMutableArray()
         for _ in 0..<dataSource.count {
@@ -56,7 +48,7 @@ class ViewControllerMain: UIViewController ,UIScrollViewDelegate{
     
     
     override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = true
+        //self.navigationController?.navigationBarHidden = true
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -67,11 +59,7 @@ class ViewControllerMain: UIViewController ,UIScrollViewDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
-    
-    
+
 }
 
 extension ViewControllerMain:UICollectionViewDelegate,UICollectionViewDataSource,WaterfallMainProtocol{
@@ -83,9 +71,6 @@ extension ViewControllerMain:UICollectionViewDelegate,UICollectionViewDataSource
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("WaterCellMain", forIndexPath: indexPath) as! WaterCellMain
-        
-        cell.backgroundColor = UIColor.redColor()
-        
         
         // UIImage.init(named: <#T##String#>)
         
@@ -116,10 +101,8 @@ extension ViewControllerMain:UICollectionViewDelegate,UICollectionViewDataSource
     func collectionView_heightForItemAtIndexPath(view:UICollectionView, layout:WaterLayoutMain,path Path:NSIndexPath)->Float{
         let origiImage = UIImage(named: dataSource[Path.row] as! String)!
         let origiImageWidth = UIImage(named: dataSource[Path.row] as! String)!.size.width
-        print(origiImage.size)
+
         let cellItemHeight = origiImage.size.height * (CGFloat(cellItemWidth)/origiImageWidth)
-        
-        print(cellItemHeight)
         
         return Float(cellItemHeight)
     }
@@ -127,47 +110,59 @@ extension ViewControllerMain:UICollectionViewDelegate,UICollectionViewDataSource
     func waterfall_itemWidth(itemWidth: Float) {
         cellItemWidth = itemWidth
     }
+	
+	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+		
+		var storyboard: UIStoryboard
+		storyboard = UIStoryboard.init(name: "SBGiftlistMain", bundle: nil)
+		
+		var viewControllerMain: ViewControllerGiftListMain
+		viewControllerMain = storyboard.instantiateViewControllerWithIdentifier("ViewControllerGiftListMain") as! ViewControllerGiftListMain
+		
+		self.navigationController?.pushViewController(viewControllerMain, animated: true)
+	}
     
     func imageGallery(){
-        let imageWidth:CGFloat = UIScreen.mainScreen().bounds.width
-        let imageHeight:CGFloat = self.imageScrollView.bounds.size.height
+		
+		self.imageScrollView.contentOffset = CGPointMake(0, 0);
+		
+        let imageWidth:CGFloat = ScreenWidth
+        let imageHeight:CGFloat = ScreenWidth * 220 / 600
         let imageY:CGFloat = 0
         let totalCount:NSInteger = 4
+		
         for index in 0..<totalCount{
             let imageView:UIImageView = UIImageView();
             imageView.contentMode = UIViewContentMode.ScaleAspectFill
             let imageX:CGFloat = CGFloat(index) * imageWidth;
+			imageView.clipsToBounds = true
             imageView.frame = CGRectMake(imageX, imageY, imageWidth, imageHeight);//设置图片的大小，注意Image和ScrollView的关系，其实几张图片是按顺序从左向右依次放置在ScrollView中的，但是ScrollView在界面中显示的只是一张图片的大小，效果类似与画廊；
             let name:String = String(format: "%d.JPG", index+1);
             imageView.image = UIImage(named: name);
-            self.imageScrollView.showsHorizontalScrollIndicator = false;//不设置水平滚动条；
+			
             self.imageScrollView.addSubview(imageView);//把图片加入到ScrollView中去，实现轮播的效果；
-            
-            //需要非常注意的是：ScrollView控件一定要设置contentSize;包括长和宽；
-            let contentW:CGFloat = imageWidth * CGFloat(totalCount);//这里的宽度就是所有的图片宽度之和；
-            self.imageScrollView.contentSize = CGSizeMake(contentW, 0);
-            self.imageScrollView.pagingEnabled = true;
-            self.imageScrollView.delegate = self;
-            self.imagePageController.numberOfPages = totalCount;//下面的页码提示器；
-            
-            
+			
         }
-        
+		
+		let contentW:CGFloat = imageWidth * CGFloat(totalCount);//这里的宽度就是所有的图片宽度之和；
+		self.imageScrollView.contentSize = CGSizeMake(contentW, 0);
+		self.imageScrollView.delegate = self;
+		self.imagePageController.numberOfPages = totalCount;//下面的页码提示器；
+
         self.addTimer()
     }
-    
+	
     func nextImage(sender:AnyObject!){//图片轮播；
-        
-        print("here")
+		
         var page:Int = self.imagePageController.currentPage;
         if(page == 3){   //循环；
             page = 0;
         }else{
             page++;
         }
-        let x:CGFloat = CGFloat(page) * self.imageScrollView.frame.size.width;
-        
-        self.imageScrollView.contentOffset = CGPointMake(x, 0);//注意：contentOffset就是设置ScrollView的偏移；
+        let x:CGFloat = CGFloat(page) * ScreenWidth;
+		
+        self.imageScrollView.setContentOffset(CGPointMake(x, 0), animated: true)//注意：contentOffset就是设置ScrollView的偏移；
     }
     
     //UIScrollViewDelegate中重写的方法；
@@ -185,7 +180,7 @@ extension ViewControllerMain:UICollectionViewDelegate,UICollectionViewDataSource
     func addTimer(){   //图片轮播的定时器；
         
         
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "nextImage:", userInfo: nil, repeats: true);
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "nextImage:", userInfo: nil, repeats: true);
     }
     
     
