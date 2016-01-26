@@ -35,7 +35,7 @@
                                                         <constraint firstAttribute="height" constant="20" id="b2t-lF-eZD"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="44FF25.png" translatesAutoresizingMaskIntoConstraints="NO" id="iYd-7V-hGV">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="iYd-7V-hGV">
                                                     <rect key="frame" x="57" y="13" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="lto-eF-ya9"/>
@@ -75,7 +75,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="44FF25.png" translatesAutoresizingMaskIntoConstraints="NO" id="XNp-1t-4Wf">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="XNp-1t-4Wf">
                                                     <rect key="frame" x="16" y="11" width="128" height="128"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="128" id="Z6O-rf-BhC"/>
@@ -185,7 +185,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="44FF25.png" width="572" height="564"/>
+        <image name="1.JPG" width="1200" height="1200"/>
         <image name="ture_none@2x.png" width="88" height="88"/>
     </resources>
 </document>
