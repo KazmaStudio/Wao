@@ -8,7 +8,10 @@
 
 import UIKit
 
-class buttonHeader: UITableViewHeaderFooterView {
+class buttonHeader: UITableViewHeaderFooterView{
+    
+    
+    
     
 	@IBOutlet var viewBG: UIView!
 	
@@ -22,14 +25,13 @@ class buttonHeader: UITableViewHeaderFooterView {
     }
     
     @IBAction func buyAtOnce(sender: AnyObject) {
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("price", object: nil)
     }
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }
+
+
+
+
+
