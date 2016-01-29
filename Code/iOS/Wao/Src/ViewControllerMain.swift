@@ -118,7 +118,9 @@ extension ViewControllerMain:UICollectionViewDelegate,UICollectionViewDataSource
 		
 		var viewControllerMain: ViewControllerGiftListMain
 		viewControllerMain = storyboard.instantiateViewControllerWithIdentifier("ViewControllerGiftListMain") as! ViewControllerGiftListMain
-		
+        // 隐藏tableBar
+		viewControllerMain.hidesBottomBarWhenPushed = true
+        
 		self.navigationController?.pushViewController(viewControllerMain, animated: true)
 	}
     
