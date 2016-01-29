@@ -223,38 +223,6 @@
             endingLineNumber = "59"
             landmarkName = "getAccess_token(_:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Wao.ViewControllerLogin.getAccess_token (Wao.ViewControllerLogin)(Swift.String) -&gt; ()"
-                  moduleName = "Wao"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/HDD%20STORE/workspace/Wao/Code/iOS/Wao/Src/ViewControllerLogin.swift"
-                  timestampString = "475266417.33424"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Wao.ViewControllerLogin.(getAccess_token (Wao.ViewControllerLogin) -&gt; (Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "Wao"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/HDD%20STORE/workspace/Wao/Code/iOS/Wao/Src/ViewControllerLogin.swift"
-                  timestampString = "475266417.334547"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "68">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
