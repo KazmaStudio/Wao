@@ -14,7 +14,7 @@ protocol WaterfallProtocol : class{
 
 class WaterLayout: UICollectionViewLayout {
     var numberOfColums = 2
-    var interItemSpacing = 0
+    var interItemSpacing = 10
     var allItemAttributeArray = NSMutableArray()
     var everyColumsHeightDic = NSMutableDictionary()
     

@@ -14,58 +14,48 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="190" height="317"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysj-IF-lth">
-                        <rect key="frame" x="0.0" y="264" width="33" height="29"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="33" id="NJi-rF-qs6"/>
-                            <constraint firstAttribute="height" constant="29" id="pvY-CW-dvM"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2234568o" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q52-Ve-8ce">
-                        <rect key="frame" x="0.0" y="296" width="82" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="JE0-jW-AM7"/>
-                            <constraint firstAttribute="width" constant="82" id="uvc-w5-Ao3"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="63" y="267" width="64" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTp-Wu-0Ea">
-                        <rect key="frame" x="128" y="265" width="62" height="18"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="62" id="FGb-5L-lfD"/>
-                            <constraint firstAttribute="height" constant="18" id="LyL-hL-VY6"/>
-                        </constraints>
-                        <state key="normal" title="查看详情"/>
+                        <rect key="frame" x="80" y="277" width="30" height="30"/>
+                        <state key="normal" title="查看"/>
                         <connections>
                             <action selector="detailButton:" destination="Cxf-py-cpd" eventType="touchUpInside" id="GBN-fZ-zJn"/>
                         </connections>
                     </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q48-hd-hno">
-                        <rect key="frame" x="0.0" y="0.0" width="190" height="250"/>
+                        <rect key="frame" x="5" y="5" width="180" height="232"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="Q48-hd-hno" secondAttribute="height" multiplier="19:25" id="0hw-Sd-Pbe"/>
+                            <constraint firstAttribute="width" secondItem="Q48-hd-hno" secondAttribute="height" multiplier="45:58" id="3n0-6S-SoU"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysj-IF-lth">
+                        <rect key="frame" x="86" y="245" width="19.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="q52-Ve-8ce" secondAttribute="bottom" id="172-XI-8bh"/>
-                <constraint firstItem="Q48-hd-hno" firstAttribute="top" secondItem="Cxf-py-cpd" secondAttribute="top" id="3Gb-Q8-9gm"/>
-                <constraint firstItem="Ysj-IF-lth" firstAttribute="top" secondItem="Q48-hd-hno" secondAttribute="bottom" constant="14" id="B4o-xx-7NG"/>
-                <constraint firstAttribute="trailing" secondItem="sTp-Wu-0Ea" secondAttribute="trailing" id="Cb3-3L-oZ3"/>
+                <constraint firstAttribute="trailing" secondItem="Q48-hd-hno" secondAttribute="trailing" constant="5" id="2Xu-BI-3Mx"/>
+                <constraint firstItem="Q48-hd-hno" firstAttribute="leading" secondItem="Cxf-py-cpd" secondAttribute="leading" constant="5" id="3dt-Mx-1r2"/>
                 <constraint firstItem="q52-Ve-8ce" firstAttribute="top" secondItem="Ysj-IF-lth" secondAttribute="bottom" constant="3" id="DjB-N9-Orl"/>
-                <constraint firstItem="Ysj-IF-lth" firstAttribute="leading" secondItem="Cxf-py-cpd" secondAttribute="leading" id="JdR-Er-TJE"/>
-                <constraint firstItem="sTp-Wu-0Ea" firstAttribute="top" secondItem="Q48-hd-hno" secondAttribute="bottom" constant="15" id="Sb8-6s-EWq"/>
-                <constraint firstItem="q52-Ve-8ce" firstAttribute="leading" secondItem="Cxf-py-cpd" secondAttribute="leading" id="VDn-8F-7f6"/>
-                <constraint firstItem="Q48-hd-hno" firstAttribute="width" secondItem="Cxf-py-cpd" secondAttribute="width" id="le6-4N-baD"/>
+                <constraint firstItem="Ysj-IF-lth" firstAttribute="centerX" secondItem="Cxf-py-cpd" secondAttribute="centerX" id="HLq-A2-Xqy"/>
+                <constraint firstItem="sTp-Wu-0Ea" firstAttribute="centerX" secondItem="Cxf-py-cpd" secondAttribute="centerX" id="HqB-J7-2A3"/>
+                <constraint firstItem="sTp-Wu-0Ea" firstAttribute="top" secondItem="q52-Ve-8ce" secondAttribute="bottom" constant="-6" id="OKb-UZ-XUM"/>
+                <constraint firstItem="Q48-hd-hno" firstAttribute="centerX" secondItem="Cxf-py-cpd" secondAttribute="centerX" id="YnH-L7-eUS"/>
+                <constraint firstAttribute="bottom" secondItem="sTp-Wu-0Ea" secondAttribute="bottom" constant="10" id="ZRh-aB-xX2"/>
+                <constraint firstItem="q52-Ve-8ce" firstAttribute="top" secondItem="Ysj-IF-lth" secondAttribute="bottom" constant="5" id="jFE-k5-Pr6"/>
                 <constraint firstItem="q52-Ve-8ce" firstAttribute="top" secondItem="Ysj-IF-lth" secondAttribute="bottom" constant="3" id="p8K-Lr-LGi"/>
-                <constraint firstItem="Q48-hd-hno" firstAttribute="leading" secondItem="Cxf-py-cpd" secondAttribute="leading" id="qBq-2D-1BH"/>
+                <constraint firstItem="Ysj-IF-lth" firstAttribute="top" secondItem="Q48-hd-hno" secondAttribute="bottom" constant="8" id="qnW-oT-j9H"/>
+                <constraint firstItem="q52-Ve-8ce" firstAttribute="centerX" secondItem="Cxf-py-cpd" secondAttribute="centerX" id="tRu-eY-aEx"/>
+                <constraint firstItem="Q48-hd-hno" firstAttribute="top" secondItem="Cxf-py-cpd" secondAttribute="top" constant="5" id="y2J-5K-aps"/>
             </constraints>
             <size key="customSize" width="190" height="316.5"/>
             <variation key="default">
@@ -79,7 +69,7 @@
                 <outlet property="giftImageView" destination="Q48-hd-hno" id="NFS-GT-1dN"/>
                 <outlet property="giftNameLabel" destination="Ysj-IF-lth" id="wUK-6v-HIc"/>
             </connections>
-            <point key="canvasLocation" x="222" y="285.25"/>
+            <point key="canvasLocation" x="222" y="284.5"/>
         </collectionViewCell>
     </objects>
 </document>
