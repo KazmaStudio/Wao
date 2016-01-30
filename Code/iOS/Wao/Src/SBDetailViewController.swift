@@ -46,7 +46,10 @@ class SBDetailViewController: UIViewController,UITableViewDataSource,UITableView
     func addView(){
         
         let view = NSBundle.mainBundle().loadNibNamed("Animation", owner: nil, options: nil).first as! AnimationView
-        
+		
+		view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight)
+		view.layoutIfNeeded()
+		
         self.view.addSubview(view)
     }
     

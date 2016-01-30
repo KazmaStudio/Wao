@@ -14,14 +14,12 @@ class AnimationView: UIView {
     
     @IBOutlet weak var footerAni: UIView!
     
-    
     @IBOutlet weak var typeTableView: UITableView!
     
     @IBOutlet weak var lastView: UIView!
     
     @IBOutlet weak var push: UIButton!
-    
-    
+	
     @IBOutlet weak var cancelButton: UIButton!
     
     @IBOutlet weak var headImage: UIImageView!
@@ -39,7 +37,7 @@ class AnimationView: UIView {
         tappressGesutre.numberOfTouchesRequired = 1
         darkView.addGestureRecognizer(tappressGesutre)
         
-       footerAni.frame = CGRectMake(0, self.frame.height, self.frame.width, 1)
+       	footerAni.frame = CGRectMake(0, self.frame.height, self.frame.width, 1)
         footerAni.userInteractionEnabled = true
         let tapSon = UITapGestureRecognizer(target: self, action: "tapAction")
         footerAni.addGestureRecognizer(tapSon)
