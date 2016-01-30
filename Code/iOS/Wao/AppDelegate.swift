@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
 
         // Override point for customization after application launch.
         
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        
+        UINavigationBar.appearance().setBackgroundImage(UIImage.init(named: "navi.png"), forBarMetrics: UIBarMetrics.Default)
+        
         return true
     }
 

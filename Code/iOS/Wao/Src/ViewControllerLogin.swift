@@ -20,8 +20,21 @@ class ViewControllerLogin: UIViewController, WXApiDelegate{
     }
     
     override func viewWillAppear(animated: Bool) {
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage.init(), forBarMetrics: UIBarMetrics.Default)
+            
+        self.navigationController!.navigationBar.shadowImage = UIImage.init()
         
+        self.navigationController!.navigationBar.translucent = true;
+        self.navigationController!.view.backgroundColor = UIColor.clearColor()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage.init(named: "navi.png"), forBarMetrics: UIBarMetrics.Default)
         
+        self.navigationController!.navigationBar.shadowImage = nil
+        
+        self.navigationController!.navigationBar.translucent = true;
+        self.navigationController!.view.backgroundColor = UIColor.clearColor()
     }
     
     override func viewDidAppear(animated: Bool) {

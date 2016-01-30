@@ -82,6 +82,8 @@
 		06C132D61C5CA4BB001F1162 /* xinyuan_c@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C132B11C5CA4BB001F1162 /* xinyuan_c@3x.png */; };
 		06C132D71C5CA4BB001F1162 /* xinyuan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C132B21C5CA4BB001F1162 /* xinyuan@3x.png */; };
 		06C132D81C5CA4BB001F1162 /* xinyuanjiaru@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C132B31C5CA4BB001F1162 /* xinyuanjiaru@3x.png */; };
+		06C132DB1C5CBC94001F1162 /* navi_bottom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C132D91C5CBC94001F1162 /* navi_bottom@3x.png */; };
+		06C132DC1C5CBC94001F1162 /* navi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C132DA1C5CBC94001F1162 /* navi@3x.png */; };
 		06C9D2291C3F967200B7F8E5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C9D2271C3F967200B7F8E5 /* RealmSwift.framework */; };
 		06C9D22A1C3F968E00B7F8E5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C9D2261C3F967200B7F8E5 /* Realm.framework */; };
 		06C9D22B1C3F968E00B7F8E5 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06C9D2261C3F967200B7F8E5 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -231,6 +233,8 @@
 		06C132B11C5CA4BB001F1162 /* xinyuan_c@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xinyuan_c@3x.png"; sourceTree = "<group>"; };
 		06C132B21C5CA4BB001F1162 /* xinyuan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xinyuan@3x.png"; sourceTree = "<group>"; };
 		06C132B31C5CA4BB001F1162 /* xinyuanjiaru@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xinyuanjiaru@3x.png"; sourceTree = "<group>"; };
+		06C132D91C5CBC94001F1162 /* navi_bottom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_bottom@3x.png"; sourceTree = "<group>"; };
+		06C132DA1C5CBC94001F1162 /* navi@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi@3x.png"; sourceTree = "<group>"; };
 		06C9D2261C3F967200B7F8E5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		06C9D2271C3F967200B7F8E5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		06C9D2311C3F983E00B7F8E5 /* ModelWeChatInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelWeChatInfo.swift; sourceTree = "<group>"; };
@@ -321,6 +325,8 @@
 		0607B5A11C428295002A508A /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				06C132D91C5CBC94001F1162 /* navi_bottom@3x.png */,
+				06C132DA1C5CBC94001F1162 /* navi@3x.png */,
 				06C1328F1C5CA4BB001F1162 /* add@3x.png */,
 				06C132901C5CA4BB001F1162 /* admin@3x.png */,
 				06C132911C5CA4BB001F1162 /* arr_down@3x.png */,
@@ -745,8 +751,10 @@
 				06C132BC1C5CA4BB001F1162 /* close@3x.png in Resources */,
 				06AEAA7B1C365AD9008ED5CF /* LaunchScreen.storyboard in Resources */,
 				021C57661C53FE760072D38D /* ture_none@2x.png in Resources */,
+				06C132DC1C5CBC94001F1162 /* navi@3x.png in Resources */,
 				06C132CB1C5CA4BB001F1162 /* sub@3x.png in Resources */,
 				8663B7641C4CB765004AD904 /* ViewControllerGiftList.xib in Resources */,
+				06C132DB1C5CBC94001F1162 /* navi_bottom@3x.png in Resources */,
 				06C132C91C5CA4BB001F1162 /* shouye_c@3x.png in Resources */,
 				06AEAA781C365AD9008ED5CF /* Assets.xcassets in Resources */,
 				06C132BE1C5CA4BB001F1162 /* coufenzi_icon@3x.png in Resources */,
