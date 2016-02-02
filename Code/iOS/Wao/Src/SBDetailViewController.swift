@@ -51,6 +51,7 @@ class SBDetailViewController: UIViewController,UITableViewDataSource,UITableView
 		view.layoutIfNeeded()
 		
         self.view.addSubview(view)
+        
     }
     
     func tapAction(){

@@ -97,7 +97,7 @@ extension AnimationView:UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 51
+        return 100
     }
     
     
