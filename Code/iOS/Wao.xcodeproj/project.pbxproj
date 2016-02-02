@@ -13,6 +13,7 @@
 		021C57741C59B2AA0072D38D /* SizeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C57721C59B2AA0072D38D /* SizeTableViewCell.swift */; };
 		021C57751C59B2AA0072D38D /* SizeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021C57731C59B2AA0072D38D /* SizeTableViewCell.xib */; };
 		021C57771C5A03EB0072D38D /* UIButton+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C57761C5A03EB0072D38D /* UIButton+Custom.swift */; };
+		02ADAAC71C5E23DA007CBDEE /* NSString+Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */; };
 		02C814631C4FC8B400AA5D85 /* NavigationViewControllerWish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */; };
 		02C814651C4FC8D400AA5D85 /* WishViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */; };
 		02C814671C4FC8E100AA5D85 /* SBWish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C814661C4FC8E100AA5D85 /* SBWish.storyboard */; };
@@ -158,6 +159,7 @@
 		021C57721C59B2AA0072D38D /* SizeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeTableViewCell.swift; sourceTree = "<group>"; };
 		021C57731C59B2AA0072D38D /* SizeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SizeTableViewCell.xib; sourceTree = "<group>"; };
 		021C57761C5A03EB0072D38D /* UIButton+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Custom.swift"; sourceTree = "<group>"; };
+		02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Expand.swift"; sourceTree = "<group>"; };
 		02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerWish.swift; sourceTree = "<group>"; };
 		02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishViewControllerMain.swift; sourceTree = "<group>"; };
 		02C814661C4FC8E100AA5D85 /* SBWish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBWish.storyboard; sourceTree = "<group>"; };
@@ -509,6 +511,7 @@
 				0607B5F61C439687002A508A /* CFButton.swift */,
 				060B49A91C4F17D4008844A8 /* UITableView+NodataView.swift */,
 				021C57761C5A03EB0072D38D /* UIButton+Custom.swift */,
+				02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */,
 			);
 			name = "UI Helper";
 			path = "Xib Helper";
@@ -838,6 +841,7 @@
 				86E148911C52149C00E72371 /* ScrollViewCell.swift in Sources */,
 				060B49AA1C4F17D4008844A8 /* UITableView+NodataView.swift in Sources */,
 				86E1488F1C52149400E72371 /* SBDetailViewController.swift in Sources */,
+				02ADAAC71C5E23DA007CBDEE /* NSString+Expand.swift in Sources */,
 				0607B59D1C4123A1002A508A /* ViewCell.swift in Sources */,
 				865186BC1C4F1F7C0044997C /* WaterCellMain.swift in Sources */,
 				06AEAAB21C365DE3008ED5CF /* Common.swift in Sources */,
