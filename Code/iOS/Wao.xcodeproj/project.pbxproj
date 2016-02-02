@@ -36,6 +36,7 @@
 		0681EDA31C3A57A90036DFB4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA01C365DE3008ED5CF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0681EDA51C3A57AF0036DFB4 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA21C365DE3008ED5CF /* Kingfisher.framework */; };
 		0681EDA61C3A57AF0036DFB4 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA21C365DE3008ED5CF /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06ADA2A01C60764F000C6D4F /* navi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06ADA29F1C60764F000C6D4F /* navi@2x.png */; };
 		06AEAA711C365AD9008ED5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEAA701C365AD9008ED5CF /* AppDelegate.swift */; };
 		06AEAA761C365AD9008ED5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06AEAA741C365AD9008ED5CF /* Main.storyboard */; };
 		06AEAA781C365AD9008ED5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06AEAA771C365AD9008ED5CF /* Assets.xcassets */; };
@@ -183,6 +184,7 @@
 		065AF3FE1C53EA9A005B7C4F /* 6.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.JPG; sourceTree = "<group>"; };
 		0681EDA71C3A57D80036DFB4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0681EDA81C3A57D80036DFB4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		06ADA29F1C60764F000C6D4F /* navi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi@2x.png"; sourceTree = "<group>"; };
 		06AEAA6D1C365AD9008ED5CF /* Wao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06AEAA701C365AD9008ED5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06AEAA751C365AD9008ED5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 			children = (
 				06C132D91C5CBC94001F1162 /* navi_bottom@3x.png */,
 				06C132DA1C5CBC94001F1162 /* navi@3x.png */,
+				06ADA29F1C60764F000C6D4F /* navi@2x.png */,
 				06C1328F1C5CA4BB001F1162 /* add@3x.png */,
 				06C132901C5CA4BB001F1162 /* admin@3x.png */,
 				06C132911C5CA4BB001F1162 /* arr_down@3x.png */,
@@ -809,6 +812,7 @@
 				865186BF1C4F1F8C0044997C /* WaterCellMain.xib in Resources */,
 				06C132BA1C5CA4BB001F1162 /* bg_liwu@3x.png in Resources */,
 				06C132D51C5CA4BB001F1162 /* wodezhanghu@3x.png in Resources */,
+				06ADA2A01C60764F000C6D4F /* navi@2x.png in Resources */,
 				06C132BB1C5CA4BB001F1162 /* cam@3x.png in Resources */,
 				06C132B51C5CA4BB001F1162 /* admin@3x.png in Resources */,
 				06C132CF1C5CA4BB001F1162 /* weibo@3x.png in Resources */,
