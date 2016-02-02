@@ -102,8 +102,10 @@ extension ViewControllerGiftListMain:UICollectionViewDelegate,UICollectionViewDa
        // let origiImage = UIImage(named: dataSource[Path.row] as! String)!
         
       //  let origiImageWidth = UIImage(named: dataSource[Path.row] as! String)!.size.width
+        
+        
 
-        let cellItemHeight = (UIScreen.mainScreen().bounds.height)/2
+        let cellItemHeight = ((cellItemWidth-10)*9/7 + 85)
         
         return Float(cellItemHeight)
     }
