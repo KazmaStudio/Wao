@@ -25,6 +25,14 @@ class ViewControllerMain: UIViewController ,UIScrollViewDelegate{
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        singletap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+//        [singletap setNumberOfTapsRequired:1];
+//        [scrollview addGestureRecognizer:singletap];
+        
+        let singleTap = UITapGestureRecognizer.init(target: self, action: "hangleSingleTap")
+        self.imageScrollView.addGestureRecognizer(singleTap)//scrollView点击跳转
+        
 		
 		self.CollectionView.alwaysBounceVertical = true
         self.CollectionView.contentInset = UIEdgeInsetsMake(15, 0, 0, 0)
@@ -43,6 +51,9 @@ class ViewControllerMain: UIViewController ,UIScrollViewDelegate{
         }
         controlAnim = TempAni
         
+    
+        
+        
         //
     }
     
@@ -58,6 +69,18 @@ class ViewControllerMain: UIViewController ,UIScrollViewDelegate{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func hangleSingleTap(){
+        
+        var storyboard: UIStoryboard
+        storyboard = UIStoryboard.init(name: "SBZTMain", bundle: nil)
+        
+        var viewController: ZTViewController
+        viewController = storyboard.instantiateViewControllerWithIdentifier("ZTViewController") as! ZTViewController
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
     }
 
 }
@@ -123,6 +146,8 @@ extension ViewControllerMain:UICollectionViewDelegate,UICollectionViewDataSource
         
 		self.navigationController?.pushViewController(viewControllerMain, animated: true)
 	}
+    
+    
     
     func imageGallery(){
 		

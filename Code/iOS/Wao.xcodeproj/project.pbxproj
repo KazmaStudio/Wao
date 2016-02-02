@@ -37,6 +37,7 @@
 		0681EDA31C3A57A90036DFB4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA01C365DE3008ED5CF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0681EDA51C3A57AF0036DFB4 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA21C365DE3008ED5CF /* Kingfisher.framework */; };
 		0681EDA61C3A57AF0036DFB4 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEAAA21C365DE3008ED5CF /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06ADA2A01C60764F000C6D4F /* navi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06ADA29F1C60764F000C6D4F /* navi@2x.png */; };
 		06AEAA711C365AD9008ED5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEAA701C365AD9008ED5CF /* AppDelegate.swift */; };
 		06AEAA761C365AD9008ED5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06AEAA741C365AD9008ED5CF /* Main.storyboard */; };
 		06AEAA781C365AD9008ED5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06AEAA771C365AD9008ED5CF /* Assets.xcassets */; };
@@ -98,6 +99,10 @@
 		06D179F01C3D003300610BB8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D179EF1C3D003300610BB8 /* libc++.tbd */; };
 		06D179F61C3D0FC200610BB8 /* NavigationControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D179F51C3D0FC200610BB8 /* NavigationControllerMain.swift */; };
 		06D179F81C3D0FE700610BB8 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D179F71C3D0FE700610BB8 /* ViewControllerMain.swift */; };
+		863DED981C6073C9009774AA /* ZTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863DED971C6073C9009774AA /* ZTViewController.swift */; };
+		863DED9A1C6073D7009774AA /* SBZTMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863DED991C6073D7009774AA /* SBZTMain.storyboard */; };
+		863DED9C1C6073E2009774AA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863DED9B1C6073E2009774AA /* TableViewCell.swift */; };
+		863DED9E1C6073E9009774AA /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863DED9D1C6073E9009774AA /* TableViewCell.xib */; };
 		865186BC1C4F1F7C0044997C /* WaterCellMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865186BA1C4F1F7C0044997C /* WaterCellMain.swift */; };
 		865186BF1C4F1F8C0044997C /* WaterCellMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865186BE1C4F1F8C0044997C /* WaterCellMain.xib */; };
 		865186C11C4F1FEB0044997C /* SBGiftlistMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865186C01C4F1FEB0044997C /* SBGiftlistMain.storyboard */; };
@@ -181,6 +186,7 @@
 		065AF3FE1C53EA9A005B7C4F /* 6.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.JPG; sourceTree = "<group>"; };
 		0681EDA71C3A57D80036DFB4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0681EDA81C3A57D80036DFB4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		06ADA29F1C60764F000C6D4F /* navi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi@2x.png"; sourceTree = "<group>"; };
 		06AEAA6D1C365AD9008ED5CF /* Wao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06AEAA701C365AD9008ED5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06AEAA751C365AD9008ED5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -252,6 +258,10 @@
 		06D179EF1C3D003300610BB8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		06D179F51C3D0FC200610BB8 /* NavigationControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerMain.swift; sourceTree = "<group>"; };
 		06D179F71C3D0FE700610BB8 /* ViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
+		863DED971C6073C9009774AA /* ZTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTViewController.swift; sourceTree = "<group>"; };
+		863DED991C6073D7009774AA /* SBZTMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBZTMain.storyboard; sourceTree = "<group>"; };
+		863DED9B1C6073E2009774AA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		863DED9D1C6073E9009774AA /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		865186BA1C4F1F7C0044997C /* WaterCellMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterCellMain.swift; sourceTree = "<group>"; };
 		865186BE1C4F1F8C0044997C /* WaterCellMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterCellMain.xib; sourceTree = "<group>"; };
 		865186C01C4F1FEB0044997C /* SBGiftlistMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBGiftlistMain.storyboard; sourceTree = "<group>"; };
@@ -329,6 +339,7 @@
 			children = (
 				06C132D91C5CBC94001F1162 /* navi_bottom@3x.png */,
 				06C132DA1C5CBC94001F1162 /* navi@3x.png */,
+				06ADA29F1C60764F000C6D4F /* navi@2x.png */,
 				06C1328F1C5CA4BB001F1162 /* add@3x.png */,
 				06C132901C5CA4BB001F1162 /* admin@3x.png */,
 				06C132911C5CA4BB001F1162 /* arr_down@3x.png */,
@@ -374,6 +385,7 @@
 		0681EDA91C3A58830036DFB4 /* Main Page */ = {
 			isa = PBXGroup;
 			children = (
+				863DED961C607384009774AA /* ZTTableView Cell */,
 				86E1488B1C52147400E72371 /* GiftDetail */,
 				865186B91C4F1F610044997C /* Main Collection Cell */,
 				06C9D2201C3F938100B7F8E5 /* Gift List */,
@@ -604,6 +616,17 @@
 			name = System;
 			sourceTree = "<group>";
 		};
+		863DED961C607384009774AA /* ZTTableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				863DED9D1C6073E9009774AA /* TableViewCell.xib */,
+				863DED971C6073C9009774AA /* ZTViewController.swift */,
+				863DED9B1C6073E2009774AA /* TableViewCell.swift */,
+				863DED991C6073D7009774AA /* SBZTMain.storyboard */,
+			);
+			name = "ZTTableView Cell";
+			sourceTree = "<group>";
+		};
 		865186B91C4F1F610044997C /* Main Collection Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -756,6 +779,7 @@
 				021C57661C53FE760072D38D /* ture_none@2x.png in Resources */,
 				06C132DC1C5CBC94001F1162 /* navi@3x.png in Resources */,
 				06C132CB1C5CA4BB001F1162 /* sub@3x.png in Resources */,
+				863DED9E1C6073E9009774AA /* TableViewCell.xib in Resources */,
 				8663B7641C4CB765004AD904 /* ViewControllerGiftList.xib in Resources */,
 				06C132DB1C5CBC94001F1162 /* navi_bottom@3x.png in Resources */,
 				06C132C91C5CA4BB001F1162 /* shouye_c@3x.png in Resources */,
@@ -791,6 +815,7 @@
 				865186BF1C4F1F8C0044997C /* WaterCellMain.xib in Resources */,
 				06C132BA1C5CA4BB001F1162 /* bg_liwu@3x.png in Resources */,
 				06C132D51C5CA4BB001F1162 /* wodezhanghu@3x.png in Resources */,
+				06ADA2A01C60764F000C6D4F /* navi@2x.png in Resources */,
 				06C132BB1C5CA4BB001F1162 /* cam@3x.png in Resources */,
 				06C132B51C5CA4BB001F1162 /* admin@3x.png in Resources */,
 				06C132CF1C5CA4BB001F1162 /* weibo@3x.png in Resources */,
@@ -808,6 +833,7 @@
 				021C576B1C57774F0072D38D /* Animation.xib in Resources */,
 				06C132D21C5CA4BB001F1162 /* wodegouwudai@3x.png in Resources */,
 				0607B5F51C436230002A508A /* SBMine.storyboard in Resources */,
+				863DED9A1C6073D7009774AA /* SBZTMain.storyboard in Resources */,
 				86E148961C5214C800E72371 /* buttonHeader.xib in Resources */,
 				8663B7491C4C74FF004AD904 /* SBMain.storyboard in Resources */,
 				065AF4001C53EA9A005B7C4F /* 6.JPG in Resources */,
@@ -839,6 +865,7 @@
 			files = (
 				0607B59F1C421A28002A508A /* GhostButton.swift in Sources */,
 				86E148911C52149C00E72371 /* ScrollViewCell.swift in Sources */,
+				863DED981C6073C9009774AA /* ZTViewController.swift in Sources */,
 				060B49AA1C4F17D4008844A8 /* UITableView+NodataView.swift in Sources */,
 				86E1488F1C52149400E72371 /* SBDetailViewController.swift in Sources */,
 				02ADAAC71C5E23DA007CBDEE /* NSString+Expand.swift in Sources */,
@@ -854,6 +881,7 @@
 				0607B5F31C436212002A508A /* TableViewControllerMine.swift in Sources */,
 				02C8146A1C4FD71000AA5D85 /* NotLitWishTableViewCell.swift in Sources */,
 				02C814631C4FC8B400AA5D85 /* NavigationViewControllerWish.swift in Sources */,
+				863DED9C1C6073E2009774AA /* TableViewCell.swift in Sources */,
 				06AEAAB61C365DE3008ED5CF /* UIView+XIBEdit.swift in Sources */,
 				06AEAAB31C365DE3008ED5CF /* UICommon.swift in Sources */,
 				060B49AC1C4F2546008844A8 /* WaterLayoutMain.swift in Sources */,
