@@ -33,6 +33,8 @@ class ViewControllerGiftListMain: UIViewController {
         }
         controlAnim = TempAni
         
+        
+        addDetailView()
         //
     }
 
@@ -40,6 +42,18 @@ class ViewControllerGiftListMain: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func addDetailView(){
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "addView", name: "detail", object: nil)
+    }
+    
+    func addView(){
+        
+        let SBDetailVC =  UIStoryboard(name:"SBDetailMain",bundle: nil).instantiateViewControllerWithIdentifier("SBDetailViewController") as! SBDetailViewController
+        navigationController?.pushViewController(SBDetailVC, animated: true)
+    }
+
+
 
 
 }
