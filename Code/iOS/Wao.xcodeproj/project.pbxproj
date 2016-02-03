@@ -13,6 +13,14 @@
 		021C57741C59B2AA0072D38D /* SizeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C57721C59B2AA0072D38D /* SizeTableViewCell.swift */; };
 		021C57751C59B2AA0072D38D /* SizeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021C57731C59B2AA0072D38D /* SizeTableViewCell.xib */; };
 		021C57771C5A03EB0072D38D /* UIButton+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C57761C5A03EB0072D38D /* UIButton+Custom.swift */; };
+		025686351C60989E00C9F1A3 /* NumberTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686331C60989E00C9F1A3 /* NumberTableCell.swift */; };
+		025686361C60989E00C9F1A3 /* NumberTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025686341C60989E00C9F1A3 /* NumberTableCell.xib */; };
+		025686391C60A54800C9F1A3 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686381C60A54800C9F1A3 /* PaymentViewController.swift */; };
+		0256863D1C60AEFB00C9F1A3 /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256863C1C60AEFB00C9F1A3 /* PaymentCell.swift */; };
+		025686401C619E0300C9F1A3 /* PaysuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256863F1C619E0300C9F1A3 /* PaysuccessViewController.swift */; };
+		025686441C61B67B00C9F1A3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686431C61B67B00C9F1A3 /* InfoViewController.swift */; };
+		025686461C61BA3F00C9F1A3 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686451C61BA3F00C9F1A3 /* InfoCell.swift */; };
+		0256864C1C61DC1C00C9F1A3 /* Provineces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0256864B1C61DC1C00C9F1A3 /* Provineces.plist */; };
 		02ADAAC71C5E23DA007CBDEE /* NSString+Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */; };
 		02C814631C4FC8B400AA5D85 /* NavigationViewControllerWish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */; };
 		02C814651C4FC8D400AA5D85 /* WishViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */; };
@@ -164,6 +172,14 @@
 		021C57721C59B2AA0072D38D /* SizeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeTableViewCell.swift; sourceTree = "<group>"; };
 		021C57731C59B2AA0072D38D /* SizeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SizeTableViewCell.xib; sourceTree = "<group>"; };
 		021C57761C5A03EB0072D38D /* UIButton+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Custom.swift"; sourceTree = "<group>"; };
+		025686331C60989E00C9F1A3 /* NumberTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTableCell.swift; sourceTree = "<group>"; };
+		025686341C60989E00C9F1A3 /* NumberTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberTableCell.xib; sourceTree = "<group>"; };
+		025686381C60A54800C9F1A3 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		0256863C1C60AEFB00C9F1A3 /* PaymentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
+		0256863F1C619E0300C9F1A3 /* PaysuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaysuccessViewController.swift; sourceTree = "<group>"; };
+		025686431C61B67B00C9F1A3 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		025686451C61BA3F00C9F1A3 /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		0256864B1C61DC1C00C9F1A3 /* Provineces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Provineces.plist; sourceTree = "<group>"; };
 		02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Expand.swift"; sourceTree = "<group>"; };
 		02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerWish.swift; sourceTree = "<group>"; };
 		02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishViewControllerMain.swift; sourceTree = "<group>"; };
@@ -317,6 +333,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		025686371C60A32900C9F1A3 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				025686381C60A54800C9F1A3 /* PaymentViewController.swift */,
+				025686431C61B67B00C9F1A3 /* InfoViewController.swift */,
+				0256863B1C60AD8700C9F1A3 /* PaymentCell */,
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+		0256863B1C60AD8700C9F1A3 /* PaymentCell */ = {
+			isa = PBXGroup;
+			children = (
+				0256863C1C60AEFB00C9F1A3 /* PaymentCell.swift */,
+				025686451C61BA3F00C9F1A3 /* InfoCell.swift */,
+			);
+			name = PaymentCell;
+			sourceTree = "<group>";
+		};
+		0256863E1C619D8100C9F1A3 /* successPay */ = {
+			isa = PBXGroup;
+			children = (
+				0256863F1C619E0300C9F1A3 /* PaysuccessViewController.swift */,
+			);
+			name = successPay;
+			sourceTree = "<group>";
+		};
 		02C814681C4FD6D700AA5D85 /* WishCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +428,8 @@
 		0681EDA91C3A58830036DFB4 /* Main Page */ = {
 			isa = PBXGroup;
 			children = (
+				0256863E1C619D8100C9F1A3 /* successPay */,
+				025686371C60A32900C9F1A3 /* Payment */,
 				863DED961C607384009774AA /* ZTTableView Cell */,
 				86E1488B1C52147400E72371 /* GiftDetail */,
 				865186B91C4F1F610044997C /* Main Collection Cell */,
@@ -544,6 +589,7 @@
 			isa = PBXGroup;
 			children = (
 				06D179E71C3CFB1D00610BB8 /* BridgingHeader.h */,
+				0256864B1C61DC1C00C9F1A3 /* Provineces.plist */,
 				06AEAA7C1C365AD9008ED5CF /* Info.plist */,
 				06AEAA701C365AD9008ED5CF /* AppDelegate.swift */,
 				06AEAA741C365AD9008ED5CF /* Main.storyboard */,
@@ -662,6 +708,8 @@
 				021C576A1C57774F0072D38D /* Animation.xib */,
 				021C57721C59B2AA0072D38D /* SizeTableViewCell.swift */,
 				021C57731C59B2AA0072D38D /* SizeTableViewCell.xib */,
+				025686331C60989E00C9F1A3 /* NumberTableCell.swift */,
+				025686341C60989E00C9F1A3 /* NumberTableCell.xib */,
 				86E148951C5214C800E72371 /* buttonHeader.swift */,
 				86E148941C5214C800E72371 /* buttonHeader.xib */,
 			);
@@ -780,6 +828,7 @@
 				06C132DC1C5CBC94001F1162 /* navi@3x.png in Resources */,
 				06C132CB1C5CA4BB001F1162 /* sub@3x.png in Resources */,
 				863DED9E1C6073E9009774AA /* TableViewCell.xib in Resources */,
+				0256864C1C61DC1C00C9F1A3 /* Provineces.plist in Resources */,
 				8663B7641C4CB765004AD904 /* ViewControllerGiftList.xib in Resources */,
 				06C132DB1C5CBC94001F1162 /* navi_bottom@3x.png in Resources */,
 				06C132C91C5CA4BB001F1162 /* shouye_c@3x.png in Resources */,
@@ -807,6 +856,7 @@
 				865186CA1C4F20740044997C /* 4.JPG in Resources */,
 				06C132C51C5CA4BB001F1162 /* qq@3x.png in Resources */,
 				06C132C11C5CA4BB001F1162 /* gouwujiaru@3x.png in Resources */,
+				025686361C60989E00C9F1A3 /* NumberTableCell.xib in Resources */,
 				065AF3FF1C53EA9A005B7C4F /* 5.JPG in Resources */,
 				06C132C21C5CA4BB001F1162 /* kefu@3x.png in Resources */,
 				06C132CC1C5CA4BB001F1162 /* ture_none@3x.png in Resources */,
@@ -869,7 +919,9 @@
 				060B49AA1C4F17D4008844A8 /* UITableView+NodataView.swift in Sources */,
 				86E1488F1C52149400E72371 /* SBDetailViewController.swift in Sources */,
 				02ADAAC71C5E23DA007CBDEE /* NSString+Expand.swift in Sources */,
+				0256863D1C60AEFB00C9F1A3 /* PaymentCell.swift in Sources */,
 				0607B59D1C4123A1002A508A /* ViewCell.swift in Sources */,
+				025686391C60A54800C9F1A3 /* PaymentViewController.swift in Sources */,
 				865186BC1C4F1F7C0044997C /* WaterCellMain.swift in Sources */,
 				06AEAAB21C365DE3008ED5CF /* Common.swift in Sources */,
 				06C9D2321C3F983E00B7F8E5 /* ModelWeChatInfo.swift in Sources */,
@@ -879,6 +931,7 @@
 				06D179F61C3D0FC200610BB8 /* NavigationControllerMain.swift in Sources */,
 				02C814651C4FC8D400AA5D85 /* WishViewControllerMain.swift in Sources */,
 				0607B5F31C436212002A508A /* TableViewControllerMine.swift in Sources */,
+				025686441C61B67B00C9F1A3 /* InfoViewController.swift in Sources */,
 				02C8146A1C4FD71000AA5D85 /* NotLitWishTableViewCell.swift in Sources */,
 				02C814631C4FC8B400AA5D85 /* NavigationViewControllerWish.swift in Sources */,
 				863DED9C1C6073E2009774AA /* TableViewCell.swift in Sources */,
@@ -890,9 +943,12 @@
 				86E148971C5214C800E72371 /* buttonHeader.swift in Sources */,
 				8663B7691C4CB9B7004AD904 /* ViewControllerGiftList.swift in Sources */,
 				06AEAA711C365AD9008ED5CF /* AppDelegate.swift in Sources */,
+				025686351C60989E00C9F1A3 /* NumberTableCell.swift in Sources */,
 				02C8146C1C4FD73300AA5D85 /* LitWishTableViewCell.swift in Sources */,
+				025686401C619E0300C9F1A3 /* PaysuccessViewController.swift in Sources */,
 				0607B5F71C439687002A508A /* CFButton.swift in Sources */,
 				021C57771C5A03EB0072D38D /* UIButton+Custom.swift in Sources */,
+				025686461C61BA3F00C9F1A3 /* InfoCell.swift in Sources */,
 				021C576F1C57C3EF0072D38D /* AnimationView.swift in Sources */,
 				06D179F81C3D0FE700610BB8 /* ViewControllerMain.swift in Sources */,
 				0607B5991C40DE18002A508A /* ViewControllerRegisterMobile.swift in Sources */,

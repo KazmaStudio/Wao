@@ -17,20 +17,23 @@ class AnimationView: UIView {
     @IBOutlet weak var typeTableView: UITableView!
     
     @IBOutlet weak var lastView: UIView!
-    
-    @IBOutlet weak var push: UIButton!
-	
+    @IBOutlet weak var paymentBtn: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
-    
     @IBOutlet weak var headImage: UIImageView!
     
+    
+    var sizeHeight: CGFloat!
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
     override func drawRect(rect: CGRect) {
-        self.backgroundColor = UIColor.clearColor()
         
+        typeTableView.estimatedRowHeight = 100
+        typeTableView.rowHeight = UITableViewAutomaticDimension
+        
+        self.backgroundColor = UIColor.clearColor()
+        typeTableView.separatorStyle = UITableViewCellSeparatorStyle.None
         darkView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         darkView.frame = CGRectMake(0, 64, self.frame.width, self.frame.height)
         let tappressGesutre = UITapGestureRecognizer(target: self, action: "handleTappressGesture")
@@ -46,9 +49,13 @@ class AnimationView: UIView {
         lastView.addGestureRecognizer(taps)
         UIView.animateWithDuration(0.5, animations: animation)
         footerAni.addSubview(typeTableView)
+        var buttonImage: UIImage
+        buttonImage = UIImage(named: "close@3x")!
+        buttonImage = buttonImage.imageWithRenderingMode(.AlwaysOriginal)
+        cancelButton.setImage(buttonImage, forState: .Normal)
         cancelButton.addTarget(self, action: "handleTappressGesture", forControlEvents: .TouchUpInside)
         
-        push.addTarget(self, action: "pushAct", forControlEvents: .TouchUpInside)
+        paymentBtn.addTarget(self, action: "paymentAct", forControlEvents: .TouchUpInside)
         
     }
     @IBAction func pushAction(sender: AnyObject) {
@@ -58,8 +65,8 @@ class AnimationView: UIView {
     func tapA(){
         print(0000000)
     }
-    func pushAct(){
-        print(4444)
+    func paymentAct(){
+       NSNotificationCenter.defaultCenter().postNotificationName("pushViewController", object: nil)
     }
     func tapAction(){
         print(1111)
@@ -88,16 +95,40 @@ extension AnimationView:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
+        
+        
+        if indexPath.row == 0{
         let nib = UINib.init(nibName: "SizeTableViewCell", bundle: nil)
         tableView.registerNib(nib, forCellReuseIdentifier: "sizeCell")
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("sizeCell") as! SizeTableViewCell
+//        cell.but.preferredFocusedView?.widthAnchor
+            
+            
+            
+            return cell
+        } else {
+            let nib = UINib.init(nibName: "NumberTableCell", bundle: nil)
+            tableView.registerNib(nib, forCellReuseIdentifier: "numberCell")
+            let cell = tableView.dequeueReusableCellWithIdentifier("numberCell") as! NumberTableCell
+            
+            return cell
+        }
         
-        return cell
+        
+        
+        
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
+//        let cell = tableView.dequeueReusableCellWithIdentifier("sizeCell") as! SizeTableViewCell
+//        return 100
+        
+        if  indexPath.row == 0{
+            return typeTableView.rowHeight 
+        } else {
+            return 40
+        }
+        
     }
     
     
