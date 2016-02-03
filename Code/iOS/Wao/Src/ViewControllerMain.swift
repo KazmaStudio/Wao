@@ -51,6 +51,7 @@ class ViewControllerMain: UIViewController ,UIScrollViewDelegate{
         }
         controlAnim = TempAni
         
+        
     
         
         

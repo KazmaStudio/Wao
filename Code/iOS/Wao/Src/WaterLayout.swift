@@ -18,6 +18,7 @@ class WaterLayout: UICollectionViewLayout {
     var allItemAttributeArray = NSMutableArray()
     var everyColumsHeightDic = NSMutableDictionary()
     
+    
     weak var delegate:WaterfallProtocol?
     override func prepareLayout() {
         super.prepareLayout()
