@@ -44,7 +44,7 @@ class SizeTableViewCell: UITableViewCell {
                 sizesum = 0
             }
             but.frame = CGRectMake(sizesum, height, size , 20)
-                        contentView.addSubview(but)
+//                        contentView.addSubview(but)
              sizesum = sizesum +  20 + size
         }
         

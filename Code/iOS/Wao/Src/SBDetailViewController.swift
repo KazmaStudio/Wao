@@ -23,6 +23,11 @@ class SBDetailViewController: UIViewController,UITableViewDataSource,UITableView
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "pushAction", name: "pushViewController", object: nil)
+        
+        
 		let cellGoodsNib = UINib(nibName: "ScrollViewCell", bundle: nil)
 		self.TableView.registerNib(cellGoodsNib, forCellReuseIdentifier: "ScrollViewCell")
 		
@@ -46,10 +51,8 @@ class SBDetailViewController: UIViewController,UITableViewDataSource,UITableView
     func addView(){
         
         let view = NSBundle.mainBundle().loadNibNamed("Animation", owner: nil, options: nil).first as! AnimationView
-		
 		view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight)
 		view.layoutIfNeeded()
-		
         self.view.addSubview(view)
         
     }
@@ -57,6 +60,13 @@ class SBDetailViewController: UIViewController,UITableViewDataSource,UITableView
     func tapAction(){
         print(1111)
     }
+    
+    func pushAction(){
+        let paymentVC = UIStoryboard(name: "SBZTMain", bundle: nil).instantiateViewControllerWithIdentifier("paymentVC") as! PaymentViewController
+        navigationController?.pushViewController(paymentVC, animated: true)
+    }
+    
+    
     
     func handleTappressGesture(){
         
