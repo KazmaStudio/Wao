@@ -232,7 +232,7 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HIV-ge-Zlw">
                                         <rect key="frame" x="40" y="94" width="520" height="260"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="260" id="65p-90-Arn"/>
                                         </constraints>
@@ -250,6 +250,9 @@
                                             <action selector="rootViewAct:" destination="hWC-AY-RSe" eventType="touchUpInside" id="EYB-XH-KRO"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="faK-1G-CxZ">
+                                        <rect key="frame" x="32" y="92.5" width="528" height="274"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -366,6 +369,6 @@
     </scenes>
     <resources>
         <image name="1.JPG" width="1200" height="1200"/>
-        <image name="ture@3x.png" width="1200" height="1200"/>
+        <image name="ture@3x.png" width="21" height="17"/>
     </resources>
 </document>

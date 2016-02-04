@@ -17,6 +17,7 @@ class SizeTableViewCell: UITableViewCell {
     var butArray: NSMutableArray!
     var sizesum:CGFloat!
     var height:CGFloat!
+    var heightlast:CGFloat!
     override func awakeFromNib() {
         super.awakeFromNib()
         butArray = ["d1","2d","3aaaaaaa","4ssaaaa","5ssss","6ddd"]
@@ -47,10 +48,14 @@ class SizeTableViewCell: UITableViewCell {
 //                        contentView.addSubview(but)
              sizesum = sizesum +  20 + size
         }
-        
+        heightlast = height + 40
     }
+    
+    
+    
+    
     func getheight() -> CGFloat{
-        return height
+        return heightlast
         
     }
     

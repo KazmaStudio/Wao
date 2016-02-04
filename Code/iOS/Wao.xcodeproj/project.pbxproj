@@ -21,6 +21,7 @@
 		025686441C61B67B00C9F1A3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686431C61B67B00C9F1A3 /* InfoViewController.swift */; };
 		025686461C61BA3F00C9F1A3 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686451C61BA3F00C9F1A3 /* InfoCell.swift */; };
 		0256864C1C61DC1C00C9F1A3 /* Provineces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0256864B1C61DC1C00C9F1A3 /* Provineces.plist */; };
+		025686501C623CDC00C9F1A3 /* ManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256864F1C623CDC00C9F1A3 /* ManagerModel.swift */; };
 		02ADAAC71C5E23DA007CBDEE /* NSString+Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */; };
 		02C814631C4FC8B400AA5D85 /* NavigationViewControllerWish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */; };
 		02C814651C4FC8D400AA5D85 /* WishViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */; };
@@ -180,6 +181,7 @@
 		025686431C61B67B00C9F1A3 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		025686451C61BA3F00C9F1A3 /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		0256864B1C61DC1C00C9F1A3 /* Provineces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Provineces.plist; sourceTree = "<group>"; };
+		0256864F1C623CDC00C9F1A3 /* ManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerModel.swift; sourceTree = "<group>"; };
 		02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Expand.swift"; sourceTree = "<group>"; };
 		02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerWish.swift; sourceTree = "<group>"; };
 		02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishViewControllerMain.swift; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				025686381C60A54800C9F1A3 /* PaymentViewController.swift */,
+				0256864F1C623CDC00C9F1A3 /* ManagerModel.swift */,
 				025686431C61B67B00C9F1A3 /* InfoViewController.swift */,
 				0256863B1C60AD8700C9F1A3 /* PaymentCell */,
 			);
@@ -930,6 +933,7 @@
 				0607B5F11C4361BC002A508A /* NavigationControllerMine.swift in Sources */,
 				06D179F61C3D0FC200610BB8 /* NavigationControllerMain.swift in Sources */,
 				02C814651C4FC8D400AA5D85 /* WishViewControllerMain.swift in Sources */,
+				025686501C623CDC00C9F1A3 /* ManagerModel.swift in Sources */,
 				0607B5F31C436212002A508A /* TableViewControllerMine.swift in Sources */,
 				025686441C61B67B00C9F1A3 /* InfoViewController.swift in Sources */,
 				02C8146A1C4FD71000AA5D85 /* NotLitWishTableViewCell.swift in Sources */,

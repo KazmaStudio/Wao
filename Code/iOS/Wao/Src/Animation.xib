@@ -61,17 +61,6 @@
                                         <constraint firstItem="oZ1-ci-dfg" firstAttribute="leading" secondItem="rEP-Re-sxf" secondAttribute="trailing" constant="10" id="w8s-9u-fJU"/>
                                     </constraints>
                                 </view>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-NV-McU">
-                                    <rect key="frame" x="0.0" y="65" width="375" height="102"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="102" id="VSL-0U-1js"/>
-                                    </constraints>
-                                    <connections>
-                                        <outlet property="dataSource" destination="iN0-l3-epB" id="0IA-iS-ft6"/>
-                                        <outlet property="delegate" destination="iN0-l3-epB" id="g1D-4a-dt0"/>
-                                    </connections>
-                                </tableView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkB-8a-q5a">
                                     <rect key="frame" x="0.0" y="167" width="375" height="43"/>
                                     <subviews>
@@ -99,7 +88,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-DI-Bl4">
-                                            <rect key="frame" x="137.5" y="0.0" width="21" height="43"/>
+                                            <rect key="frame" x="137" y="0.0" width="21" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <nil key="highlightedColor"/>
@@ -128,6 +117,17 @@
                                         </mask>
                                     </variation>
                                 </view>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-NV-McU">
+                                    <rect key="frame" x="0.0" y="65" width="375" height="102"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="102" id="VSL-0U-1js"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="dataSource" destination="iN0-l3-epB" id="0IA-iS-ft6"/>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="g1D-4a-dt0"/>
+                                    </connections>
+                                </tableView>
                             </subviews>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>

@@ -22,6 +22,7 @@ class PaymentViewController: UIViewController {
     }
 
     func addrightBtn() {
+      
         let item = UIBarButtonItem(title: "编辑", style: .Plain, target: self, action: "rightBtnAction")
         self.navigationItem.rightBarButtonItem = item
         

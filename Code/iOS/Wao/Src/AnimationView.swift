@@ -49,6 +49,7 @@ class AnimationView: UIView {
         lastView.addGestureRecognizer(taps)
         UIView.animateWithDuration(0.5, animations: animation)
         footerAni.addSubview(typeTableView)
+//        lastView.hidden = true
         var buttonImage: UIImage
         buttonImage = UIImage(named: "close@3x")!
         buttonImage = buttonImage.imageWithRenderingMode(.AlwaysOriginal)
@@ -95,16 +96,11 @@ extension AnimationView:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        
-        
         if indexPath.row == 0{
         let nib = UINib.init(nibName: "SizeTableViewCell", bundle: nil)
         tableView.registerNib(nib, forCellReuseIdentifier: "sizeCell")
         let cell = tableView.dequeueReusableCellWithIdentifier("sizeCell") as! SizeTableViewCell
-//        cell.but.preferredFocusedView?.widthAnchor
-            
-            
-            
+
             return cell
         } else {
             let nib = UINib.init(nibName: "NumberTableCell", bundle: nil)
@@ -124,7 +120,7 @@ extension AnimationView:UITableViewDataSource,UITableViewDelegate{
 //        return 100
         
         if  indexPath.row == 0{
-            return typeTableView.rowHeight 
+            return 100
         } else {
             return 40
         }

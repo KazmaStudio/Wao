@@ -28,28 +28,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="94.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ture_none@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zi0-Dk-KEI">
-                                                    <rect key="frame" x="17" y="37" width="20" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="20" id="2Tt-0O-CQ4"/>
-                                                        <constraint firstAttribute="height" constant="20" id="b2t-lF-eZD"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="iYd-7V-hGV">
-                                                    <rect key="frame" x="57" y="13" width="70" height="70"/>
+                                                    <rect key="frame" x="16" y="13" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="lto-eF-ya9"/>
                                                         <constraint firstAttribute="width" constant="70" id="yzY-XB-dFQ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STARBUCKS 星星马克杯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q21-ZW-erh">
-                                                    <rect key="frame" x="135" y="15" width="450" height="20.5"/>
+                                                    <rect key="frame" x="94" y="16" width="491" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 256.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88D-K5-fLo">
-                                                    <rect key="frame" x="135" y="37.5" width="62.5" height="18"/>
+                                                    <rect key="frame" x="94" y="38.5" width="62.5" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -57,14 +50,12 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="88D-K5-fLo" firstAttribute="centerY" secondItem="JG3-aD-pI5" secondAttribute="centerY" id="2bi-cp-FNy"/>
-                                                <constraint firstItem="Zi0-Dk-KEI" firstAttribute="leading" secondItem="JG3-aD-pI5" secondAttribute="leading" constant="17" id="7sQ-vq-btu"/>
                                                 <constraint firstItem="88D-K5-fLo" firstAttribute="leading" secondItem="iYd-7V-hGV" secondAttribute="trailing" constant="8" id="9K1-Kl-Var"/>
                                                 <constraint firstItem="Q21-ZW-erh" firstAttribute="leading" secondItem="iYd-7V-hGV" secondAttribute="trailing" constant="8" id="GVy-zD-ABy"/>
-                                                <constraint firstItem="iYd-7V-hGV" firstAttribute="leading" secondItem="Zi0-Dk-KEI" secondAttribute="trailing" constant="20" id="SS9-U0-Pvb"/>
+                                                <constraint firstItem="iYd-7V-hGV" firstAttribute="leading" secondItem="JG3-aD-pI5" secondAttribute="leading" constant="16" id="PJZ-fl-gAn"/>
                                                 <constraint firstAttribute="trailing" secondItem="Q21-ZW-erh" secondAttribute="trailing" constant="15" id="ZT8-li-PnV"/>
                                                 <constraint firstItem="88D-K5-fLo" firstAttribute="top" secondItem="Q21-ZW-erh" secondAttribute="bottom" constant="2" id="cuZ-bc-UUl"/>
                                                 <constraint firstItem="iYd-7V-hGV" firstAttribute="centerY" secondItem="JG3-aD-pI5" secondAttribute="centerY" id="gC8-3m-Rbb"/>
-                                                <constraint firstItem="Zi0-Dk-KEI" firstAttribute="centerY" secondItem="JG3-aD-pI5" secondAttribute="centerY" id="zeW-uB-b1W"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -186,6 +177,5 @@
     </scenes>
     <resources>
         <image name="1.JPG" width="1200" height="1200"/>
-        <image name="ture_none@2x.png" width="88" height="88"/>
     </resources>
 </document>
