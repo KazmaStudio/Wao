@@ -11,24 +11,28 @@ import UIKit
 class PaymentViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
-    
+    var editBtn: UIButton!
+    var yesorno: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+       yesorno = false
         addfooterView()
         addrightBtn()
     }
 
     func addrightBtn() {
-      
-        let item = UIBarButtonItem(title: "编辑", style: .Plain, target: self, action: "rightBtnAction")
+        editBtn = UIButton(type: .System)
+        editBtn.frame = CGRectMake(0, 0, 30, 30)
+        editBtn.setTitle("编辑", forState: .Normal)
+        editBtn.addTarget(self, action: "editAction:", forControlEvents: .TouchUpInside)
+        let item = UIBarButtonItem(customView: editBtn)
         self.navigationItem.rightBarButtonItem = item
         
         
     }
-    func rightBtnAction() {
+    func editAction(button: UIButton) {
+        yesorno = true
         let view = NSBundle.mainBundle().loadNibNamed("Animation", owner: nil, options: nil).first as! AnimationView
         view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight)
         view.layoutIfNeeded()
@@ -40,6 +44,14 @@ class PaymentViewController: UIViewController {
         btn.backgroundColor = UIColor.redColor()
         view.lastView.addSubview(btn)
         self.view.addSubview(view)
+        if yesorno == true{
+            button.setTitle("完成", forState: .Normal)
+            button.addTarget(self, action: "hideViewAct", forControlEvents: .TouchUpInside)
+        }
+    }
+    
+    func hideViewAct(){
+        
     }
     
     func editFinishAct(){

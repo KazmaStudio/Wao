@@ -137,6 +137,9 @@
                                                     <rect key="frame" x="59" y="7" width="443" height="31"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="gNI-Ei-bB1" id="rJA-38-rfZ"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -369,6 +372,6 @@
     </scenes>
     <resources>
         <image name="1.JPG" width="1200" height="1200"/>
-        <image name="ture@3x.png" width="21" height="17"/>
+        <image name="ture@3x.png" width="88" height="88"/>
     </resources>
 </document>
