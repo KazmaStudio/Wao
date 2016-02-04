@@ -21,7 +21,7 @@ class ViewControllerGiftList: UICollectionViewCell {
     
     @IBAction func detailButton(sender: AnyObject) {
         
-        
+        NSNotificationCenter.defaultCenter().postNotificationName("detail", object: nil)
         
     }
     
