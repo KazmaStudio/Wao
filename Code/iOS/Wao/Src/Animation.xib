@@ -47,10 +47,18 @@
                                                 <constraint firstAttribute="width" constant="17" id="kMl-UR-Ddx"/>
                                             </constraints>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhI-my-bjp">
+                                            <rect key="frame" x="164" y="37" width="16" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="oZ1-ci-dfg" firstAttribute="top" secondItem="hsn-vG-ZZ3" secondAttribute="top" constant="10" id="6Yk-1R-57F"/>
+                                        <constraint firstItem="PhI-my-bjp" firstAttribute="top" secondItem="oZ1-ci-dfg" secondAttribute="bottom" constant="10" id="AH0-JN-vDY"/>
+                                        <constraint firstItem="PhI-my-bjp" firstAttribute="leading" secondItem="Nb9-dZ-rYl" secondAttribute="trailing" id="BvQ-Sw-j16"/>
                                         <constraint firstItem="Nb9-dZ-rYl" firstAttribute="leading" secondItem="rEP-Re-sxf" secondAttribute="trailing" constant="10" id="CCU-LC-lqo"/>
                                         <constraint firstAttribute="height" constant="65" id="Kto-UB-hKo"/>
                                         <constraint firstItem="Nb9-dZ-rYl" firstAttribute="top" secondItem="oZ1-ci-dfg" secondAttribute="bottom" constant="10" id="NtM-EE-dba"/>
@@ -166,7 +174,9 @@
                 <outlet property="footerAni" destination="mhk-Np-b8A" id="Px0-IB-Su7"/>
                 <outlet property="headImage" destination="rEP-Re-sxf" id="ZJ4-up-DUd"/>
                 <outlet property="lastView" destination="KkB-8a-q5a" id="Yvc-mp-n9u"/>
+                <outlet property="numberChange" destination="PhI-my-bjp" id="FPt-R3-87p"/>
                 <outlet property="paymentBtn" destination="kLR-Ef-bRU" id="Bv5-n8-7wN"/>
+                <outlet property="selectLab" destination="Nb9-dZ-rYl" id="3s0-3u-uJC"/>
                 <outlet property="typeTableView" destination="mLb-NV-McU" id="gjv-ax-cOc"/>
             </connections>
             <point key="canvasLocation" x="113.5" y="355.5"/>

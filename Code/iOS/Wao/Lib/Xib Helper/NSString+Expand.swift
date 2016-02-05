@@ -13,7 +13,7 @@ extension NSString{
     
     func getSizeWithConstraint(Constraint:CGSize , font:UIFont) -> CGFloat{
     
-        return self.boundingRectWithSize(Constraint, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes:[NSFontAttributeName: font], context: nil).width + 10
+        return self.boundingRectWithSize(Constraint, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes:[NSFontAttributeName: font], context: nil).width + 50
         
     
     }

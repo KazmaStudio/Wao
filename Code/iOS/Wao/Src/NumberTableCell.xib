@@ -46,6 +46,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="addBtn" destination="N4Z-Hs-1WJ" id="yBG-NY-agK"/>
+                <outlet property="numberLabel" destination="NmS-8g-O8C" id="Q8B-s3-HIR"/>
                 <outlet property="subBtn" destination="1ot-rt-gY9" id="geI-W1-QyC"/>
             </connections>
         </tableViewCell>

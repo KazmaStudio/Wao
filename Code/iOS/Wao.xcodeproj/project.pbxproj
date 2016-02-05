@@ -22,6 +22,13 @@
 		025686461C61BA3F00C9F1A3 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686451C61BA3F00C9F1A3 /* InfoCell.swift */; };
 		0256864C1C61DC1C00C9F1A3 /* Provineces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0256864B1C61DC1C00C9F1A3 /* Provineces.plist */; };
 		025686501C623CDC00C9F1A3 /* ManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256864F1C623CDC00C9F1A3 /* ManagerModel.swift */; };
+		025686521C634AD100C9F1A3 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686511C634AD100C9F1A3 /* LibraryViewController.swift */; };
+		025686541C634AE300C9F1A3 /* GiftBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686531C634AE300C9F1A3 /* GiftBoxViewController.swift */; };
+		025686561C634AEF00C9F1A3 /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686551C634AEF00C9F1A3 /* BagViewController.swift */; };
+		025686581C634B0100C9F1A3 /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686571C634B0100C9F1A3 /* CollectViewController.swift */; };
+		0256865B1C634C3800C9F1A3 /* LibraryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256865A1C634C3800C9F1A3 /* LibraryViewCell.swift */; };
+		0256865E1C643CF400C9F1A3 /* EditLibraryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256865C1C643CF400C9F1A3 /* EditLibraryViewCell.swift */; };
+		0256865F1C643CF400C9F1A3 /* EditLibraryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0256865D1C643CF400C9F1A3 /* EditLibraryViewCell.xib */; };
 		02ADAAC71C5E23DA007CBDEE /* NSString+Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */; };
 		02C814631C4FC8B400AA5D85 /* NavigationViewControllerWish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */; };
 		02C814651C4FC8D400AA5D85 /* WishViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */; };
@@ -182,6 +189,13 @@
 		025686451C61BA3F00C9F1A3 /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		0256864B1C61DC1C00C9F1A3 /* Provineces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Provineces.plist; sourceTree = "<group>"; };
 		0256864F1C623CDC00C9F1A3 /* ManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerModel.swift; sourceTree = "<group>"; };
+		025686511C634AD100C9F1A3 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		025686531C634AE300C9F1A3 /* GiftBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftBoxViewController.swift; sourceTree = "<group>"; };
+		025686551C634AEF00C9F1A3 /* BagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
+		025686571C634B0100C9F1A3 /* CollectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
+		0256865A1C634C3800C9F1A3 /* LibraryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewCell.swift; sourceTree = "<group>"; };
+		0256865C1C643CF400C9F1A3 /* EditLibraryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLibraryViewCell.swift; sourceTree = "<group>"; };
+		0256865D1C643CF400C9F1A3 /* EditLibraryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditLibraryViewCell.xib; sourceTree = "<group>"; };
 		02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Expand.swift"; sourceTree = "<group>"; };
 		02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerWish.swift; sourceTree = "<group>"; };
 		02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishViewControllerMain.swift; sourceTree = "<group>"; };
@@ -363,6 +377,16 @@
 			name = successPay;
 			sourceTree = "<group>";
 		};
+		025686591C634BCF00C9F1A3 /* MineCell */ = {
+			isa = PBXGroup;
+			children = (
+				0256865A1C634C3800C9F1A3 /* LibraryViewCell.swift */,
+				0256865C1C643CF400C9F1A3 /* EditLibraryViewCell.swift */,
+				0256865D1C643CF400C9F1A3 /* EditLibraryViewCell.xib */,
+			);
+			name = MineCell;
+			sourceTree = "<group>";
+		};
 		02C814681C4FD6D700AA5D85 /* WishCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,7 +484,12 @@
 			children = (
 				0607B5F01C4361BC002A508A /* NavigationControllerMine.swift */,
 				0607B5F21C436212002A508A /* TableViewControllerMine.swift */,
+				025686511C634AD100C9F1A3 /* LibraryViewController.swift */,
+				025686531C634AE300C9F1A3 /* GiftBoxViewController.swift */,
+				025686551C634AEF00C9F1A3 /* BagViewController.swift */,
+				025686571C634B0100C9F1A3 /* CollectViewController.swift */,
 				0607B5F41C436230002A508A /* SBMine.storyboard */,
+				025686591C634BCF00C9F1A3 /* MineCell */,
 			);
 			name = Mine;
 			sourceTree = "<group>";
@@ -883,6 +912,7 @@
 				02C814671C4FC8E100AA5D85 /* SBWish.storyboard in Resources */,
 				06C132D61C5CA4BB001F1162 /* xinyuan_c@3x.png in Resources */,
 				06C132B81C5CA4BB001F1162 /* arr_up@3x.png in Resources */,
+				0256865F1C643CF400C9F1A3 /* EditLibraryViewCell.xib in Resources */,
 				021C576B1C57774F0072D38D /* Animation.xib in Resources */,
 				06C132D21C5CA4BB001F1162 /* wodegouwudai@3x.png in Resources */,
 				0607B5F51C436230002A508A /* SBMine.storyboard in Resources */,
@@ -920,12 +950,16 @@
 				86E148911C52149C00E72371 /* ScrollViewCell.swift in Sources */,
 				863DED981C6073C9009774AA /* ZTViewController.swift in Sources */,
 				060B49AA1C4F17D4008844A8 /* UITableView+NodataView.swift in Sources */,
+				0256865B1C634C3800C9F1A3 /* LibraryViewCell.swift in Sources */,
 				86E1488F1C52149400E72371 /* SBDetailViewController.swift in Sources */,
+				0256865E1C643CF400C9F1A3 /* EditLibraryViewCell.swift in Sources */,
 				02ADAAC71C5E23DA007CBDEE /* NSString+Expand.swift in Sources */,
 				0256863D1C60AEFB00C9F1A3 /* PaymentCell.swift in Sources */,
 				0607B59D1C4123A1002A508A /* ViewCell.swift in Sources */,
 				025686391C60A54800C9F1A3 /* PaymentViewController.swift in Sources */,
+				025686521C634AD100C9F1A3 /* LibraryViewController.swift in Sources */,
 				865186BC1C4F1F7C0044997C /* WaterCellMain.swift in Sources */,
+				025686581C634B0100C9F1A3 /* CollectViewController.swift in Sources */,
 				06AEAAB21C365DE3008ED5CF /* Common.swift in Sources */,
 				06C9D2321C3F983E00B7F8E5 /* ModelWeChatInfo.swift in Sources */,
 				0607B5961C40D89F002A508A /* ViewControllerLogin.swift in Sources */,
@@ -941,8 +975,10 @@
 				863DED9C1C6073E2009774AA /* TableViewCell.swift in Sources */,
 				06AEAAB61C365DE3008ED5CF /* UIView+XIBEdit.swift in Sources */,
 				06AEAAB31C365DE3008ED5CF /* UICommon.swift in Sources */,
+				025686561C634AEF00C9F1A3 /* BagViewController.swift in Sources */,
 				060B49AC1C4F2546008844A8 /* WaterLayoutMain.swift in Sources */,
 				8663B7601C4CB715004AD904 /* ViewControllerGiftListMain.swift in Sources */,
+				025686541C634AE300C9F1A3 /* GiftBoxViewController.swift in Sources */,
 				021C57741C59B2AA0072D38D /* SizeTableViewCell.swift in Sources */,
 				86E148971C5214C800E72371 /* buttonHeader.swift in Sources */,
 				8663B7691C4CB9B7004AD904 /* ViewControllerGiftList.swift in Sources */,

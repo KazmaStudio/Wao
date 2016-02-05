@@ -105,7 +105,7 @@ class SBDetailViewController: UIViewController,UITableViewDataSource,UITableView
 		
 		if( section == 1 ){
 			
-			let viewHeader = tableView.dequeueReusableHeaderFooterViewWithIdentifier("buttonHeader") as! buttonHeader
+        let viewHeader = tableView.dequeueReusableHeaderFooterViewWithIdentifier("buttonHeader") as! buttonHeader
 			
 			let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
 			let blurEffectView = UIVisualEffectView(effect: blurEffect)

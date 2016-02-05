@@ -12,15 +12,18 @@ class AnimationView: UIView {
 
     @IBOutlet weak var darkView: UIView!
     
+    @IBOutlet weak var selectLab: UILabel!
     @IBOutlet weak var footerAni: UIView!
     
+    @IBOutlet weak var numberChange: UILabel!
     @IBOutlet weak var typeTableView: UITableView!
     
     @IBOutlet weak var lastView: UIView!
     @IBOutlet weak var paymentBtn: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var headImage: UIImageView!
-    
+    var textM:NSMutableString!
+    var mutableTextArray:NSMutableArray!
     
     var sizeHeight: CGFloat!
     required init?(coder aDecoder: NSCoder) {
@@ -31,6 +34,7 @@ class AnimationView: UIView {
         
         typeTableView.estimatedRowHeight = 100
         typeTableView.rowHeight = UITableViewAutomaticDimension
+        numberChange.hidden = true
         
         self.backgroundColor = UIColor.clearColor()
         typeTableView.separatorStyle = UITableViewCellSeparatorStyle.None
@@ -57,12 +61,29 @@ class AnimationView: UIView {
         cancelButton.addTarget(self, action: "handleTappressGesture", forControlEvents: .TouchUpInside)
         
         paymentBtn.addTarget(self, action: "paymentAct", forControlEvents: .TouchUpInside)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "notice:", name: "buttonChange", object: nil)
+        mutableTextArray = NSMutableArray()
+        for var i = 0; i < 1; i++ {
+          mutableTextArray.addObject("")
+        }
         
     }
     @IBAction func pushAction(sender: AnyObject) {
 
     }
     
+    func notice(sender:NSNotification){
+        var num = NSInteger()
+        num = sender.userInfo!["selectNum"]!.integerValue
+        textM = NSMutableString()
+        mutableTextArray.replaceObjectAtIndex(num, withObject: sender.userInfo!["selectText"]!)
+        for var i = 0; i < 1; i++ {
+            textM.appendString(mutableTextArray[i] as! String)
+        }
+        selectLab.text = textM as String
+        
+        
+    }
     func tapA(){
         print(0000000)
     }
@@ -100,12 +121,15 @@ extension AnimationView:UITableViewDataSource,UITableViewDelegate{
         let nib = UINib.init(nibName: "SizeTableViewCell", bundle: nil)
         tableView.registerNib(nib, forCellReuseIdentifier: "sizeCell")
         let cell = tableView.dequeueReusableCellWithIdentifier("sizeCell") as! SizeTableViewCell
-
+        cell.indexpath = indexPath
+            
+            
             return cell
         } else {
             let nib = UINib.init(nibName: "NumberTableCell", bundle: nil)
             tableView.registerNib(nib, forCellReuseIdentifier: "numberCell")
             let cell = tableView.dequeueReusableCellWithIdentifier("numberCell") as! NumberTableCell
+            numberChange.text = cell.numberLabel.text
             
             return cell
         }
@@ -116,13 +140,14 @@ extension AnimationView:UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("sizeCell") as! SizeTableViewCell
-//        return 100
-        
+        let nib = UINib.init(nibName: "SizeTableViewCell", bundle: nil)
+        tableView.registerNib(nib, forCellReuseIdentifier: "sizeCell")
+        let cell = tableView.dequeueReusableCellWithIdentifier("sizeCell") as! SizeTableViewCell
+
         if  indexPath.row == 0{
-            return 100
+            return cell.getheight()
         } else {
-            return 40
+            return 80
         }
         
     }

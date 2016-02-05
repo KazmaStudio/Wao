@@ -42,8 +42,8 @@ class PaymentViewController: UIViewController {
         btn.setTitle("确定", forState: .Normal)
         btn.addTarget(self, action: "editFinishAct", forControlEvents: .TouchUpInside)
         btn.backgroundColor = UIColor.redColor()
-        view.lastView.addSubview(btn)
         self.view.addSubview(view)
+        view.lastView.addSubview(btn)
         if yesorno == true{
             button.setTitle("完成", forState: .Normal)
             button.addTarget(self, action: "hideViewAct", forControlEvents: .TouchUpInside)
