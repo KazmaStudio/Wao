@@ -65,10 +65,11 @@ class SizeTableViewCell: UITableViewCell {
     }
     
     func buttonAction(button: UIButton){
-        var myButton:UIButton!
+		
         for myButton in contentView.subviews{
             myButton.backgroundColor = UIColor.whiteColor()
         }
+		
         button.backgroundColor = UIColor.redColor()
         let str:NSString!
         str = NSString(format: "%ld", self.indexpath.row)

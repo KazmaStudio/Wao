@@ -20,9 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
         // Override point for customization after application launch.
         
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        
         UINavigationBar.appearance().setBackgroundImage(UIImage.init(named: "navi.png"), forBarMetrics: UIBarMetrics.Default)
-        
+		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+		
+		UITabBar.appearance().tintColor = UIColor.whiteColor()
+		UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState: UIControlState.Selected)
+		UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: rgba(238, g: 209, b: 137, a: 1)], forState: UIControlState.Normal)
+		
         return true
     }
 

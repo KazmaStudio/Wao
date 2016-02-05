@@ -155,7 +155,7 @@ extension ViewControllerMain:UICollectionViewDelegate,UICollectionViewDataSource
 		self.imageScrollView.contentOffset = CGPointMake(0, 0);
 		
         let imageWidth:CGFloat = ScreenWidth
-        let imageHeight:CGFloat = ScreenWidth * 220 / 600
+        let imageHeight:CGFloat = ScreenWidth * 260 / 640
         let imageY:CGFloat = 0
         let totalCount:NSInteger = 4
 		

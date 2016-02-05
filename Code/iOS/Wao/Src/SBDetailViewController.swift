@@ -93,7 +93,7 @@ class SBDetailViewController: UIViewController,UITableViewDataSource,UITableView
 	
 	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 		if indexPath.section == 0{
-			return ScreenWidth * 320 / 600
+			return ScreenWidth * 320 / 640
 		}else {
 			return webViewHeight
 		}
