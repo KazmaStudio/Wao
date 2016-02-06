@@ -13,8 +13,13 @@ class InfoViewController: UIViewController {
     var titleArray = ["姓名", "手机", "验证码", "请选择省市", "详细地址"]
     
     @IBOutlet weak var sureBtn: UIButton!
-    
     @IBOutlet weak var tableView: UITableView!
+    
+    var nameTextField: UITextField!
+    var phoneTextField: UITextField!
+    var PINTextField: UITextField!
+    var addressTextField: UITextField!
+    
     var cityString: String?
     var pickerView: UIPickerView!
     var maskView: UIView!
@@ -39,6 +44,9 @@ class InfoViewController: UIViewController {
             provinceName.append(dict["ProvinceName"] as! String)
         }
         
+        
+        tableView.keyboardDismissMode = .OnDrag
+        
         addPickerView()
         addView()
     }
@@ -59,8 +67,8 @@ class InfoViewController: UIViewController {
     }
     func changeKeyBoard(){
         self.markView.hidden = true
-//        nameTextField.resignFirstResponder()
-//        phoneTextField.resignFirstResponder()
+        nameTextField.resignFirstResponder()
+        phoneTextField.resignFirstResponder()
     }
     func addPickerView() {
         maskView = UIView()
@@ -164,12 +172,31 @@ extension InfoViewController: UITableViewDataSource, UITableViewDelegate{
         } else {
             cell.getCodeBtn.hidden = false
         }
-        if  indexPath.row == 3{
-            cell.textField.hidden = true
-        }
         if indexPath.row != 3{
             cell.provinceLab.hidden = true
         }
+        
+        if indexPath.row == 0 {
+            nameTextField = cell.textField
+        } else if indexPath.row == 1{
+            phoneTextField = cell.textField
+            phoneTextField.keyboardType = UIKeyboardType.NamePhonePad
+            
+        }else if indexPath.row == 2{
+            PINTextField = cell.textField
+            phoneTextField.keyboardType = UIKeyboardType.NumberPad
+            
+        }else if indexPath.row == 3{
+            cell.textField.hidden = true
+        }else{
+            addressTextField = cell.textField
+        }
+        
+        
+        
+        
+        
+        
         cell.provinceLab.text = cityString
         
         
@@ -179,6 +206,10 @@ extension InfoViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.row == 3{
             showPickerView()
+            nameTextField.resignFirstResponder()
+            phoneTextField.resignFirstResponder()
+            PINTextField.resignFirstResponder()
+            addressTextField.resignFirstResponder()
         }
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
@@ -194,3 +225,28 @@ extension InfoViewController: UITableViewDataSource, UITableViewDelegate{
     
 }
 
+extension InfoViewController: UITextFieldDelegate{
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        if textField == phoneTextField{
+            if range.location >= 11{
+                return false
+            }
+            // 限制输入框只能输入阿拉伯数字及小数点
+            let character = NSCharacterSet(charactersInString: "0123456789.").invertedSet
+            let filter = string.componentsSeparatedByCharactersInSet(character) as NSArray
+            let bTest = string.isEqual(filter.componentsJoinedByString("")).boolValue
+            return bTest
+        }
+        if textField == PINTextField{
+            if range.location >= 6{
+                return false
+            }
+            // 限制输入框只能输入阿拉伯数字及小数点
+            let character = NSCharacterSet(charactersInString: "0123456789.").invertedSet
+            let filter = string.componentsSeparatedByCharactersInSet(character) as NSArray
+            let bTest = string.isEqual(filter.componentsJoinedByString("")).boolValue
+            return bTest
+        }
+        return true
+    }
+}

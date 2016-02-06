@@ -14,18 +14,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="267" height="263"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="cpM-Q1-Ky6">
-                        <rect key="frame" x="0.0" y="0.0" width="267" height="263"/>
+                        <rect key="frame" x="5" y="5" width="257" height="253"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="cpM-Q1-Ky6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="0tU-hj-4Es"/>
                 <constraint firstItem="cpM-Q1-Ky6" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="J1d-kJ-QQb"/>
+                <constraint firstItem="cpM-Q1-Ky6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="SfM-bc-l4B"/>
                 <constraint firstItem="cpM-Q1-Ky6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="WrY-GV-wxM"/>
                 <constraint firstItem="cpM-Q1-Ky6" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="Yai-5k-oVN"/>
+                <constraint firstAttribute="trailing" secondItem="cpM-Q1-Ky6" secondAttribute="trailing" constant="5" id="ecu-wd-BZa"/>
+                <constraint firstAttribute="bottom" secondItem="cpM-Q1-Ky6" secondAttribute="bottom" constant="5" id="ld0-O2-bvm"/>
                 <constraint firstItem="cpM-Q1-Ky6" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="yjo-ix-c6H"/>
             </constraints>
             <size key="customSize" width="267" height="263"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="J1d-kJ-QQb"/>
+                    <exclude reference="WrY-GV-wxM"/>
+                    <exclude reference="Yai-5k-oVN"/>
+                    <exclude reference="yjo-ix-c6H"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="ImageView" destination="cpM-Q1-Ky6" id="7QV-uG-Gx1"/>
             </connections>

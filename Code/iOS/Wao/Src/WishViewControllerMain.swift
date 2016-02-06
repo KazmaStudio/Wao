@@ -51,7 +51,12 @@ class WishViewControllerMain: UIViewController {
         
         hideHeadView = UIView()
         hideHeadView.frame = CGRectMake(0, 64, view.frame.width, 50)
-        hideHeadView.backgroundColor = UIColor.whiteColor()
+        hideHeadView.backgroundColor = UIColor.clearColor()
+		
+		let blurEffectLight = UIBlurEffect(style: UIBlurEffectStyle.Light)
+		let bgBlurViewLight = UIVisualEffectView(effect: blurEffectLight)
+		bgBlurViewLight.frame = CGRectMake(0, 0, hideHeadView.frame.width, hideHeadView.frame.height)
+		hideHeadView.addSubview(bgBlurViewLight)
         view.addSubview(hideHeadView)
         
         
@@ -84,6 +89,8 @@ class WishViewControllerMain: UIViewController {
         addFooterButton()
         tellFriendAction()
         shareFriendCircleAction()
+		
+		self.tableView.contentInset = UIEdgeInsetsMake(hideHeadView.frame.size.height, 0, 0, 0)
     }
     
     func selectedBtn(button: UIButton){

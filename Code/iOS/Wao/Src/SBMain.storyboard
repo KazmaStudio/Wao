@@ -6,7 +6,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller Main-->
+        <!--Wao-->
         <scene sceneID="h1S-3X-UxU">
             <objects>
                 <viewController storyboardIdentifier="viewControllerMain" automaticallyAdjustsScrollViewInsets="NO" id="vHe-75-SOt" customClass="ViewControllerMain" customModule="Wao" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,25 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-y5-k3Q">
-                                <rect key="frame" x="0.0" y="64" width="600" height="220"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="GN7-y5-k3Q" secondAttribute="height" multiplier="600:220" id="t2x-v1-fis"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="delegate" destination="vHe-75-SOt" id="O93-1G-IcP"/>
-                                </connections>
-                            </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="NJ3-Qc-Fuo">
-                                <rect key="frame" x="489" y="247" width="111" height="37"/>
+                                <rect key="frame" x="489" y="271" width="111" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="111" id="1lS-Fg-meG"/>
                                     <constraint firstAttribute="height" constant="37" id="BjX-AG-0gF"/>
                                 </constraints>
                             </pageControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-RQ-oTr">
-                                <rect key="frame" x="0.0" y="284" width="600" height="316"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="308" width="600" height="292"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HKe-cs-rtW" customClass="WaterLayoutMain" customModule="Wao" customModuleProvider="target">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -59,6 +50,15 @@
                                     <outlet property="delegate" destination="vHe-75-SOt" id="GE3-Xn-4dQ"/>
                                 </connections>
                             </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-y5-k3Q">
+                                <rect key="frame" x="0.0" y="64" width="600" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GN7-y5-k3Q" secondAttribute="height" multiplier="640:260" id="t2x-v1-fis"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="vHe-75-SOt" id="O93-1G-IcP"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -73,6 +73,7 @@
                             <constraint firstItem="GN7-y5-k3Q" firstAttribute="width" secondItem="1kr-4h-oDd" secondAttribute="width" id="zIt-jI-XR9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Wao" id="jDD-1h-Xjb"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="CollectionView" destination="fa4-RQ-oTr" id="JGD-ai-CW9"/>

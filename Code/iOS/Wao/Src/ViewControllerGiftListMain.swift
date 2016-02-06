@@ -119,7 +119,7 @@ extension ViewControllerGiftListMain:UICollectionViewDelegate,UICollectionViewDa
         
         
 
-        let cellItemHeight = ((cellItemWidth-10)*9/7 + 85)
+        let cellItemHeight = ((cellItemWidth-10)*(280/260) + 85)
         
         return Float(cellItemHeight)
     }

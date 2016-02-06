@@ -93,7 +93,7 @@ class SBDetailViewController: UIViewController,UITableViewDataSource,UITableView
 	
 	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 		if indexPath.section == 0{
-			return ScreenWidth * 320 / 600
+			return ScreenWidth * 320 / 640
 		}else {
 			return webViewHeight
 		}
@@ -105,7 +105,7 @@ class SBDetailViewController: UIViewController,UITableViewDataSource,UITableView
 		
 		if( section == 1 ){
 			
-			let viewHeader = tableView.dequeueReusableHeaderFooterViewWithIdentifier("buttonHeader") as! buttonHeader
+        let viewHeader = tableView.dequeueReusableHeaderFooterViewWithIdentifier("buttonHeader") as! buttonHeader
 			
 			let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
 			let blurEffectView = UIVisualEffectView(effect: blurEffect)
