@@ -80,7 +80,7 @@ class ZTViewController: UIViewController,UITableViewDataSource,UITableViewDelega
         
         let heightImage = widthImage * 18/29
         
-        let heightOther = heightImage + 150
+        let heightOther = heightImage + 160
         
         return heightList[indexPath.row] as! CGFloat + heightOther
     }
