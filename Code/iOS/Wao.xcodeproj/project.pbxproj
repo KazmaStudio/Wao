@@ -27,8 +27,9 @@
 		025686561C634AEF00C9F1A3 /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686551C634AEF00C9F1A3 /* BagViewController.swift */; };
 		025686581C634B0100C9F1A3 /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686571C634B0100C9F1A3 /* CollectViewController.swift */; };
 		0256865B1C634C3800C9F1A3 /* LibraryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256865A1C634C3800C9F1A3 /* LibraryViewCell.swift */; };
-		0256865E1C643CF400C9F1A3 /* EditLibraryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256865C1C643CF400C9F1A3 /* EditLibraryViewCell.swift */; };
-		0256865F1C643CF400C9F1A3 /* EditLibraryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0256865D1C643CF400C9F1A3 /* EditLibraryViewCell.xib */; };
+		025686611C648BC600C9F1A3 /* GiftBoxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686601C648BC600C9F1A3 /* GiftBoxViewCell.swift */; };
+		025686631C648BD600C9F1A3 /* BagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686621C648BD600C9F1A3 /* BagViewCell.swift */; };
+		025686651C648BE600C9F1A3 /* CollectViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025686641C648BE600C9F1A3 /* CollectViewCell.swift */; };
 		02ADAAC71C5E23DA007CBDEE /* NSString+Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */; };
 		02C814631C4FC8B400AA5D85 /* NavigationViewControllerWish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */; };
 		02C814651C4FC8D400AA5D85 /* WishViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */; };
@@ -233,8 +234,9 @@
 		025686551C634AEF00C9F1A3 /* BagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
 		025686571C634B0100C9F1A3 /* CollectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
 		0256865A1C634C3800C9F1A3 /* LibraryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewCell.swift; sourceTree = "<group>"; };
-		0256865C1C643CF400C9F1A3 /* EditLibraryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLibraryViewCell.swift; sourceTree = "<group>"; };
-		0256865D1C643CF400C9F1A3 /* EditLibraryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditLibraryViewCell.xib; sourceTree = "<group>"; };
+		025686601C648BC600C9F1A3 /* GiftBoxViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftBoxViewCell.swift; sourceTree = "<group>"; };
+		025686621C648BD600C9F1A3 /* BagViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagViewCell.swift; sourceTree = "<group>"; };
+		025686641C648BE600C9F1A3 /* CollectViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectViewCell.swift; sourceTree = "<group>"; };
 		02ADAAC61C5E23DA007CBDEE /* NSString+Expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Expand.swift"; sourceTree = "<group>"; };
 		02C814621C4FC8B400AA5D85 /* NavigationViewControllerWish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerWish.swift; sourceTree = "<group>"; };
 		02C814641C4FC8D400AA5D85 /* WishViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishViewControllerMain.swift; sourceTree = "<group>"; };
@@ -459,8 +461,9 @@
 			isa = PBXGroup;
 			children = (
 				0256865A1C634C3800C9F1A3 /* LibraryViewCell.swift */,
-				0256865C1C643CF400C9F1A3 /* EditLibraryViewCell.swift */,
-				0256865D1C643CF400C9F1A3 /* EditLibraryViewCell.xib */,
+				025686601C648BC600C9F1A3 /* GiftBoxViewCell.swift */,
+				025686621C648BD600C9F1A3 /* BagViewCell.swift */,
+				025686641C648BE600C9F1A3 /* CollectViewCell.swift */,
 			);
 			name = MineCell;
 			sourceTree = "<group>";
@@ -563,7 +566,6 @@
 				06C132B31C5CA4BB001F1162 /* xinyuanjiaru@3x.png */,
 				065B1C1C1C64ED0C0019A80F /* tab_bg@2x.png */,
 				065B1C1D1C64ED0C0019A80F /* tab_bg@3x.png */,
-				021C57651C53FE760072D38D /* ture_none@2x.png */,
 				865186C21C4F20740044997C /* fake */,
 			);
 			path = Image;
@@ -844,6 +846,7 @@
 		865186C21C4F20740044997C /* fake */ = {
 			isa = PBXGroup;
 			children = (
+				021C57651C53FE760072D38D /* ture_none@2x.png */,
 				865186C31C4F20740044997C /* 1.JPG */,
 				865186C41C4F20740044997C /* 2.JPG */,
 				865186C51C4F20740044997C /* 3.JPG */,
@@ -1115,7 +1118,6 @@
 				060B49AA1C4F17D4008844A8 /* UITableView+NodataView.swift in Sources */,
 				0256865B1C634C3800C9F1A3 /* LibraryViewCell.swift in Sources */,
 				86E1488F1C52149400E72371 /* SBDetailViewController.swift in Sources */,
-				0256865E1C643CF400C9F1A3 /* EditLibraryViewCell.swift in Sources */,
 				02ADAAC71C5E23DA007CBDEE /* NSString+Expand.swift in Sources */,
 				0256863D1C60AEFB00C9F1A3 /* PaymentCell.swift in Sources */,
 				0607B59D1C4123A1002A508A /* ViewCell.swift in Sources */,
@@ -1143,7 +1145,9 @@
 				8663B7601C4CB715004AD904 /* ViewControllerGiftListMain.swift in Sources */,
 				025686541C634AE300C9F1A3 /* GiftBoxViewController.swift in Sources */,
 				021C57741C59B2AA0072D38D /* SizeTableViewCell.swift in Sources */,
+				025686651C648BE600C9F1A3 /* CollectViewCell.swift in Sources */,
 				86E148971C5214C800E72371 /* buttonHeader.swift in Sources */,
+				025686611C648BC600C9F1A3 /* GiftBoxViewCell.swift in Sources */,
 				8663B7691C4CB9B7004AD904 /* ViewControllerGiftList.swift in Sources */,
 				06AEAA711C365AD9008ED5CF /* AppDelegate.swift in Sources */,
 				025686351C60989E00C9F1A3 /* NumberTableCell.swift in Sources */,
@@ -1155,6 +1159,7 @@
 				021C576F1C57C3EF0072D38D /* AnimationView.swift in Sources */,
 				06D179F81C3D0FE700610BB8 /* ViewControllerMain.swift in Sources */,
 				0607B5991C40DE18002A508A /* ViewControllerRegisterMobile.swift in Sources */,
+				025686631C648BD600C9F1A3 /* BagViewCell.swift in Sources */,
 				065B1C6A1C64F04D0019A80F /* TabbarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

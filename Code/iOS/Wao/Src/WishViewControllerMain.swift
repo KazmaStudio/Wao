@@ -43,7 +43,7 @@ class WishViewControllerMain: UIViewController {
         self.view.backgroundColor = UIColor.whiteColor()
         segment = UISegmentedControl(items: appsArray as [AnyObject])
         segment.frame = CGRectMake(10, 10, self.view.frame.width - 20, 30)
-        segment.tintColor = UIColor.redColor()
+        segment.tintColor = UIColor(red: 255/255, green: 84/255, blue: 59/255, alpha: 1)
         segment.setTitle("未点亮心愿", forSegmentAtIndex: 0)
         segment.selectedSegmentIndex = 0
         
@@ -104,7 +104,7 @@ class WishViewControllerMain: UIViewController {
             shareFriendCircleButton.hidden = true
             // 删除按钮
             deleteBtn = UIButton(type: .Custom)
-            deleteBtn.backgroundColor = UIColor.redColor()
+            deleteBtn.backgroundColor = UIColor(red: 255/255, green: 84/255, blue: 59/255, alpha: 1)
             deleteBtn.setTitle("删除", forState: .Normal)
             deleteBtn.frame = CGRectMake(0, 0, self.view.frame.size.width, 60)
             deleteBtn.addTarget(self, action: "deleteClick:", forControlEvents: .TouchUpInside)
@@ -167,7 +167,7 @@ class WishViewControllerMain: UIViewController {
             footButton.hidden = false
             shareFriendCircleButton.hidden = true
             tellFriendButton.hidden = true
-          
+            seleAllBtn.hidden = true
         }
         
         selectedBtn = UIButton(type: .System)
@@ -192,7 +192,7 @@ class WishViewControllerMain: UIViewController {
         
         var tellFriendButton: UIButton!
         tellFriendButton = UIButton(type: .Custom)
-        tellFriendButton.backgroundColor = UIColor.redColor()
+        tellFriendButton.backgroundColor = UIColor(red: 255/255, green: 84/255, blue: 59/255, alpha: 1)
         tellFriendButton.frame = CGRectMake(10, 10, self.footerView.frame.width * 0.5 - 15, 40)
         tellFriendButton.setTitle("把心愿告诉好友", forState: .Normal)
         tellFriendButton.cornerRadius = 6
@@ -205,7 +205,7 @@ class WishViewControllerMain: UIViewController {
     func shareFriendCircleAction(){
         var shareFriendCircleBut: UIButton!
         shareFriendCircleBut = UIButton(type: .Custom)
-        shareFriendCircleBut.backgroundColor = UIColor.redColor()
+        shareFriendCircleBut.backgroundColor = UIColor(red: 255/255, green: 84/255, blue: 59/255, alpha: 1)
         shareFriendCircleBut.frame = CGRectMake(self.tellFriendButton.frame.width + 20, 10, self.footerView.frame.width * 0.5 - 15, 40)
         shareFriendCircleBut.setTitle("把分享到朋友圈", forState: .Normal)
         shareFriendCircleBut.cornerRadius = 6
@@ -216,7 +216,7 @@ class WishViewControllerMain: UIViewController {
     
     func addFooterButton(){
         footButton = UIButton(type: .Custom)
-        footButton.backgroundColor = UIColor.redColor()
+        footButton.backgroundColor = UIColor(red: 255/255, green: 84/255, blue: 59/255, alpha: 1)
         footButton.frame = CGRectMake(20, self.view.frame.height - 99, self.view.frame.width - 40, 40)
         footButton.cornerRadius = 6
         footButton.setTitle("分享到朋友圈", forState: UIControlState.Normal)

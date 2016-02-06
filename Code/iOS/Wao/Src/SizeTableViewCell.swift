@@ -67,7 +67,7 @@ class SizeTableViewCell: UITableViewCell {
     func buttonAction(button: UIButton){
 		
         for myButton in contentView.subviews{
-            myButton.backgroundColor = UIColor.whiteColor()
+            myButton.backgroundColor = UIColor.groupTableViewBackgroundColor()
         }
 		
         button.backgroundColor = UIColor.redColor()

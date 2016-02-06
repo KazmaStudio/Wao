@@ -67,7 +67,7 @@ class PaymentViewController: UIViewController {
         let sureBtn = UIButton()
         sureBtn.frame = CGRectMake(self.view.frame.width - 115, 0, 115, 43)
         
-        sureBtn.backgroundColor = UIColor.greenColor()
+        sureBtn.backgroundColor = UIColor(red: 69/255, green: 179/255, blue: 82/255, alpha: 1)
         sureBtn.setTitle("确认支付", forState: .Normal)
         sureBtn.addTarget(self, action: "successedAct", forControlEvents: .TouchUpInside)
         footerView.addSubview(sureBtn)
