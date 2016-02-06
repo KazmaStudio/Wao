@@ -563,6 +563,7 @@
 				06C132B31C5CA4BB001F1162 /* xinyuanjiaru@3x.png */,
 				065B1C1C1C64ED0C0019A80F /* tab_bg@2x.png */,
 				065B1C1D1C64ED0C0019A80F /* tab_bg@3x.png */,
+				021C57651C53FE760072D38D /* ture_none@2x.png */,
 				865186C21C4F20740044997C /* fake */,
 			);
 			path = Image;
@@ -843,7 +844,6 @@
 		865186C21C4F20740044997C /* fake */ = {
 			isa = PBXGroup;
 			children = (
-				021C57651C53FE760072D38D /* ture_none@2x.png */,
 				865186C31C4F20740044997C /* 1.JPG */,
 				865186C41C4F20740044997C /* 2.JPG */,
 				865186C51C4F20740044997C /* 3.JPG */,
