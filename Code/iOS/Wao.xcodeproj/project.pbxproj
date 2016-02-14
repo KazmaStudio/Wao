@@ -171,6 +171,8 @@
 		8663B7621C4CB747004AD904 /* WaterLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8663B7611C4CB747004AD904 /* WaterLayout.swift */; };
 		8663B7641C4CB765004AD904 /* ViewControllerGiftList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8663B7631C4CB765004AD904 /* ViewControllerGiftList.xib */; };
 		8663B7691C4CB9B7004AD904 /* ViewControllerGiftList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8663B7681C4CB9B7004AD904 /* ViewControllerGiftList.swift */; };
+		866C9D431C70521C00CAEEE7 /* SZTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866C9D421C70521C00CAEEE7 /* SZTableViewController.swift */; };
+		866C9D451C70522300CAEEE7 /* SZMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866C9D441C70522300CAEEE7 /* SZMain.storyboard */; };
 		86E1488D1C52148C00E72371 /* SBDetailMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E1488C1C52148C00E72371 /* SBDetailMain.storyboard */; };
 		86E1488F1C52149400E72371 /* SBDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1488E1C52149400E72371 /* SBDetailViewController.swift */; };
 		86E148911C52149C00E72371 /* ScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E148901C52149C00E72371 /* ScrollViewCell.swift */; };
@@ -386,6 +388,8 @@
 		8663B7611C4CB747004AD904 /* WaterLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterLayout.swift; sourceTree = "<group>"; };
 		8663B7631C4CB765004AD904 /* ViewControllerGiftList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerGiftList.xib; sourceTree = "<group>"; };
 		8663B7681C4CB9B7004AD904 /* ViewControllerGiftList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerGiftList.swift; sourceTree = "<group>"; };
+		866C9D421C70521C00CAEEE7 /* SZTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SZTableViewController.swift; sourceTree = "<group>"; };
+		866C9D441C70522300CAEEE7 /* SZMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SZMain.storyboard; sourceTree = "<group>"; };
 		86E1488C1C52148C00E72371 /* SBDetailMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBDetailMain.storyboard; sourceTree = "<group>"; };
 		86E1488E1C52149400E72371 /* SBDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBDetailViewController.swift; sourceTree = "<group>"; };
 		86E148901C52149C00E72371 /* ScrollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewCell.swift; sourceTree = "<group>"; };
@@ -616,6 +620,8 @@
 				025686551C634AEF00C9F1A3 /* BagViewController.swift */,
 				025686571C634B0100C9F1A3 /* CollectViewController.swift */,
 				0607B5F41C436230002A508A /* SBMine.storyboard */,
+				866C9D421C70521C00CAEEE7 /* SZTableViewController.swift */,
+				866C9D441C70522300CAEEE7 /* SZMain.storyboard */,
 				025686591C634BCF00C9F1A3 /* MineCell */,
 			);
 			name = Mine;
@@ -1078,6 +1084,7 @@
 				06C132D21C5CA4BB001F1162 /* wodegouwudai@3x.png in Resources */,
 				0607B5F51C436230002A508A /* SBMine.storyboard in Resources */,
 				863DED9A1C6073D7009774AA /* SBZTMain.storyboard in Resources */,
+				866C9D451C70522300CAEEE7 /* SZMain.storyboard in Resources */,
 				86E148961C5214C800E72371 /* buttonHeader.xib in Resources */,
 				065B1C5F1C64EEB50019A80F /* wode_c@2x.png in Resources */,
 				8663B7491C4C74FF004AD904 /* SBMain.storyboard in Resources */,
@@ -1153,6 +1160,7 @@
 				02C8146C1C4FD73300AA5D85 /* LitWishTableViewCell.swift in Sources */,
 				025686401C619E0300C9F1A3 /* PaysuccessViewController.swift in Sources */,
 				0607B5F71C439687002A508A /* CFButton.swift in Sources */,
+				866C9D431C70521C00CAEEE7 /* SZTableViewController.swift in Sources */,
 				021C57771C5A03EB0072D38D /* UIButton+Custom.swift in Sources */,
 				025686461C61BA3F00C9F1A3 /* InfoCell.swift in Sources */,
 				021C576F1C57C3EF0072D38D /* AnimationView.swift in Sources */,
