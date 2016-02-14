@@ -256,7 +256,6 @@ extension WishViewControllerMain:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete{
             appsArray.removeObjectAtIndex(indexPath.row)
-//            appsArray.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Top)
         }
         tableView.reloadData()
@@ -285,6 +284,8 @@ extension WishViewControllerMain:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         allArray.addObject(appsArray.objectAtIndex(indexPath.row))
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
     }
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         allArray.addObject(appsArray.objectAtIndex(indexPath.row))

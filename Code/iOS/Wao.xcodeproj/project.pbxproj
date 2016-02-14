@@ -560,11 +560,11 @@
 				06C132AD1C5CA4BB001F1162 /* wodegouwudai@3x.png */,
 				06C132AE1C5CA4BB001F1162 /* wodelihe@3x.png */,
 				06C132AF1C5CA4BB001F1162 /* wodeliku@3x.png */,
+				065B1C1C1C64ED0C0019A80F /* tab_bg@2x.png */,
 				06C132B01C5CA4BB001F1162 /* wodezhanghu@3x.png */,
 				06C132B11C5CA4BB001F1162 /* xinyuan_c@3x.png */,
 				06C132B21C5CA4BB001F1162 /* xinyuan@3x.png */,
 				06C132B31C5CA4BB001F1162 /* xinyuanjiaru@3x.png */,
-				065B1C1C1C64ED0C0019A80F /* tab_bg@2x.png */,
 				065B1C1D1C64ED0C0019A80F /* tab_bg@3x.png */,
 				865186C21C4F20740044997C /* fake */,
 			);
@@ -945,7 +945,7 @@
 				TargetAttributes = {
 					06AEAA6C1C365AD9008ED5CF = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = ASDHZ8W35W;
+						DevelopmentTeam = H6XW4S2SCW;
 					};
 					06AEAA801C365AD9008ED5CF = {
 						CreatedOnToolsVersion = 7.2;
@@ -1071,7 +1071,6 @@
 				06C132B81C5CA4BB001F1162 /* arr_up@3x.png in Resources */,
 				065B1C461C64EEB50019A80F /* arr_down@2x.png in Resources */,
 				065B1C4D1C64EEB50019A80F /* coufenzi_c@2x.png in Resources */,
-				0256865F1C643CF400C9F1A3 /* EditLibraryViewCell.xib in Resources */,
 				065B1C561C64EEB50019A80F /* setting@2x.png in Resources */,
 				021C576B1C57774F0072D38D /* Animation.xib in Resources */,
 				065B1C471C64EEB50019A80F /* arr_right@2x.png in Resources */,
@@ -1325,7 +1324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.Wao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f7a65979-9c46-45de-81cd-b7fc59e370fc";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = ./Wao/BridgingHeader.h;
 			};
 			name = Debug;

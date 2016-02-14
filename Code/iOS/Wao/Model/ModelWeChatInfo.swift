@@ -17,13 +17,11 @@ class ModelWeChatInfo: NSObject {
     var headimgurl: String
     
     init(nickname: String, openid: String, province: String, sex: Int ,headimgurl: String){
-        
         self.nickname = nickname
         self.openid = openid
         self.province = province
         self.sex = sex
         self.headimgurl = headimgurl
-        
         super.init()
         
     }

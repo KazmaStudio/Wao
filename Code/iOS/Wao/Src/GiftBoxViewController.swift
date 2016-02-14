@@ -22,7 +22,7 @@ class GiftBoxViewController: UIViewController {
         super.viewDidLoad()
 
         headView = UIView()
-        headView.frame = CGRectMake(0, 0, view.frame.width, 41)
+        headView.frame = CGRectMake(0, 64, view.frame.width, 41)
         headView.backgroundColor = UIColor.whiteColor()
         view.addSubview(headView)
         

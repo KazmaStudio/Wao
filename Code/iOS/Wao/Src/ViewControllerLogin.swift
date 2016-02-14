@@ -47,6 +47,11 @@ class ViewControllerLogin: UIViewController, WXApiDelegate{
         NSNotificationCenter.defaultCenter().removeObserver(self, name: "WX_CODE", object: nil)
     }
 
+    @IBAction func signUpAction(sender: AnyObject) {
+        let registerVC = UIStoryboard.init(name: "SBRegisterMobile", bundle: nil).instantiateViewControllerWithIdentifier("viewControllerRegisterMobile") as! ViewControllerRegisterMobile
+        navigationController?.pushViewController(registerVC, animated: true)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
