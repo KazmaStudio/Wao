@@ -83,7 +83,7 @@ class WishViewControllerMain: UIViewController {
         
         footerView = UIView()
         footerView.frame = CGRectMake(0, view.frame.height - 109, view.frame.width, 60)
-        footerView.backgroundColor = UIColor.whiteColor()
+        footerView.backgroundColor = UIColor.groupTableViewBackgroundColor()
         view.addSubview(footerView)
         
         addFooterButton()

@@ -6,7 +6,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--绑定信息-->
+        <!--创建账号-->
         <scene sceneID="FIy-IE-1zO">
             <objects>
                 <viewController storyboardIdentifier="viewControllerRegisterMobile" id="iYX-pR-ISh" customClass="ViewControllerRegisterMobile" customModule="Wao" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,6 +44,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4w-AR-fho">
                                                 <rect key="frame" x="8" y="50" width="504" height="1"/>
@@ -52,7 +55,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="3Vp-br-BQY"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aGy-WS-9CY">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="aGy-WS-9CY">
                                                 <rect key="frame" x="8" y="51" width="504" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -60,6 +63,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uty-3R-ysC">
                                                 <rect key="frame" x="8" y="101" width="504" height="1"/>
@@ -68,7 +74,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="EzI-VG-hL3"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9kq-fB-6Pz">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入验证码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9kq-fB-6Pz">
                                                 <rect key="frame" x="8" y="102" width="396" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -76,6 +82,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Umg-J2-ag1">
                                                 <rect key="frame" x="8" y="152" width="504" height="1"/>
@@ -84,7 +93,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="Bj3-SW-HRy"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cn1-Xs-J4O">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Cn1-Xs-J4O">
                                                 <rect key="frame" x="8" y="153" width="504" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -92,6 +101,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNb-xU-eEk">
                                                 <rect key="frame" x="8" y="203" width="504" height="1"/>
@@ -100,11 +112,14 @@
                                                     <constraint firstAttribute="height" constant="1" id="vkr-2z-i6U"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="重复密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQq-4u-q1s">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="重复密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jQq-4u-q1s">
                                                 <rect key="frame" x="8" y="204" width="504" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsJ-Q6-Cqa">
                                                 <rect key="frame" x="421" y="109" width="91" height="36"/>
@@ -224,10 +239,12 @@
                             <constraint firstItem="dHx-wa-XZu" firstAttribute="centerX" secondItem="oV7-HN-iVN" secondAttribute="centerX" id="vla-wJ-Tax"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="绑定信息" id="QtG-YJ-Suh"/>
+                    <navigationItem key="navigationItem" title="创建账号" id="QtG-YJ-Suh"/>
                     <connections>
                         <outlet property="imageViewAvatar" destination="QVl-a6-Yle" id="UVp-YX-5Vb"/>
+                        <outlet property="scrollView" destination="dHx-wa-XZu" id="hIa-m2-hk1"/>
                         <outlet property="textFieldNickname" destination="z1p-GT-WLC" id="q3h-sO-ztm"/>
+                        <outlet property="textFieldPhone" destination="aGy-WS-9CY" id="E2A-jC-taz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sd2-Es-HUM" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -23,8 +23,8 @@ class GiftBoxViewController: UIViewController {
 
         headView = UIView()
         headView.frame = CGRectMake(0, 64, view.frame.width, 41)
-        headView.backgroundColor = UIColor.whiteColor()
-        view.addSubview(headView)
+        headView.backgroundColor = UIColor.redColor()
+//        view.addSubview(headView)
         
         receiveBtn = UIButton()
         receiveBtn.frame = CGRectMake(0, 0, view.frame.width * 0.5, 41)

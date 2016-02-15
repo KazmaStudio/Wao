@@ -11,9 +11,17 @@ import Kingfisher
 
 class ViewControllerRegisterMobile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var imageViewAvatar: UIImageView!
 
     @IBOutlet weak var textFieldNickname: UITextField!
+    
+    
+    @IBOutlet weak var textFieldPhone: UITextField!
+    
+    
+    
     
     let imagePickerController: UIImagePickerController = UIImagePickerController()
     var isFullScreen: Bool = false
@@ -38,9 +46,8 @@ class ViewControllerRegisterMobile: UIViewController, UIImagePickerControllerDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        imageViewAvatar.hidden = true
-//        textFieldNickname.hidden = true
+        scrollView.keyboardDismissMode = .OnDrag
+
         
 //        let weChatInfo = userDefaults.objectForKey(KEY_WECHATINFO)
         

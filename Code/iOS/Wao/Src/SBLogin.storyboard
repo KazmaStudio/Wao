@@ -48,26 +48,18 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="Pui-Qr-ddw" firstAttribute="top" secondItem="uzJ-8m-xRQ" secondAttribute="top" id="BQg-wP-nU7"/>
                                                     <constraint firstItem="Rnj-4m-ove" firstAttribute="top" secondItem="uzJ-8m-xRQ" secondAttribute="top" id="Bkw-uc-tEe"/>
                                                     <constraint firstAttribute="height" constant="40" id="F43-f9-hEo"/>
                                                     <constraint firstAttribute="trailing" secondItem="Rnj-4m-ove" secondAttribute="trailing" id="JDF-OB-EU9"/>
                                                     <constraint firstItem="Pui-Qr-ddw" firstAttribute="leading" secondItem="uzJ-8m-xRQ" secondAttribute="leading" constant="15" id="fRY-fe-voB"/>
                                                     <constraint firstItem="Pui-Qr-ddw" firstAttribute="centerY" secondItem="uzJ-8m-xRQ" secondAttribute="centerY" id="gWt-Z7-GJP"/>
                                                     <constraint firstItem="Rnj-4m-ove" firstAttribute="leading" secondItem="Pui-Qr-ddw" secondAttribute="trailing" constant="33" id="i3g-Wd-efo"/>
-                                                    <constraint firstItem="Rnj-4m-ove" firstAttribute="leading" secondItem="Pui-Qr-ddw" secondAttribute="leading" id="ufO-SZ-0ZK"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="BQg-wP-nU7"/>
-                                                        <exclude reference="ufO-SZ-0ZK"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PR-Co-ROz">
                                                 <rect key="frame" x="40" y="102" width="520" height="40"/>
@@ -93,7 +85,6 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="A8e-O6-ntd" firstAttribute="top" secondItem="2PR-Co-ROz" secondAttribute="top" id="Dsr-lH-xIK"/>
                                                     <constraint firstItem="9QD-TH-NgX" firstAttribute="top" secondItem="2PR-Co-ROz" secondAttribute="top" id="U58-4L-s9K"/>
                                                     <constraint firstItem="A8e-O6-ntd" firstAttribute="centerY" secondItem="2PR-Co-ROz" secondAttribute="centerY" id="WFV-PR-mV3"/>
                                                     <constraint firstAttribute="height" constant="40" id="cix-3Z-o01"/>
@@ -106,18 +97,12 @@
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="Dsr-lH-xIK"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr1-Td-H4f" customClass="CFButton" customModule="Wao" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="184" width="520" height="40"/>
                                                 <color key="backgroundColor" red="0.86274509799999999" green="0.30196078430000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="6N2-rY-ppV"/>
-                                                    <constraint firstAttribute="width" constant="233" id="Ug7-5s-5vT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="登    录">
@@ -132,11 +117,6 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="lighter" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="Ug7-5s-5vT"/>
-                                                    </mask>
-                                                </variation>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKN-lv-ej4">
                                                 <rect key="frame" x="260" y="232" width="80" height="30"/>
@@ -290,23 +270,13 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.43137254901960786" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="RRI-wM-UI5" secondAttribute="bottom" id="7kv-Z3-9mT"/>
-                                    <constraint firstAttribute="bottom" secondItem="RRI-wM-UI5" secondAttribute="bottom" id="9bl-Ol-55s"/>
                                     <constraint firstItem="BcA-43-s6q" firstAttribute="leading" secondItem="qdy-Oe-VJA" secondAttribute="leading" id="N5f-oq-Yn1"/>
                                     <constraint firstItem="RRI-wM-UI5" firstAttribute="leading" secondItem="qdy-Oe-VJA" secondAttribute="leading" id="OEP-BW-xBO"/>
-                                    <constraint firstItem="RRI-wM-UI5" firstAttribute="top" secondItem="BcA-43-s6q" secondAttribute="bottom" constant="20" id="RJe-Xd-HwU"/>
                                     <constraint firstAttribute="bottom" secondItem="BcA-43-s6q" secondAttribute="bottom" constant="212" id="WAs-Ig-kd7"/>
                                     <constraint firstAttribute="trailing" secondItem="RRI-wM-UI5" secondAttribute="trailing" id="hbn-uf-A8G"/>
                                     <constraint firstItem="BcA-43-s6q" firstAttribute="top" secondItem="qdy-Oe-VJA" secondAttribute="top" constant="64" id="jQZ-Ai-Erp"/>
                                     <constraint firstAttribute="trailing" secondItem="BcA-43-s6q" secondAttribute="trailing" id="szW-3e-UkC"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="7kv-Z3-9mT"/>
-                                        <exclude reference="9bl-Ol-55s"/>
-                                        <exclude reference="RJe-Xd-HwU"/>
-                                    </mask>
-                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

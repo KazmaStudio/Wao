@@ -48,7 +48,7 @@ class TableViewControllerMine: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.section == 0 || indexPath.section == 2{
+        if indexPath.section == 0 {
 
             var storyboardLogin: UIStoryboard
             storyboardLogin = UIStoryboard.init(name: "SBLogin", bundle: nil)
@@ -73,10 +73,14 @@ class TableViewControllerMine: UITableViewController {
             let bagVC = UIStoryboard(name: "SBMine", bundle: nil).instantiateViewControllerWithIdentifier("bag") as! BagViewController
             bagVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(bagVC, animated: true)
-        } else {
+        } else if indexPath.section == 1 && indexPath.row == 3{
             let collectVC = UIStoryboard(name: "SBMine", bundle: nil).instantiateViewControllerWithIdentifier("collect") as! CollectViewController
             collectVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(collectVC, animated: true)
+        } else if indexPath.section == 2 && indexPath.row == 0{
+            let SZTableVC = UIStoryboard(name: "SZMain", bundle: nil).instantiateViewControllerWithIdentifier("SZtable") as! SZTableViewController
+            SZTableVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(SZTableVC, animated: true)
         }
         
     }

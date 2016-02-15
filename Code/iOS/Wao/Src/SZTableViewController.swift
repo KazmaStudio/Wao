@@ -10,14 +10,11 @@ import UIKit
 
 class SZTableViewController: UITableViewController {
 
+    @IBOutlet var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableview.backgroundColor = UIColor.groupTableViewBackgroundColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,8 +47,10 @@ class SZTableViewController: UITableViewController {
     
         
         button = UIButton.init(frame: CGRectMake(15, 15, self.view.frame.width-30, 40))
-        button.setTitle("2222", forState: UIControlState.Normal)
-        button.backgroundColor = UIColor.redColor()
+        button.setTitle("登出", forState: UIControlState.Normal)
+        button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        button.cornerRadius = 6
+        button.backgroundColor = UIColor.whiteColor()
         view.addSubview(button)
         
         return view

@@ -10,9 +10,16 @@ import UIKit
 
 class LitWishTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var backGiftBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        backGiftBtn.borderColor = UIColor.redColor()
+        
+        
+        
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
