@@ -22,9 +22,9 @@ class GiftBoxViewController: UIViewController {
         super.viewDidLoad()
 
         headView = UIView()
-        headView.frame = CGRectMake(0, 64, view.frame.width, 41)
+        headView.frame = CGRectMake(0, 0, view.frame.width, 41)
         headView.backgroundColor = UIColor.redColor()
-//        view.addSubview(headView)
+        view.addSubview(headView)
         
         receiveBtn = UIButton()
         receiveBtn.frame = CGRectMake(0, 0, view.frame.width * 0.5, 41)
@@ -70,7 +70,12 @@ extension GiftBoxViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 1
+        return 0.1
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
     
 }

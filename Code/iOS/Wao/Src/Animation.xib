@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -53,8 +53,20 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mox-VJ-QPG">
+                                            <rect key="frame" x="0.0" y="64" width="375" height="1"/>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="S3q-tP-SJm"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="oZ1-ci-dfg" firstAttribute="top" secondItem="hsn-vG-ZZ3" secondAttribute="top" constant="10" id="6Yk-1R-57F"/>
                                         <constraint firstItem="PhI-my-bjp" firstAttribute="top" secondItem="oZ1-ci-dfg" secondAttribute="bottom" constant="10" id="AH0-JN-vDY"/>
@@ -63,10 +75,13 @@
                                         <constraint firstAttribute="height" constant="65" id="Kto-UB-hKo"/>
                                         <constraint firstItem="Nb9-dZ-rYl" firstAttribute="top" secondItem="oZ1-ci-dfg" secondAttribute="bottom" constant="10" id="NtM-EE-dba"/>
                                         <constraint firstItem="rEP-Re-sxf" firstAttribute="top" secondItem="hsn-vG-ZZ3" secondAttribute="top" constant="-50" id="Rrb-1U-HJA"/>
+                                        <constraint firstAttribute="bottom" secondItem="mox-VJ-QPG" secondAttribute="bottom" id="UIj-yp-N4K"/>
                                         <constraint firstItem="SmR-Dp-UEv" firstAttribute="top" secondItem="hsn-vG-ZZ3" secondAttribute="top" constant="10" id="VxE-E5-nIq"/>
                                         <constraint firstItem="rEP-Re-sxf" firstAttribute="leading" secondItem="hsn-vG-ZZ3" secondAttribute="leading" constant="15" id="dnO-1Z-WQB"/>
                                         <constraint firstAttribute="trailing" secondItem="SmR-Dp-UEv" secondAttribute="trailing" constant="10" id="s0w-un-RHh"/>
                                         <constraint firstItem="oZ1-ci-dfg" firstAttribute="leading" secondItem="rEP-Re-sxf" secondAttribute="trailing" constant="10" id="w8s-9u-fJU"/>
+                                        <constraint firstAttribute="trailing" secondItem="mox-VJ-QPG" secondAttribute="trailing" id="z2I-a5-aUn"/>
+                                        <constraint firstItem="mox-VJ-QPG" firstAttribute="leading" secondItem="hsn-vG-ZZ3" secondAttribute="leading" id="zJo-fP-dG7"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkB-8a-q5a">
@@ -84,25 +99,25 @@
                                             </state>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he5-7c-DrM">
-                                            <rect key="frame" x="15" y="0.0" width="35" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="34.5" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" red="1" green="0.32941176470588235" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 256.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVb-YR-U8w">
-                                            <rect key="frame" x="58" y="0.0" width="70" height="43"/>
+                                            <rect key="frame" x="57" y="0.0" width="70" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="0.32941176470588235" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-DI-Bl4">
-                                            <rect key="frame" x="138" y="0.0" width="21" height="43"/>
+                                            <rect key="frame" x="137" y="0.0" width="21" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="he5-7c-DrM" firstAttribute="leading" secondItem="KkB-8a-q5a" secondAttribute="leading" constant="15" id="AiM-GM-whK"/>
                                         <constraint firstItem="he5-7c-DrM" firstAttribute="top" secondItem="KkB-8a-q5a" secondAttribute="top" id="DRy-bH-9El"/>

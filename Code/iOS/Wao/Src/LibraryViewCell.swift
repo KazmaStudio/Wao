@@ -10,11 +10,9 @@ import UIKit
 
 class LibraryViewCell: UITableViewCell {
 
-    
-    
-    
-    
-    
+
+    @IBOutlet weak var smailImage: UIImageView!
+ 
     @IBOutlet weak var numberLab: UILabel!
     @IBOutlet weak var timeLab: UILabel!
     @IBOutlet weak var fromLab: UILabel!
@@ -25,10 +23,5 @@ class LibraryViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
 
 }

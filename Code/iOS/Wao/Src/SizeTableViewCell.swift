@@ -32,7 +32,7 @@ class SizeTableViewCell: UITableViewCell {
         height = 15
         for var i = 0; i < butArray.count; i++ {
             let but = UIButton()
-           but.backgroundColor = UIColor.groupTableViewBackgroundColor()
+           but.backgroundColor = UIColor(red: 244/255, green: 244/255, blue: 244/255, alpha: 1)
             let ns:NSString
             ns = butArray[i] as! NSString
             but.setTitle(ns as String, forState: .Normal)
@@ -44,7 +44,7 @@ class SizeTableViewCell: UITableViewCell {
             )
             if sizesum + size + 20 > UIScreen.mainScreen().bounds.width{
                 height = height + 40
-                sizesum = 15
+                sizesum = 60
             }
             but.frame = CGRectMake(sizesum, height, size , 30)
             but.addTarget(self, action: "buttonAction:", forControlEvents: .TouchUpInside)

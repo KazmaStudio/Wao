@@ -32,6 +32,9 @@ class AnimationView: UIView {
     
     override func drawRect(rect: CGRect) {
         
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleTappressGesture", name: "animation", object: nil)
+        
+        
         typeTableView.estimatedRowHeight = 100
         typeTableView.rowHeight = UITableViewAutomaticDimension
         numberChange.hidden = true
@@ -96,7 +99,8 @@ class AnimationView: UIView {
     func handleTappressGesture(){
         UIView.animateWithDuration(0.5, animations: hideAnimation, completion: {finished in
             self.hidden = true
-            
+            NSUserDefaults.standardUserDefaults().setObject("finish", forKey: "EditOrFinish")
+//            NSNotificationCenter.defaultCenter()
         })
     }
     
@@ -133,10 +137,6 @@ extension AnimationView:UITableViewDataSource,UITableViewDelegate{
             
             return cell
         }
-        
-        
-        
-        
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -150,6 +150,10 @@ extension AnimationView:UITableViewDataSource,UITableViewDelegate{
             return 80
         }
         
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 1
     }
     
     

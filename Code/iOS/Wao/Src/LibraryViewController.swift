@@ -13,12 +13,16 @@ class LibraryViewController: UIViewController {
     var isOpen: Bool!
     var selectedIndex: NSInteger!
     var currentSelection: Int!
+    var path: NSIndexPath!
+    var height: CGFloat!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        path = NSIndexPath()
         isOpen = true
         currentSelection = -1
+        height = 126
     }
 
 
@@ -30,43 +34,66 @@ extension LibraryViewController: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("librarycell") as! LibraryViewCell
-        
-        if indexPath.row == 0{
-            cell.numberLab.text = "123123123123"
-            cell.timeLab.text = "141241241241"
-            cell.fromLab.text = "14124124"
-        }
-        
-        if indexPath == currentSelection && !isOpen{
+        if indexPath == path && !isOpen{
+            cell.smailImage.image = UIImage(named: "arr_up")
             cell.numberLab.hidden = false
             cell.timeLab.hidden = false
             cell.fromLab.hidden = false
         } else {
-            
+            cell.smailImage.image = UIImage(named: "arr_down")
             cell.numberLab.hidden = true
             cell.timeLab.hidden = true
             cell.fromLab.hidden = true
         }
-        
-        
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if currentSelection == indexPath.row{
-            currentSelection = -1
-        } else {
-            currentSelection = indexPath.row
+//        if currentSelection == indexPath.row{
+//            currentSelection = -1
+//        } else {
+//            currentSelection = indexPath.row
+//        }
+        
+        path = indexPath
+        
+        if isOpen == true{
+            
+//            tableView.beginUpdates()
+            isOpen = false
+//            UIView.animateWithDuration(3, animations: { () -> Void in
+                self.height = 126
+                
+                
+//            })
+//            tableView.deselectRowAtIndexPath(indexPath, animated: false)
+            
+//            tableView.endUpdates()
+            tableView.reloadData()
+            
+        }else{
+
+            isOpen = true
+//            tableView.beginUpdates()
+//            UIView.animateWithDuration(3, animations: { () -> Void in
+                self.height = 63
+                
+                
+//            })
+//            tableView.deselectRowAtIndexPath(indexPath, animated: false)
+            
+//            tableView.endUpdates()
+            tableView.reloadData()
         }
         
-        tableView.beginUpdates()
-        tableView.endUpdates()
+        
         
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if  indexPath.row == currentSelection {
-            return 126
+        if  indexPath == path {
+            return height
             
         }else{
             return 63
@@ -74,7 +101,7 @@ extension LibraryViewController: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 1
+        return 0.1
     }
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 15

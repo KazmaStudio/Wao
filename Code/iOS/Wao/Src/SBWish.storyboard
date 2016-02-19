@@ -161,7 +161,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dRe-xG-ZFU" firstAttribute="top" secondItem="Xcq-bs-ttE" secondAttribute="top" id="P99-Mq-8Ri"/>
                             <constraint firstItem="wF5-EA-ZMb" firstAttribute="top" secondItem="dRe-xG-ZFU" secondAttribute="bottom" constant="60" id="Pvk-Cr-euI"/>

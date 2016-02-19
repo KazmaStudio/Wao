@@ -32,6 +32,8 @@ extension CollectViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("collectCell") as! CollectViewCell
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+
         return cell
     }
     

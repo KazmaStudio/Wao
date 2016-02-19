@@ -58,7 +58,7 @@ class ZTViewController: UIViewController,UITableViewDataSource,UITableViewDelega
         let cell = tableView.dequeueReusableCellWithIdentifier("TableViewCell", forIndexPath: indexPath) as! TableViewCell
         
         
-        print(heightList[indexPath.row] as! CGFloat)
+//        print(heightList[indexPath.row] as! CGFloat)
         
         cell.GiftDescribe.text = dataList[indexPath.row] as! String
         cell.cHeight.constant = heightList[indexPath.row] as! CGFloat

@@ -83,6 +83,21 @@ class ViewControllerMain: UIViewController ,UIScrollViewDelegate{
         self.navigationController?.pushViewController(viewController, animated: true)
         
     }
+    
+    @IBAction func backTopAction(sender: AnyObject) {
+        
+        CollectionView.setContentOffset(CGPointMake(0, -15), animated: true)
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
 
 }
 

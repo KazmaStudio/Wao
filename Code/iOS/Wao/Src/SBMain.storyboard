@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="NJ3-Qc-Fuo">
-                                <rect key="frame" x="489" y="271" width="111" height="37"/>
+                                <rect key="frame" x="489" y="243" width="111" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="111" id="1lS-Fg-meG"/>
                                     <constraint firstAttribute="height" constant="37" id="BjX-AG-0gF"/>
                                 </constraints>
                             </pageControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-RQ-oTr">
-                                <rect key="frame" x="0.0" y="308" width="600" height="292"/>
+                                <rect key="frame" x="0.0" y="280" width="600" height="320"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HKe-cs-rtW" customClass="WaterLayoutMain" customModule="Wao" customModuleProvider="target">
                                     <size key="itemSize" width="50" height="50"/>
@@ -51,14 +51,21 @@
                                 </connections>
                             </collectionView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-y5-k3Q">
-                                <rect key="frame" x="0.0" y="64" width="600" height="244"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="216"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="GN7-y5-k3Q" secondAttribute="height" multiplier="640:260" id="t2x-v1-fis"/>
+                                    <constraint firstAttribute="width" secondItem="GN7-y5-k3Q" secondAttribute="height" multiplier="750:270" id="t2x-v1-fis"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="vHe-75-SOt" id="O93-1G-IcP"/>
                                 </connections>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UA3-C4-hLD">
+                                <rect key="frame" x="524" y="545" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backTopAction:" destination="vHe-75-SOt" eventType="touchUpInside" id="RmX-o9-iSW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -66,8 +73,10 @@
                             <constraint firstItem="NJ3-Qc-Fuo" firstAttribute="bottom" secondItem="GN7-y5-k3Q" secondAttribute="bottom" id="9g0-eT-puA"/>
                             <constraint firstItem="bXl-o7-US2" firstAttribute="top" secondItem="fa4-RQ-oTr" secondAttribute="bottom" id="GpP-EG-dvx"/>
                             <constraint firstItem="GN7-y5-k3Q" firstAttribute="top" secondItem="3Q2-Lj-cWS" secondAttribute="bottom" id="WrG-Vy-Og0"/>
+                            <constraint firstAttribute="trailing" secondItem="UA3-C4-hLD" secondAttribute="trailing" constant="30" id="bGO-dZ-aWb"/>
                             <constraint firstItem="fa4-RQ-oTr" firstAttribute="width" secondItem="1kr-4h-oDd" secondAttribute="width" id="gRM-NC-9Jr"/>
                             <constraint firstItem="GN7-y5-k3Q" firstAttribute="leading" secondItem="1kr-4h-oDd" secondAttribute="leading" id="qe4-SS-EDV"/>
+                            <constraint firstItem="bXl-o7-US2" firstAttribute="top" secondItem="UA3-C4-hLD" secondAttribute="bottom" constant="25" id="smz-rb-Y4Z"/>
                             <constraint firstItem="fa4-RQ-oTr" firstAttribute="top" secondItem="GN7-y5-k3Q" secondAttribute="bottom" id="vo0-D6-JFl"/>
                             <constraint firstAttribute="trailing" secondItem="NJ3-Qc-Fuo" secondAttribute="trailing" id="xF2-g8-4Zi"/>
                             <constraint firstItem="GN7-y5-k3Q" firstAttribute="width" secondItem="1kr-4h-oDd" secondAttribute="width" id="zIt-jI-XR9"/>

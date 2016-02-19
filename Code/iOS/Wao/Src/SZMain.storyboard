@@ -30,19 +30,16 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yaC-bm-GTt">
-                                                    <rect key="frame" x="529" y="7" width="51" height="31"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="31" id="RyB-6J-4Ew"/>
-                                                        <constraint firstAttribute="width" constant="49" id="rZX-jy-fuh"/>
-                                                    </constraints>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHa-lw-dgr">
+                                                    <rect key="frame" x="534" y="7" width="51" height="31"/>
+                                                    <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="0pF-Vj-ut4" firstAttribute="top" secondItem="OaI-dK-iWJ" secondAttribute="topMargin" constant="5" id="3Vr-DI-83z"/>
-                                                <constraint firstItem="yaC-bm-GTt" firstAttribute="centerY" secondItem="OaI-dK-iWJ" secondAttribute="centerY" id="Fm9-94-JXw"/>
                                                 <constraint firstItem="0pF-Vj-ut4" firstAttribute="leading" secondItem="OaI-dK-iWJ" secondAttribute="leadingMargin" constant="6" id="PjI-kL-PxD"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="yaC-bm-GTt" secondAttribute="trailing" constant="14" id="eNF-PR-HEq"/>
+                                                <constraint firstItem="LHa-lw-dgr" firstAttribute="centerY" secondItem="OaI-dK-iWJ" secondAttribute="centerY" id="QpU-i3-KxK"/>
+                                                <constraint firstAttribute="trailing" secondItem="LHa-lw-dgr" secondAttribute="trailing" constant="17" id="V9y-OI-AFK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -98,7 +95,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="邀请好友（邀请有理）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ZN-Dj-NjW">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="邀请好友(邀请有礼)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ZN-Dj-NjW">
                                                     <rect key="frame" x="15" y="0.0" width="550" height="44.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -151,6 +148,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="mainSwitch" destination="LHa-lw-dgr" id="dxR-hs-Vr5"/>
                         <outlet property="tableview" destination="BU0-qe-Fkj" id="s57-vu-pFa"/>
                     </connections>
                 </tableViewController>

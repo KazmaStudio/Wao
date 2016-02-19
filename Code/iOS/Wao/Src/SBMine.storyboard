@@ -196,7 +196,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6SE-DO-Xqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="858"/>
+            <point key="canvasLocation" x="426" y="851"/>
         </scene>
         <!--Gift Box View Controller-->
         <scene sceneID="Lwl-V3-6gO">
@@ -212,7 +212,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="63" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="8a5-oC-0Ls">
                                 <rect key="frame" x="0.0" y="40" width="600" height="560"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="giftCell" rowHeight="63" id="yNA-Fk-MPh" customClass="GiftBoxViewCell" customModule="Wao" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="49.5" width="600" height="63"/>
@@ -231,7 +231,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STARBUCKS 星星马克杯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aw-i6-eH0">
                                                     <rect key="frame" x="75" y="10" width="113.5" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间: 2015.12.23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m6-Fi-jeH">
@@ -242,7 +242,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="来自: 顾小云" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-eD-Wvd">
                                                     <rect key="frame" x="75" y="44" width="56.5" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -268,9 +268,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="8a5-oC-0Ls" secondAttribute="trailing" id="6hv-sT-jZH"/>
-                            <constraint firstItem="8a5-oC-0Ls" firstAttribute="top" secondItem="8Fa-GB-KZ5" secondAttribute="top" constant="40" id="BE4-qa-TuT"/>
                             <constraint firstItem="BLQ-s6-H5i" firstAttribute="top" secondItem="8a5-oC-0Ls" secondAttribute="bottom" id="LKh-bP-ym8"/>
                             <constraint firstItem="8a5-oC-0Ls" firstAttribute="leading" secondItem="8Fa-GB-KZ5" secondAttribute="leading" id="Xls-xk-uhL"/>
+                            <constraint firstItem="8a5-oC-0Ls" firstAttribute="top" secondItem="8Fa-GB-KZ5" secondAttribute="top" constant="40" id="jyI-nj-dcN"/>
                         </constraints>
                     </view>
                     <connections>
@@ -279,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQK-7D-XzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="447" y="1514"/>
+            <point key="canvasLocation" x="426" y="1507"/>
         </scene>
         <!--Library View Controller-->
         <scene sceneID="y4b-Pk-5aK">
@@ -413,6 +413,7 @@
                                         <connections>
                                             <outlet property="fromLab" destination="rjP-yD-Sq0" id="XV9-1v-2YE"/>
                                             <outlet property="numberLab" destination="Q3M-40-SSg" id="URU-HL-NbZ"/>
+                                            <outlet property="smailImage" destination="Bnm-ds-T54" id="M1O-yk-1Fs"/>
                                             <outlet property="timeLab" destination="EVG-zA-9ng" id="fJa-Vc-aNw"/>
                                         </connections>
                                     </tableViewCell>
@@ -443,7 +444,121 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SxP-ax-vg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1354" y="858"/>
+            <point key="canvasLocation" x="1053" y="851"/>
+        </scene>
+        <!--Account View Controller-->
+        <scene sceneID="dXp-w7-x2N">
+            <objects>
+                <viewController storyboardIdentifier="account" id="Nii-t0-KMj" customClass="AccountViewController" customModule="Wao" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MOD-My-4Sy"/>
+                        <viewControllerLayoutGuide type="bottom" id="a7Q-OP-y0c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uG5-iQ-WTG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="45" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="L7Y-oB-Ia1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="accountCell" rowHeight="45" id="8hg-Mr-ssE" customClass="AccountViewCell" customModule="Wao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="49.5" width="600" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8hg-Mr-ssE" id="KFf-JX-fZR">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdt-mj-K8H">
+                                                    <rect key="frame" x="15" y="13.5" width="30" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="HJT-p8-lW4">
+                                                    <rect key="frame" x="522" y="2" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="UGF-Ks-RTt"/>
+                                                        <constraint firstAttribute="width" constant="40" id="lz7-Qh-gTK"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xdt-mj-K8H" firstAttribute="centerY" secondItem="KFf-JX-fZR" secondAttribute="centerY" id="4Zk-fV-Jrd"/>
+                                                <constraint firstAttribute="trailing" secondItem="HJT-p8-lW4" secondAttribute="trailing" constant="5" id="5Vn-yb-oTo"/>
+                                                <constraint firstItem="xdt-mj-K8H" firstAttribute="leading" secondItem="KFf-JX-fZR" secondAttribute="leading" constant="15" id="Ar0-q7-jxi"/>
+                                                <constraint firstItem="HJT-p8-lW4" firstAttribute="centerY" secondItem="KFf-JX-fZR" secondAttribute="centerY" id="f6X-f9-WNQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="headImage" destination="HJT-p8-lW4" id="MA9-sB-F5L"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="accountTwoCell" id="BFS-Ja-E48" customClass="AccountViewCell" customModule="Wao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="94.5" width="600" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BFS-Ja-E48" id="zyE-W1-GKP">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoD-DN-beZ">
+                                                    <rect key="frame" x="15" y="13" width="30" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小昭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yx-kX-4ZX">
+                                                    <rect key="frame" x="527" y="13.5" width="30" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FoD-DN-beZ" firstAttribute="centerY" secondItem="zyE-W1-GKP" secondAttribute="centerY" id="3pV-cx-gXR"/>
+                                                <constraint firstItem="9yx-kX-4ZX" firstAttribute="centerY" secondItem="zyE-W1-GKP" secondAttribute="centerY" id="8LD-ry-4Gv"/>
+                                                <constraint firstAttribute="trailing" secondItem="9yx-kX-4ZX" secondAttribute="trailing" constant="10" id="BCS-pm-sGX"/>
+                                                <constraint firstItem="FoD-DN-beZ" firstAttribute="leading" secondItem="zyE-W1-GKP" secondAttribute="leading" constant="15" id="bIL-7u-ZCj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailLabel" destination="9yx-kX-4ZX" id="2gr-FP-O5S"/>
+                                            <outlet property="titleLabel" destination="FoD-DN-beZ" id="7cE-6O-0Jt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nii-t0-KMj" id="4Ij-12-39c"/>
+                                    <outlet property="delegate" destination="Nii-t0-KMj" id="8kV-2I-5hU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a7Q-OP-y0c" firstAttribute="top" secondItem="L7Y-oB-Ia1" secondAttribute="bottom" id="AZe-4c-7Oz"/>
+                            <constraint firstItem="L7Y-oB-Ia1" firstAttribute="centerY" secondItem="uG5-iQ-WTG" secondAttribute="centerY" id="FdD-9g-HRu"/>
+                            <constraint firstAttribute="trailing" secondItem="L7Y-oB-Ia1" secondAttribute="trailing" id="YgN-WT-UWI"/>
+                            <constraint firstItem="L7Y-oB-Ia1" firstAttribute="leading" secondItem="uG5-iQ-WTG" secondAttribute="leading" id="l8y-pw-WfF"/>
+                            <constraint firstItem="L7Y-oB-Ia1" firstAttribute="top" secondItem="uG5-iQ-WTG" secondAttribute="top" id="mVX-qM-yVz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FdD-9g-HRu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="L7Y-oB-Ia1" id="ecJ-6R-Rv6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIa-or-LvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="851"/>
         </scene>
         <!--Collect View Controller-->
         <scene sceneID="HlT-9K-cCw">
@@ -459,7 +574,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="63" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="XTU-He-I02">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="collectCell" rowHeight="63" id="edR-LF-ZL6" customClass="CollectViewCell" customModule="Wao" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="49.5" width="600" height="63"/>
@@ -478,7 +593,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STARBUCKS 星星马克杯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtr-1R-SPq">
                                                     <rect key="frame" x="75" y="10" width="134.5" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 265.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2X-Rc-aJX">
@@ -565,7 +680,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sju-Bz-JFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1691" y="1514"/>
+            <point key="canvasLocation" x="1672" y="1507"/>
         </scene>
         <!--Bag View Controller-->
         <scene sceneID="Bad-1y-9rl">
@@ -581,7 +696,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="63" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-5j-FSF">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bagCell" rowHeight="63" id="2fR-Jj-UEe" customClass="BagViewCell" customModule="Wao" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="49.5" width="600" height="63"/>
@@ -600,7 +715,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STARBUCKS 星星马克杯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwb-iJ-k8m">
                                                     <rect key="frame" x="75" y="10" width="134.5" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 265.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvU-Ak-UvQ">
@@ -663,7 +778,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYq-N7-Z1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1069" y="1514"/>
+            <point key="canvasLocation" x="1053" y="1507"/>
         </scene>
     </scenes>
     <resources>

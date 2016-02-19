@@ -13,11 +13,6 @@ class TableViewControllerMine: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func didReceiveMemoryWarning() {
@@ -81,6 +76,10 @@ class TableViewControllerMine: UITableViewController {
             let SZTableVC = UIStoryboard(name: "SZMain", bundle: nil).instantiateViewControllerWithIdentifier("SZtable") as! SZTableViewController
             SZTableVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(SZTableVC, animated: true)
+        } else if indexPath.section == 2 && indexPath.row == 1{
+            let accountVC = UIStoryboard(name: "SBMine", bundle: nil).instantiateViewControllerWithIdentifier("account") as! AccountViewController
+            accountVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(accountVC, animated: true)
         }
         
     }

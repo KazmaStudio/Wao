@@ -258,17 +258,36 @@ extension WishViewControllerMain:UITableViewDataSource,UITableViewDelegate{
             appsArray.removeObjectAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Top)
         }
+        
+        
+        
         tableView.reloadData()
         
     }
     
-    func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
-        
-        return "删除"
-    }
     func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
         return UITableViewCellEditingStyle.Delete
     }
+    
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        
+        
+        
+        var deleteRowAction = UITableViewRowAction()
+        deleteRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.Destructive, title: "删除", handler: { (UITableViewRowAction, NSIndexPath) -> Void in
+            self.appsArray.removeObjectAtIndex(indexPath.row)
+            
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation:
+            UITableViewRowAnimation.Automatic)
+        
+        })
+
+        deleteRowAction.backgroundColor = UIColor(red: 119/255, green: 132/255, blue: 145/255, alpha: 1)
+        
+        return [deleteRowAction]
+        
+    }
+    
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if segment.selectedSegmentIndex == 0{

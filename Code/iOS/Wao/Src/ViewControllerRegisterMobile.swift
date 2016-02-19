@@ -12,12 +12,8 @@ import Kingfisher
 class ViewControllerRegisterMobile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet weak var scrollView: UIScrollView!
-    
     @IBOutlet weak var imageViewAvatar: UIImageView!
-
     @IBOutlet weak var textFieldNickname: UITextField!
-    
-    
     @IBOutlet weak var textFieldPhone: UITextField!
     
     
