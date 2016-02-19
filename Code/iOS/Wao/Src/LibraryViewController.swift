@@ -50,40 +50,17 @@ extension LibraryViewController: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        if currentSelection == indexPath.row{
-//            currentSelection = -1
-//        } else {
-//            currentSelection = indexPath.row
-//        }
         
         path = indexPath
         
         if isOpen == true{
-            
-//            tableView.beginUpdates()
             isOpen = false
-//            UIView.animateWithDuration(3, animations: { () -> Void in
                 self.height = 126
-                
-                
-//            })
-//            tableView.deselectRowAtIndexPath(indexPath, animated: false)
-            
-//            tableView.endUpdates()
             tableView.reloadData()
             
         }else{
-
             isOpen = true
-//            tableView.beginUpdates()
-//            UIView.animateWithDuration(3, animations: { () -> Void in
                 self.height = 63
-                
-                
-//            })
-//            tableView.deselectRowAtIndexPath(indexPath, animated: false)
-            
-//            tableView.endUpdates()
             tableView.reloadData()
         }
         

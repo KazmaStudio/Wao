@@ -226,6 +226,7 @@
 		021C57721C59B2AA0072D38D /* SizeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeTableViewCell.swift; sourceTree = "<group>"; };
 		021C57731C59B2AA0072D38D /* SizeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SizeTableViewCell.xib; sourceTree = "<group>"; };
 		021C57761C5A03EB0072D38D /* UIButton+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Custom.swift"; sourceTree = "<group>"; };
+		0230749F1C76EEC00048903B /* Wao.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Wao.entitlements; sourceTree = "<group>"; };
 		025686331C60989E00C9F1A3 /* NumberTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTableCell.swift; sourceTree = "<group>"; };
 		025686341C60989E00C9F1A3 /* NumberTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberTableCell.xib; sourceTree = "<group>"; };
 		025686381C60A54800C9F1A3 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
@@ -669,6 +670,7 @@
 		06AEAA6F1C365AD9008ED5CF /* Wao */ = {
 			isa = PBXGroup;
 			children = (
+				0230749F1C76EEC00048903B /* Wao.entitlements */,
 				0607B5A01C428295002A508A /* Resource */,
 				06C9D2301C3F982F00B7F8E5 /* Model */,
 				06AEAAAF1C365DE3008ED5CF /* Src */,
@@ -963,7 +965,12 @@
 				TargetAttributes = {
 					06AEAA6C1C365AD9008ED5CF = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = H6XW4S2SCW;
+						DevelopmentTeam = ASDHZ8W35W;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
 					};
 					06AEAA801C365AD9008ED5CF = {
 						CreatedOnToolsVersion = 7.2;
@@ -1331,6 +1338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Wao/Wao.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1357,6 +1365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Wao/Wao.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -22,7 +22,7 @@ class GiftBoxViewController: UIViewController {
         super.viewDidLoad()
 
         headView = UIView()
-        headView.frame = CGRectMake(0, 0, view.frame.width, 41)
+        headView.frame = CGRectMake(0, 64, view.frame.width, 41)
         headView.backgroundColor = UIColor.redColor()
         view.addSubview(headView)
         
@@ -43,6 +43,25 @@ class GiftBoxViewController: UIViewController {
         headView.addSubview(giveOutBtn)
         
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage.init(named:"navi.png"), forBarMetrics: UIBarMetrics.Default)
+        
+        self.navigationController!.navigationBar.shadowImage = UIImage.init()
+        
+        self.navigationController!.navigationBar.translucent = true;
+        self.navigationController!.view.backgroundColor = UIColor.clearColor()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage.init(named: "navi.png"), forBarMetrics: UIBarMetrics.Default)
+        
+        self.navigationController!.navigationBar.shadowImage = nil
+        
+        self.navigationController!.navigationBar.translucent = true;
+        self.navigationController!.view.backgroundColor = UIColor.clearColor()
+    }
+    
     func receiveAction(button: UIButton){
         receiveRow = 8
         row = receiveRow

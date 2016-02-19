@@ -48,13 +48,6 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4w-AR-fho">
-                                                <rect key="frame" x="8" y="50" width="504" height="1"/>
-                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="3Vp-br-BQY"/>
-                                                </constraints>
-                                            </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="aGy-WS-9CY">
                                                 <rect key="frame" x="8" y="51" width="504" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,13 +60,6 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uty-3R-ysC">
-                                                <rect key="frame" x="8" y="101" width="504" height="1"/>
-                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="EzI-VG-hL3"/>
-                                                </constraints>
-                                            </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入验证码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9kq-fB-6Pz">
                                                 <rect key="frame" x="8" y="102" width="396" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,13 +72,6 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Umg-J2-ag1">
-                                                <rect key="frame" x="8" y="152" width="504" height="1"/>
-                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="Bj3-SW-HRy"/>
-                                                </constraints>
-                                            </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Cn1-Xs-J4O">
                                                 <rect key="frame" x="8" y="153" width="504" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,13 +84,6 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNb-xU-eEk">
-                                                <rect key="frame" x="8" y="203" width="504" height="1"/>
-                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="vkr-2z-i6U"/>
-                                                </constraints>
-                                            </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="重复密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jQq-4u-q1s">
                                                 <rect key="frame" x="8" y="204" width="504" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,26 +123,16 @@
                                             <constraint firstAttribute="height" constant="254" id="3mS-S5-cW7"/>
                                             <constraint firstItem="bq3-nX-EFH" firstAttribute="leading" secondItem="9kq-fB-6Pz" secondAttribute="trailing" constant="8" id="4P0-kw-WTh"/>
                                             <constraint firstAttribute="trailing" secondItem="9kq-fB-6Pz" secondAttribute="trailing" constant="8" id="5qb-pO-jHF"/>
-                                            <constraint firstItem="Uty-3R-ysC" firstAttribute="top" secondItem="aGy-WS-9CY" secondAttribute="bottom" id="660-Y4-8ja"/>
                                             <constraint firstItem="z1p-GT-WLC" firstAttribute="leading" secondItem="StO-3M-2Bl" secondAttribute="leading" constant="8" id="AMf-Mt-j1k"/>
                                             <constraint firstItem="VsJ-Q6-Cqa" firstAttribute="leading" secondItem="bq3-nX-EFH" secondAttribute="trailing" constant="8" id="ETV-9p-PuB"/>
-                                            <constraint firstItem="Uty-3R-ysC" firstAttribute="leading" secondItem="StO-3M-2Bl" secondAttribute="leading" constant="8" id="FyW-8w-2vX"/>
-                                            <constraint firstItem="i4w-AR-fho" firstAttribute="top" secondItem="z1p-GT-WLC" secondAttribute="bottom" id="IHk-0x-zhz"/>
                                             <constraint firstItem="Cn1-Xs-J4O" firstAttribute="top" secondItem="9kq-fB-6Pz" secondAttribute="bottom" constant="1" id="JWt-Yj-5dL"/>
                                             <constraint firstItem="VsJ-Q6-Cqa" firstAttribute="centerY" secondItem="StO-3M-2Bl" secondAttribute="centerY" id="Kc8-33-GrE"/>
-                                            <constraint firstAttribute="trailing" secondItem="i4w-AR-fho" secondAttribute="trailing" constant="8" id="KdJ-Be-xBm"/>
-                                            <constraint firstAttribute="trailing" secondItem="Umg-J2-ag1" secondAttribute="trailing" constant="8" id="LUH-Xs-1xf"/>
                                             <constraint firstItem="9kq-fB-6Pz" firstAttribute="leading" secondItem="StO-3M-2Bl" secondAttribute="leading" constant="8" id="RHW-x0-8OI"/>
-                                            <constraint firstItem="Umg-J2-ag1" firstAttribute="top" secondItem="9kq-fB-6Pz" secondAttribute="bottom" id="RjN-I3-xwb"/>
                                             <constraint firstItem="bq3-nX-EFH" firstAttribute="leading" secondItem="9kq-fB-6Pz" secondAttribute="trailing" constant="8" id="Rnz-7a-bmE"/>
                                             <constraint firstAttribute="trailing" secondItem="z1p-GT-WLC" secondAttribute="trailing" constant="8" id="V4V-Xa-pqd"/>
-                                            <constraint firstItem="i4w-AR-fho" firstAttribute="leading" secondItem="StO-3M-2Bl" secondAttribute="leading" constant="8" id="VV4-a2-FDt"/>
                                             <constraint firstItem="bq3-nX-EFH" firstAttribute="centerY" secondItem="StO-3M-2Bl" secondAttribute="centerY" id="aI3-y4-SIQ"/>
                                             <constraint firstItem="aGy-WS-9CY" firstAttribute="top" secondItem="z1p-GT-WLC" secondAttribute="bottom" constant="1" id="b9p-YZ-G1k"/>
-                                            <constraint firstItem="Umg-J2-ag1" firstAttribute="leading" secondItem="StO-3M-2Bl" secondAttribute="leading" constant="8" id="cDG-MX-QQF"/>
-                                            <constraint firstAttribute="trailing" secondItem="Uty-3R-ysC" secondAttribute="trailing" constant="8" id="fMb-Ej-Fmy"/>
                                             <constraint firstItem="jQq-4u-q1s" firstAttribute="leading" secondItem="StO-3M-2Bl" secondAttribute="leading" constant="8" id="j6Y-1D-ZVN"/>
-                                            <constraint firstItem="eNb-xU-eEk" firstAttribute="top" secondItem="Cn1-Xs-J4O" secondAttribute="bottom" id="jFn-Ow-cxu"/>
                                             <constraint firstAttribute="trailing" secondItem="aGy-WS-9CY" secondAttribute="trailing" constant="8" id="kEE-5o-lDs"/>
                                             <constraint firstItem="9kq-fB-6Pz" firstAttribute="top" secondItem="aGy-WS-9CY" secondAttribute="bottom" constant="1" id="lao-2v-ZbU"/>
                                             <constraint firstAttribute="trailing" secondItem="jQq-4u-q1s" secondAttribute="trailing" constant="8" id="mx6-fi-5a9"/>
@@ -178,12 +140,9 @@
                                             <constraint firstItem="aGy-WS-9CY" firstAttribute="leading" secondItem="StO-3M-2Bl" secondAttribute="leading" constant="8" id="nKE-Pe-iXj"/>
                                             <constraint firstAttribute="bottom" secondItem="jQq-4u-q1s" secondAttribute="bottom" id="oGy-uY-RFr"/>
                                             <constraint firstAttribute="trailing" secondItem="Cn1-Xs-J4O" secondAttribute="trailing" constant="8" id="oLN-b3-mz8"/>
-                                            <constraint firstAttribute="trailing" secondItem="eNb-xU-eEk" secondAttribute="trailing" constant="8" id="qw4-R9-Chj"/>
                                             <constraint firstItem="jQq-4u-q1s" firstAttribute="top" secondItem="Cn1-Xs-J4O" secondAttribute="bottom" constant="1" id="rk2-tc-u7b"/>
-                                            <constraint firstItem="eNb-xU-eEk" firstAttribute="leading" secondItem="StO-3M-2Bl" secondAttribute="leading" constant="8" id="sm5-b1-sCV"/>
                                             <constraint firstItem="Cn1-Xs-J4O" firstAttribute="leading" secondItem="StO-3M-2Bl" secondAttribute="leading" constant="8" id="t0H-mx-qmW"/>
                                             <constraint firstAttribute="trailing" secondItem="VsJ-Q6-Cqa" secondAttribute="trailing" constant="8" id="vvD-Od-jGN"/>
-                                            <constraint firstItem="Uty-3R-ysC" firstAttribute="top" secondItem="i4w-AR-fho" secondAttribute="bottom" id="y6R-Xy-k9z"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
@@ -193,7 +152,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="y6R-Xy-k9z"/>
                                                 <exclude reference="5qb-pO-jHF"/>
                                                 <exclude reference="4P0-kw-WTh"/>
                                             </mask>
