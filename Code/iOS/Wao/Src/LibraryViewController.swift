@@ -56,9 +56,11 @@ extension LibraryViewController: UITableViewDataSource,UITableViewDelegate{
         if isOpen == true{
             isOpen = false
                 self.height = 126
+
             tableView.reloadData()
             
         }else{
+
             isOpen = true
                 self.height = 63
             tableView.reloadData()
