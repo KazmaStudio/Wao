@@ -21,6 +21,7 @@ class LibraryViewController: UIViewController {
         let string: NSString = "N"
         array.addObject(string)
         }
+       
         height = 126
     }
 
@@ -34,13 +35,12 @@ extension LibraryViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("librarycell") as! LibraryViewCell
         if array[indexPath.row].isEqualToString("Y"){
-            cell.numberLab.hidden = false
-            cell.timeLab.hidden = false
-            cell.fromLab.hidden = false
+            cell.smailImage.image = UIImage(named: "arr_up")
+            cell.darkView.hidden = false
+
         } else {
-            cell.numberLab.hidden = true
-            cell.timeLab.hidden = true
-            cell.fromLab.hidden = true
+            cell.smailImage.image = UIImage(named: "arr_down")
+            cell.darkView.hidden = true
         }
         
         
@@ -49,8 +49,7 @@ extension LibraryViewController: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        if array[indexPath.row].isEqualToString("Y"){
+                if array[indexPath.row].isEqualToString("Y"){
             array[indexPath.row] = "N"
         } else {
             array[indexPath.row] = "Y"
@@ -62,6 +61,7 @@ extension LibraryViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if  array[indexPath.row].isEqualToString("Y") {
             return height
+            
         }else{
             return 63
         }

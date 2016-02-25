@@ -17,6 +17,7 @@ class LibraryViewCell: UITableViewCell {
     @IBOutlet weak var timeLab: UILabel!
     @IBOutlet weak var fromLab: UILabel!
     
+    @IBOutlet weak var darkView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
