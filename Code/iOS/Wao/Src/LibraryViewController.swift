@@ -10,18 +10,17 @@ import UIKit
 
 class LibraryViewController: UIViewController {
 
-    var isOpen: Bool!
-    var selectedIndex: NSInteger!
-    var currentSelection: Int!
-    var path: NSIndexPath!
+    var array: NSMutableArray!
     var height: CGFloat!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        path = NSIndexPath()
-        isOpen = true
-        currentSelection = -1
+        array = NSMutableArray()
+        for (var i = 0; i < 5; i++) {
+        let string: NSString = "N"
+        array.addObject(string)
+        }
         height = 126
     }
 
@@ -34,46 +33,35 @@ extension LibraryViewController: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("librarycell") as! LibraryViewCell
-        if indexPath == path && !isOpen{
-            cell.smailImage.image = UIImage(named: "arr_up")
+        if array[indexPath.row].isEqualToString("Y"){
             cell.numberLab.hidden = false
             cell.timeLab.hidden = false
             cell.fromLab.hidden = false
         } else {
-            cell.smailImage.image = UIImage(named: "arr_down")
             cell.numberLab.hidden = true
             cell.timeLab.hidden = true
             cell.fromLab.hidden = true
         }
+        
+        
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        path = indexPath
-        
-        if isOpen == true{
-            isOpen = false
-                self.height = 126
-
-            tableView.reloadData()
-            
-        }else{
-
-            isOpen = true
-                self.height = 63
-            tableView.reloadData()
+        if array[indexPath.row].isEqualToString("Y"){
+            array[indexPath.row] = "N"
+        } else {
+            array[indexPath.row] = "Y"
         }
-        
-        
+        tableView.reloadData()
         
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if  indexPath == path {
+        if  array[indexPath.row].isEqualToString("Y") {
             return height
-            
         }else{
             return 63
         }
