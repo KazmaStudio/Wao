@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--我的-->
@@ -117,14 +117,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="我的收藏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hz5-Ii-Hmq">
-                                                    <rect key="frame" x="55" y="0.0" width="510" height="43.5"/>
+                                                    <rect key="frame" x="50" y="0.0" width="515" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="shoucang.png" id="LHn-eD-6a2">
-                                                    <rect key="frame" x="15" y="10" width="25" height="22"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="my_collection" id="LHn-eD-6a2">
+                                                    <rect key="frame" x="15" y="11" width="20" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -795,11 +795,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.JPG" width="1200" height="1200"/>
+        <image name="1.JPG" width="1280" height="1024"/>
         <image name="arr_down@3x" width="14" height="8"/>
         <image name="kefu.png" width="20" height="21"/>
+        <image name="my_collection" width="20" height="21"/>
         <image name="setting.png" width="20" height="20"/>
-        <image name="shoucang.png" width="25" height="22"/>
         <image name="wodegouwudai.png" width="20" height="20"/>
         <image name="wodelihe.png" width="20" height="21"/>
         <image name="wodeliku.png" width="20" height="20"/>
