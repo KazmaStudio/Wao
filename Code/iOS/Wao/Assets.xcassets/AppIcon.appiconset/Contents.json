@@ -3,79 +3,79 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "Group@58-1.png",
+      "filename" : "WaoIcon@29_2x.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "Group@87.png",
+      "filename" : "WaoIcon@29_3x.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "Group@80.png",
+      "filename" : "WaoIcon@40_2x.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "Group@120-1.png",
+      "filename" : "WaoIcon@40_3x.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Group@120.png",
+      "filename" : "WaoIcon@60_2x.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Group@180.png",
+      "filename" : "WaoIcon@60_3x.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "Group@29.png",
+      "filename" : "WaoIcon@29.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "Group@58.png",
+      "filename" : "WaoIcon@29_2x-1.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "Group@40.png",
+      "filename" : "WaoIcon@40.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "Group@80-1.png",
+      "filename" : "WaoIcon@40_2x-1.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "Group@76.png",
+      "filename" : "WaoIcon@76.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "Group@152.png",
+      "filename" : "WaoIcon@76_2x.png",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "Group@167.png",
+      "filename" : "WaoIcon@83.png",
       "scale" : "2x"
     }
   ],
