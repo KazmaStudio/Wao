@@ -29,6 +29,8 @@ class ViewControllerMain: UIViewController ,UIScrollViewDelegate{
 //        singletap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
 //        [singletap setNumberOfTapsRequired:1];
 //        [scrollview addGestureRecognizer:singletap];
+        view.addSubview(imagePageController)
+        
         
         let singleTap = UITapGestureRecognizer.init(target: self, action: "hangleSingleTap")
         self.imageScrollView.addGestureRecognizer(singleTap)//scrollView点击跳转

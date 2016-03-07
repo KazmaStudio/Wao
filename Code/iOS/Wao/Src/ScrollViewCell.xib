@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -14,19 +14,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="750" height="374.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ULq-Sm-63n">
+                        <rect key="frame" x="339.5" y="334.5" width="70" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="6IZ-4P-emK"/>
+                            <constraint firstAttribute="width" constant="70" id="qbF-0B-b5X"/>
+                        </constraints>
+                    </pageControl>
                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPQ-aC-2u8">
                         <rect key="frame" x="0.0" y="0.0" width="750" height="374.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gDc-jV-UVg">
                                 <rect key="frame" x="0.0" y="0.0" width="750" height="374.5"/>
                             </imageView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ULq-Sm-63n">
-                                <rect key="frame" x="491" y="324" width="39" height="37"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="39" id="LFG-ga-Hkd"/>
-                                    <constraint firstAttribute="height" constant="37" id="sXc-c3-p9c"/>
-                                </constraints>
-                            </pageControl>
                         </subviews>
                         <constraints>
                             <constraint firstItem="gDc-jV-UVg" firstAttribute="leading" secondItem="GPQ-aC-2u8" secondAttribute="leading" id="7KX-pF-iGL"/>
@@ -34,13 +34,13 @@
                             <constraint firstItem="gDc-jV-UVg" firstAttribute="height" secondItem="GPQ-aC-2u8" secondAttribute="height" id="LP5-zU-ahw"/>
                             <constraint firstItem="gDc-jV-UVg" firstAttribute="top" secondItem="GPQ-aC-2u8" secondAttribute="top" id="RGQ-Ui-zzy"/>
                             <constraint firstAttribute="bottom" secondItem="gDc-jV-UVg" secondAttribute="bottom" id="SRC-hK-lpp"/>
-                            <constraint firstItem="ULq-Sm-63n" firstAttribute="leading" secondItem="gDc-jV-UVg" secondAttribute="trailing" constant="-259" id="Yeg-md-gtH"/>
-                            <constraint firstItem="ULq-Sm-63n" firstAttribute="top" secondItem="gDc-jV-UVg" secondAttribute="bottom" constant="-50.5" id="d44-Vl-503"/>
                             <constraint firstItem="gDc-jV-UVg" firstAttribute="width" secondItem="GPQ-aC-2u8" secondAttribute="width" id="oEX-Vg-ciK"/>
                         </constraints>
                     </scrollView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="ULq-Sm-63n" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ClM-wz-P86"/>
+                    <constraint firstAttribute="bottom" secondItem="ULq-Sm-63n" secondAttribute="bottom" constant="3" id="RsL-U3-Sju"/>
                     <constraint firstItem="GPQ-aC-2u8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aDd-l6-M5u"/>
                     <constraint firstItem="GPQ-aC-2u8" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="ry7-d1-oRd"/>
                     <constraint firstItem="GPQ-aC-2u8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sY0-Y4-L43"/>
@@ -52,7 +52,7 @@
                 <outlet property="PageControl" destination="ULq-Sm-63n" id="8Dj-eD-OjR"/>
                 <outlet property="ScrollView" destination="GPQ-aC-2u8" id="5bj-5Y-UOp"/>
             </connections>
-            <point key="canvasLocation" x="332.5" y="205"/>
+            <point key="canvasLocation" x="332" y="204.5"/>
         </tableViewCell>
     </objects>
 </document>

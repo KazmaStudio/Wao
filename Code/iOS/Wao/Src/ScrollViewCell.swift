@@ -44,6 +44,8 @@ class ScrollViewCell: UITableViewCell,UIScrollViewDelegate {
         }
     }
     func imageGallery(){
+        contentView.addSubview(PageControl)
+        
         let imageWidth:CGFloat = UIScreen.mainScreen().bounds.width
         let imageHeight:CGFloat = self.ScrollView.bounds.size.height
         let imageY:CGFloat = 0
