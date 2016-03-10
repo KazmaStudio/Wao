@@ -70,7 +70,7 @@ class SizeTableViewCell: UITableViewCell {
             myButton.backgroundColor = UIColor.groupTableViewBackgroundColor()
         }
 		
-        button.backgroundColor = UIColor.redColor()
+        button.backgroundColor = UIColor(red: 255/255, green: 84/255, blue: 59/255, alpha: 1)
         let str:NSString!
         str = NSString(format: "%ld", self.indexpath.row)
         let notific: NSNotification

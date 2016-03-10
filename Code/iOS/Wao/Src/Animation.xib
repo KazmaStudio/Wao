@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -88,10 +88,10 @@
                                     <rect key="frame" x="0.0" y="167" width="375" height="43"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLR-Ef-bRU">
-                                            <rect key="frame" x="294" y="0.0" width="80" height="43"/>
+                                            <rect key="frame" x="260" y="0.0" width="115" height="43"/>
                                             <color key="backgroundColor" red="1" green="0.32941176470588235" blue="0.23137254901960785" alpha="0.8408135775862069" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="80" id="4xF-73-6oJ"/>
+                                                <constraint firstAttribute="width" constant="115" id="4xF-73-6oJ"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <state key="normal" title="去支付">
@@ -113,7 +113,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-DI-Bl4">
                                             <rect key="frame" x="137" y="0.0" width="21" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -123,8 +123,7 @@
                                         <constraint firstItem="he5-7c-DrM" firstAttribute="top" secondItem="KkB-8a-q5a" secondAttribute="top" id="DRy-bH-9El"/>
                                         <constraint firstAttribute="bottom" secondItem="he5-7c-DrM" secondAttribute="bottom" id="EwD-tY-zhB"/>
                                         <constraint firstAttribute="bottom" secondItem="kLR-Ef-bRU" secondAttribute="bottom" id="GYo-Ub-260"/>
-                                        <constraint firstAttribute="trailing" secondItem="kLR-Ef-bRU" secondAttribute="trailing" constant="1" id="HxX-j6-EWI"/>
-                                        <constraint firstItem="kLR-Ef-bRU" firstAttribute="leading" secondItem="Thh-DI-Bl4" secondAttribute="trailing" constant="13" id="MwB-uZ-HfU"/>
+                                        <constraint firstAttribute="trailing" secondItem="kLR-Ef-bRU" secondAttribute="trailing" id="HxX-j6-EWI"/>
                                         <constraint firstItem="BVb-YR-U8w" firstAttribute="leading" secondItem="he5-7c-DrM" secondAttribute="trailing" constant="8" id="Wpu-tX-GIP"/>
                                         <constraint firstItem="Thh-DI-Bl4" firstAttribute="top" secondItem="KkB-8a-q5a" secondAttribute="top" id="c0v-mE-AoZ"/>
                                         <constraint firstItem="BVb-YR-U8w" firstAttribute="top" secondItem="KkB-8a-q5a" secondAttribute="top" id="hvf-iM-hdD"/>
@@ -134,11 +133,6 @@
                                         <constraint firstAttribute="bottom" secondItem="BVb-YR-U8w" secondAttribute="bottom" id="tHZ-j8-Qc4"/>
                                         <constraint firstItem="Thh-DI-Bl4" firstAttribute="leading" secondItem="BVb-YR-U8w" secondAttribute="trailing" constant="10" id="u9J-7L-EDi"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="MwB-uZ-HfU"/>
-                                        </mask>
-                                    </variation>
                                 </view>
                                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-NV-McU">
                                     <rect key="frame" x="0.0" y="65" width="375" height="102"/>
@@ -159,12 +153,18 @@
                                 <constraint firstItem="hsn-vG-ZZ3" firstAttribute="leading" secondItem="mhk-Np-b8A" secondAttribute="leading" id="Jf4-ho-GhF"/>
                                 <constraint firstAttribute="height" constant="210" id="KfU-Uu-Jdl"/>
                                 <constraint firstItem="hsn-vG-ZZ3" firstAttribute="top" secondItem="mhk-Np-b8A" secondAttribute="top" id="L8G-4g-lfi"/>
+                                <constraint firstAttribute="trailing" secondItem="KkB-8a-q5a" secondAttribute="trailing" id="Yib-ng-yUG"/>
                                 <constraint firstItem="hsn-vG-ZZ3" firstAttribute="width" secondItem="mhk-Np-b8A" secondAttribute="width" id="ZTk-ct-8lN"/>
                                 <constraint firstItem="KkB-8a-q5a" firstAttribute="top" secondItem="mLb-NV-McU" secondAttribute="bottom" id="cW1-7b-lrJ"/>
                                 <constraint firstItem="mLb-NV-McU" firstAttribute="top" secondItem="hsn-vG-ZZ3" secondAttribute="bottom" id="r0P-Hi-Ia5"/>
                                 <constraint firstItem="KkB-8a-q5a" firstAttribute="leading" secondItem="mhk-Np-b8A" secondAttribute="leading" id="sYc-hJ-MQd"/>
                                 <constraint firstItem="mLb-NV-McU" firstAttribute="width" secondItem="mhk-Np-b8A" secondAttribute="width" id="sgv-4b-Gi0"/>
                             </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Yib-ng-yUG"/>
+                                </mask>
+                            </variation>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -184,6 +184,7 @@
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
+                <outlet property="amountLab" destination="Thh-DI-Bl4" id="LhE-rl-8Vs"/>
                 <outlet property="cancelButton" destination="SmR-Dp-UEv" id="wGx-SO-Mq3"/>
                 <outlet property="darkView" destination="Buj-OQ-Xb7" id="9wM-X8-EeG"/>
                 <outlet property="footerAni" destination="mhk-Np-b8A" id="Px0-IB-Su7"/>
@@ -198,6 +199,6 @@
         </view>
     </objects>
     <resources>
-        <image name="1.JPG" width="1200" height="1200"/>
+        <image name="1.JPG" width="1280" height="1024"/>
     </resources>
 </document>

@@ -22,8 +22,10 @@ class NumberTableCell: UITableViewCell {
         super.awakeFromNib()
         addAddBtn()
         addSubBtn()
-        numberLabel.text = "0"
-        number = 0
+        numberLabel.text = "1"
+        number = 1
+        
+
     }
 
 
@@ -38,6 +40,12 @@ class NumberTableCell: UITableViewCell {
     func addAct(){
          ++number
         numberLabel.text = String(number)
+        let notific: NSNotification
+        var dic = [NSString:NSString]()
+        dic["changeNum"] = numberLabel.text
+        notific = NSNotification(name: "changeNumber", object: nil, userInfo: dic)
+        NSNotificationCenter.defaultCenter().postNotification(notific)
+        
     }
     
     func addSubBtn(){
@@ -49,11 +57,19 @@ class NumberTableCell: UITableViewCell {
         
     }
     func subAct(){
-        if number == 0{
+        if number == 1{
             return
         }
         --number
+        
         numberLabel.text = String(number)
+        let notific: NSNotification
+        var dic = [NSString:NSString]()
+        dic["subNumber"] = numberLabel.text
+        notific = NSNotification(name: "subNumber", object: nil, userInfo: dic)
+        NSNotificationCenter.defaultCenter().postNotification(notific)
+        
+        
     }
     
 }

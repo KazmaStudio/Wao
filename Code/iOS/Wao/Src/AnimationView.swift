@@ -22,7 +22,14 @@ class AnimationView: UIView {
     @IBOutlet weak var paymentBtn: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var headImage: UIImageView!
+    
+    
+    @IBOutlet weak var amountLab: UILabel!
+    
+    
     var textM:NSMutableString!
+    var changeNum: NSMutableString!
+    
     var mutableTextArray:NSMutableArray!
     
     var sizeHeight: CGFloat!
@@ -65,6 +72,10 @@ class AnimationView: UIView {
         
         paymentBtn.addTarget(self, action: "paymentAct", forControlEvents: .TouchUpInside)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "notice:", name: "buttonChange", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "changeNumber:", name: "changeNumber", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "subNumber:", name: "subNumber", object: nil)
+        
+        
         mutableTextArray = NSMutableArray()
         for var i = 0; i < 1; i++ {
           mutableTextArray.addObject("")
@@ -73,6 +84,18 @@ class AnimationView: UIView {
     }
     @IBAction func pushAction(sender: AnyObject) {
 
+    }
+    
+    func changeNumber(sender:NSNotification){
+        changeNum = NSMutableString()
+        changeNum.appendString(sender.userInfo!["changeNum"]! as! String)
+        amountLab.text = changeNum as String + " 份"
+    }
+    
+    func subNumber(sender:NSNotification){
+        changeNum = NSMutableString()
+        changeNum.appendString(sender.userInfo!["subNumber"]! as! String)
+        amountLab.text = changeNum as String + " 份"
     }
     
     func notice(sender:NSNotification){
@@ -100,7 +123,6 @@ class AnimationView: UIView {
         UIView.animateWithDuration(0.5, animations: hideAnimation, completion: {finished in
             self.hidden = true
             NSUserDefaults.standardUserDefaults().setObject("finish", forKey: "EditOrFinish")
-//            NSNotificationCenter.defaultCenter()
         })
     }
     
@@ -134,6 +156,7 @@ extension AnimationView:UITableViewDataSource,UITableViewDelegate{
             tableView.registerNib(nib, forCellReuseIdentifier: "numberCell")
             let cell = tableView.dequeueReusableCellWithIdentifier("numberCell") as! NumberTableCell
             numberChange.text = cell.numberLabel.text
+            amountLab.text = cell.numberLabel.text! + " 份"
             
             return cell
         }
@@ -147,7 +170,7 @@ extension AnimationView:UITableViewDataSource,UITableViewDelegate{
         if  indexPath.row == 0{
             return cell.getheight()
         } else {
-            return 80
+            return 60
         }
         
     }

@@ -25,13 +25,6 @@ class ScrollViewCell: UITableViewCell,UIScrollViewDelegate {
         imageGallery()
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-    
     func displayCellAnimation(view:UIView){
         view.transform = CGAffineTransformMakeScale(0.0, 0.0)
         
