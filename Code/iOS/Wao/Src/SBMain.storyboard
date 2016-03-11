@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -25,6 +25,26 @@
                                     <constraint firstAttribute="height" constant="37" id="BjX-AG-0gF"/>
                                 </constraints>
                             </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-y5-k3Q">
+                                <rect key="frame" x="0.0" y="64" width="600" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GN7-y5-k3Q" secondAttribute="height" multiplier="750:270" id="t2x-v1-fis"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="vHe-75-SOt" id="O93-1G-IcP"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UA3-C4-hLD">
+                                <rect key="frame" x="526" y="531" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="QS9-5N-5AU"/>
+                                    <constraint firstAttribute="height" constant="44" id="lBJ-gU-ZqU"/>
+                                </constraints>
+                                <state key="normal" image="up.png"/>
+                                <connections>
+                                    <action selector="backTopAction:" destination="vHe-75-SOt" eventType="touchUpInside" id="RmX-o9-iSW"/>
+                                </connections>
+                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-RQ-oTr">
                                 <rect key="frame" x="0.0" y="280" width="600" height="320"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,26 +70,6 @@
                                     <outlet property="delegate" destination="vHe-75-SOt" id="GE3-Xn-4dQ"/>
                                 </connections>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-y5-k3Q">
-                                <rect key="frame" x="0.0" y="64" width="600" height="216"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="GN7-y5-k3Q" secondAttribute="height" multiplier="750:270" id="t2x-v1-fis"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="delegate" destination="vHe-75-SOt" id="O93-1G-IcP"/>
-                                </connections>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UA3-C4-hLD">
-                                <rect key="frame" x="526" y="531" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="QS9-5N-5AU"/>
-                                    <constraint firstAttribute="height" constant="44" id="lBJ-gU-ZqU"/>
-                                </constraints>
-                                <state key="normal" image="up.png"/>
-                                <connections>
-                                    <action selector="backTopAction:" destination="vHe-75-SOt" eventType="touchUpInside" id="RmX-o9-iSW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>

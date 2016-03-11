@@ -150,7 +150,7 @@ extension ViewControllerMain:UICollectionViewDelegate,UICollectionViewDataSource
 //            imageView.image = UIImage(named: name)
             if index == 0{
                 imageView.image = UIImage(named: "4.JPG")
-            } else if index == 3{
+            } else if index == 4{
                 imageView.image = UIImage(named: "1.JPG")
             } else {
                 let name:String = String(format: "%d.JPG", index+1)
@@ -158,7 +158,7 @@ extension ViewControllerMain:UICollectionViewDelegate,UICollectionViewDataSource
             }
             self.imageScrollView.addSubview(imageView);//把图片加入到ScrollView中去，实现轮播的效果；
         }
-		let contentW:CGFloat = imageWidth * CGFloat(totalCount)//这里的宽度就是所有的图片宽度之和；
+		let contentW:CGFloat = imageWidth * CGFloat(totalCount + 2)//这里的宽度就是所有的图片宽度之和；
 		self.imageScrollView.contentSize = CGSizeMake(contentW, 0)
 		self.imageScrollView.delegate = self
 		self.imagePageController.numberOfPages = totalCount//下面的页码提示器；

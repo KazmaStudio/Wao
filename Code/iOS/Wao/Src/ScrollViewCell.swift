@@ -11,8 +11,7 @@ import UIKit
 class ScrollViewCell: UITableViewCell,UIScrollViewDelegate {
 
     @IBOutlet weak var ScrollView: UIScrollView!
-    
-    @IBOutlet weak var GiftImage: UIImageView!
+
     
     @IBOutlet weak var PageControl: UIPageControl!
     
@@ -25,19 +24,10 @@ class ScrollViewCell: UITableViewCell,UIScrollViewDelegate {
         imageGallery()
     }
 
-    func displayCellAnimation(view:UIView){
-        view.transform = CGAffineTransformMakeScale(0.0, 0.0)
-        
-        //动画效果
-        UIView.animateWithDuration(0.3, delay: 0.1, usingSpringWithDamping: 0.6, initialSpringVelocity: 7, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            view.transform = CGAffineTransformIdentity
-            
-            }) { (success) -> Void in
-                
-        }
-    }
     func imageGallery(){
         contentView.addSubview(PageControl)
+        self.ScrollView.pagingEnabled = true
+        self.ScrollView.contentOffset = CGPointMake(0, 0);
         
         let imageWidth:CGFloat = UIScreen.mainScreen().bounds.width
         let imageHeight:CGFloat = self.ScrollView.bounds.size.height
@@ -47,23 +37,23 @@ class ScrollViewCell: UITableViewCell,UIScrollViewDelegate {
             let imageView:UIImageView = UIImageView();
             imageView.contentMode = UIViewContentMode.ScaleAspectFill
             let imageX:CGFloat = CGFloat(index) * imageWidth;
+            imageView.clipsToBounds = true
             imageView.frame = CGRectMake(imageX, imageY, imageWidth, imageHeight);//设置图片的大小，注意Image和ScrollView的关系，其实几张图片是按顺序从左向右依次放置在ScrollView中的，但是ScrollView在界面中显示的只是一张图片的大小，效果类似与画廊；
             let name:String = String(format: "%d.JPG", index+1);
             imageView.image = UIImage(named: name);
             self.ScrollView.showsHorizontalScrollIndicator = false;//不设置水平滚动条；
             self.ScrollView.addSubview(imageView);//把图片加入到ScrollView中去，实现轮播的效果；
             
-            //需要非常注意的是：ScrollView控件一定要设置contentSize;包括长和宽；
-            let contentW:CGFloat = imageWidth * CGFloat(totalCount);//这里的宽度就是所有的图片宽度之和；
-            self.ScrollView.contentSize = CGSizeMake(contentW, 0);
-            self.ScrollView.pagingEnabled = true;
-            self.ScrollView.delegate = self;
-            self.PageControl.numberOfPages = totalCount;//下面的页码提示器；
             
             
         }
-        
+        //需要非常注意的是：ScrollView控件一定要设置contentSize;包括长和宽；
+        let contentW:CGFloat = imageWidth * CGFloat(totalCount);//这里的宽度就是所有的图片宽度之和；
+        self.ScrollView.contentSize = CGSizeMake(contentW, 0)
+        self.ScrollView.delegate = self
+        self.PageControl.numberOfPages = totalCount//下面的页码提示器；
         self.addTimer()
+        
         
     }
 	
@@ -77,9 +67,27 @@ class ScrollViewCell: UITableViewCell,UIScrollViewDelegate {
         }
         let x:CGFloat = CGFloat(page) * self.ScrollView.frame.size.width;
         
-        self.ScrollView.contentOffset = CGPointMake(x, 0);//注意：contentOffset就是设置ScrollView的偏移；
+        self.ScrollView.setContentOffset(CGPointMake(x, 0), animated: true)//注意：contentOffset就是设置ScrollView的偏移；
     }
     
+    
+    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        // 开始拖动,timer暂停
+        timer.invalidate()
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        if ScrollView.contentOffset.x == 0{
+            ScrollView.contentOffset = CGPointMake(3 * ScrollView.frame.size.width, 0)
+        } else if ScrollView.contentOffset.x == 3 * ScrollView.frame.size.width{
+            ScrollView.contentOffset = CGPointMake(0, 0)
+        }
+        
+    }
+    
+    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        addTimer()
+    }
     //UIScrollViewDelegate中重写的方法；
     //处理所有ScrollView的滚动之后的事件，注意 不是执行滚动的事件；
     func scrollViewDidScroll(scrollView: UIScrollView) {

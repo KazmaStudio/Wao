@@ -21,21 +21,8 @@
                             <constraint firstAttribute="width" constant="70" id="qbF-0B-b5X"/>
                         </constraints>
                     </pageControl>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPQ-aC-2u8">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPQ-aC-2u8">
                         <rect key="frame" x="0.0" y="0.0" width="750" height="374.5"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gDc-jV-UVg">
-                                <rect key="frame" x="0.0" y="0.0" width="750" height="374.5"/>
-                            </imageView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="gDc-jV-UVg" firstAttribute="leading" secondItem="GPQ-aC-2u8" secondAttribute="leading" id="7KX-pF-iGL"/>
-                            <constraint firstAttribute="trailing" secondItem="gDc-jV-UVg" secondAttribute="trailing" id="8J0-5W-Sdr"/>
-                            <constraint firstItem="gDc-jV-UVg" firstAttribute="height" secondItem="GPQ-aC-2u8" secondAttribute="height" id="LP5-zU-ahw"/>
-                            <constraint firstItem="gDc-jV-UVg" firstAttribute="top" secondItem="GPQ-aC-2u8" secondAttribute="top" id="RGQ-Ui-zzy"/>
-                            <constraint firstAttribute="bottom" secondItem="gDc-jV-UVg" secondAttribute="bottom" id="SRC-hK-lpp"/>
-                            <constraint firstItem="gDc-jV-UVg" firstAttribute="width" secondItem="GPQ-aC-2u8" secondAttribute="width" id="oEX-Vg-ciK"/>
-                        </constraints>
                     </scrollView>
                 </subviews>
                 <constraints>
@@ -48,7 +35,6 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="GiftImage" destination="gDc-jV-UVg" id="hiB-H6-GHt"/>
                 <outlet property="PageControl" destination="ULq-Sm-63n" id="8Dj-eD-OjR"/>
                 <outlet property="ScrollView" destination="GPQ-aC-2u8" id="5bj-5Y-UOp"/>
             </connections>
